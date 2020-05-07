@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "target": "es2020",
+      "module": "ESNext",
+      "sourceMap": true,
+      "moduleResolution": "Node",
+      "noImplicitAny": true
+    },
+    "include": ["scripts", "src"]
+  }
