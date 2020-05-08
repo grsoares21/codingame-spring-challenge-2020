@@ -4,6 +4,7 @@
 
 import { Point, manhattanDistance } from "./geometry";
 import { areEqual } from "./geometry";
+import { Pac, PacOrder } from "./game";
 
 var inputs: string[] = readline().split(" ");
 const width: number = parseInt(inputs[0]); // size of the grid
@@ -12,8 +13,8 @@ for (let i = 0; i < height; i++) {
   const row: string = readline(); // one line of the grid: space " " is floor, pound "#" is wall
 }
 
-let oldPacPoint: Point = { x: -1, y: -1 };
-let bumpIterations = 1;
+let oldPacList: Pac[] = [];
+let bumpIterations: number[] = [];
 // game loop
 while (true) {
   var inputs: string[] = readline().split(" ");
@@ -21,7 +22,7 @@ while (true) {
   const opponentScore: number = parseInt(inputs[1]);
   const visiblePacCount: number = parseInt(readline()); // all your pacs and enemy pacs in sight
 
-  let pacPoint: Point;
+  let pacList: Pac[] = [];
 
   for (let i = 0; i < visiblePacCount; i++) {
     var inputs: string[] = readline().split(" ");
@@ -30,7 +31,7 @@ while (true) {
     const x: number = parseInt(inputs[2]); // position in the grid
     const y: number = parseInt(inputs[3]); // position in the grid
     if (mine) {
-      pacPoint = { x, y };
+      pacList.push({ id: pacId, position: { x, y } });
     }
     //const typeId: string = inputs[4]; // unused in wood leagues
     //const speedTurnsLeft: number = parseInt(inputs[5]); // unused in wood leagues
@@ -38,10 +39,15 @@ while (true) {
   }
   const visiblePelletCount: number = parseInt(readline()); // all pellets in sight
 
-  let minDistance = Number.POSITIVE_INFINITY;
-  let currentMinValue = 0;
-  let destinationPoint: Point;
-  let pelletDistanceList: { pelletPoint: Point; pelletDistance: number }[] = [];
+  let pacOrders: PacOrder[] = pacList.map((pac) => {
+    return {
+      id: pac.id,
+      destinationPoint: null,
+      distance: Number.POSITIVE_INFINITY,
+      value: 0,
+      pelletDistanceList: [],
+    };
+  });
 
   for (let i = 0; i < visiblePelletCount; i++) {
     var inputs: string[] = readline().split(" ");
@@ -50,44 +56,51 @@ while (true) {
     const pelletPoint: Point = { x, y };
     const value: number = parseInt(inputs[2]); // amount of points this pellet is worth
 
-    const pelletDistance = manhattanDistance(pacPoint, pelletPoint);
-    if (
-      (pelletDistance < minDistance || value > currentMinValue) &&
-      !areEqual(pacPoint, oldPacPoint)
-    ) {
-      currentMinValue = value;
-      minDistance = pelletDistance;
-      destinationPoint = pelletPoint;
-      /*if (pelletDistance < 4) {
-        console.error(
-          `Min dist: ${minDistance}, Pac point: ${JSON.stringify(
-            pacPoint
-          )}, Pellet point: ${JSON.stringify(
-            pelletPoint
-          )}, pellet value ${value}`
-        );
-      }*/
-    } else if (areEqual(pacPoint, oldPacPoint)) {
-      pelletDistanceList.push({ pelletPoint, pelletDistance });
+    for (let j = 0; j < pacList.length; j++) {
+      const pelletDistance = manhattanDistance(
+        pacList[j].position,
+        pelletPoint
+      );
+      if (
+        (pelletDistance < pacOrders[j].distance ||
+          value > pacOrders[j].value) &&
+        (!oldPacList[j] ||
+          !areEqual(pacList[j].position, oldPacList[j].position))
+      ) {
+        pacOrders[j].value = value;
+        pacOrders[j].distance = pelletDistance;
+        pacOrders[j].destinationPoint = pelletPoint;
+      } else if (
+        oldPacList[j] &&
+        areEqual(pacList[j].position, oldPacList[j].position)
+      ) {
+        pacOrders[j].pelletDistanceList.push({ pelletPoint, pelletDistance });
+      }
     }
   }
-  if (!destinationPoint) {
-    pelletDistanceList.sort(
-      (pelletA, pelletB) => pelletA.pelletDistance - pelletB.pelletDistance
-    );
 
-    destinationPoint = pelletDistanceList[bumpIterations].pelletPoint;
-    bumpIterations++;
-  } else {
-    bumpIterations = 1;
+  for (let i = 0; i < pacOrders.length; i++) {
+    if (!pacOrders[i].destinationPoint) {
+      pacOrders[i].pelletDistanceList.sort(
+        (pelletA, pelletB) => pelletA.pelletDistance - pelletB.pelletDistance
+      );
+      pacOrders[i].destinationPoint =
+        pacOrders[i].pelletDistanceList[bumpIterations[i]].pelletPoint;
+      bumpIterations[i]++;
+    } else {
+      bumpIterations[i] = 1;
+    }
   }
-  console.error(
-    `Bump it: ${bumpIterations}, Dest point: ${JSON.stringify(
-      destinationPoint
-    )}`
-  );
-  console.log(`MOVE 0 ${destinationPoint.x} ${destinationPoint.y}`); // MOVE <pacId> <x> <y>
-  oldPacPoint = pacPoint;
+
+  console.log(
+    pacOrders
+      .map(
+        (pac) =>
+          `MOVE ${pac.id} ${pac.destinationPoint.x} ${pac.destinationPoint.y}`
+      )
+      .join("|")
+  ); // MOVE <pacId> <x> <y>
+  oldPacList = pacList;
   // Write an action using console.log()
   // To debug: console.error('Debug messages...');
 }
