@@ -3,6 +3,7 @@ import { Point } from "./geometry";
 interface Pac {
   position: Point;
   id: number;
+  abilityCooldown: number;
 }
 
 interface PelletDistance {
@@ -10,7 +11,7 @@ interface PelletDistance {
   pelletDistance: number;
 }
 
-interface PacOrder {
+interface PacDestination {
   id: number;
   destinationPoint: Point;
   distance: number;
