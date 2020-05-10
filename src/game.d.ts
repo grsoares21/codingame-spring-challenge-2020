@@ -6,6 +6,10 @@ interface Pac {
   abilityCooldown: number;
 }
 
+interface Pellet {
+  position: Point;
+  value: number;
+}
 interface PelletDistance {
   pelletPoint: Point;
   pelletDistance: number;

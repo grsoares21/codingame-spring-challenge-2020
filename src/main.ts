@@ -5,16 +5,16 @@
 import {
   Point,
   manhattanDistance,
-  findFirstAvailablePosition,
+  findRandomAvailablePosition,
 } from "./geometry";
 import { areEqual } from "./geometry";
-import { Pac, PacDestination } from "./game";
+import { Pac, PacDestination, Pellet } from "./game";
 import { storeInput } from "./local";
 
 import { runLocally } from "./local";
 
 //storeInput();
-//runLocally("./src/replays/replay_0.txt");
+//runLocally("./src/replays/replay_1.txt");
 
 var inputs: string[] = readline().split(" ");
 const width: number = parseInt(inputs[0]); // size of the grid
@@ -28,6 +28,7 @@ for (let i = 0; i < height; i++) {
 
 let oldPacList: Pac[] = [];
 let bumpIterations: number[] = [];
+let lastRandomDestination: { [pacId: number]: Point } = {};
 // game loop
 while (true) {
   var inputs: string[] = readline().split(" ");
@@ -53,6 +54,14 @@ while (true) {
   }
   const visiblePelletCount: number = parseInt(readline()); // all pellets in sight
 
+  if (
+    pacList.some(
+      ({ id, position }) => id === 1 && position.x === 21 && position.y === 6
+    )
+  ) {
+    debugger;
+  }
+
   let pacDestinations: { [key: number]: PacDestination } = {};
 
   pacList.forEach((pac) => {
@@ -65,15 +74,22 @@ while (true) {
     };
   });
 
+  let pelletList: Pellet[] = [];
   for (let i = 0; i < visiblePelletCount; i++) {
     var inputs: string[] = readline().split(" ");
     const x: number = parseInt(inputs[0]);
     const y: number = parseInt(inputs[1]);
-    const pelletPoint: Point = { x, y };
+    const position: Point = { x, y };
     const value: number = parseInt(inputs[2]); // amount of points this pellet is worth
+    pelletList.push({ position, value });
+  }
 
-    for (let j = 0; j < pacList.length; j++) {
+  for (let j = 0; j < pacList.length; j++) {
+    for (let i = 0; i < pelletList.length; i++) {
       let pelletAvailable = true;
+      let pelletPoint = pelletList[i].position;
+      let { value } = pelletList[i];
+
       for (let { destinationPoint } of Object.values(pacDestinations)) {
         if (destinationPoint && areEqual(destinationPoint, pelletPoint)) {
           pelletAvailable = false;
@@ -126,7 +142,12 @@ while (true) {
         pacDestination.destinationPoint =
           pacDestination.pelletDistanceList[0].pelletPoint;
       } else {
-        pacDestination.destinationPoint = findFirstAvailablePosition(map);
+        lastRandomDestination[pacId] =
+          !lastRandomDestination[pacId] ||
+          areEqual(lastRandomDestination[pacId], pacList[i].position)
+            ? findRandomAvailablePosition(map)
+            : lastRandomDestination[pacId];
+        pacDestination.destinationPoint = lastRandomDestination[pacId];
       }
     } else {
       bumpIterations[i] = 1;

@@ -1,0 +1,1566 @@
+Standard Error Stream:
+[in] 33 13
+[in] #################################
+[in] # #   #     # # # # #     #   # #
+[in] # # ##### # # # # # # # ##### # #
+[in] #         #     #     #         #
+[in] ##### # # ### # # # ### # # #####
+[in]       #   #   #   #   #   #      
+[in] ### # ### # # ##### # # ### # ###
+[in] #   #       #       #       #   #
+[in] # # ### ### # # # # # ### ### # #
+[in] # #     ### #   #   # ###     # #
+[in] # # # # ### ### # ### ### # # # #
+[in] # # # #         #         # # # #
+[in] #################################
+[in] 0 0
+[in] 2
+[in] 0 1 15 11 ROCK 0 0
+[in] 1 1 13 2 PAPER 0 0
+[in] 23
+[in] 14 11 1
+[in] 13 11 1
+[in] 12 11 1
+[in] 11 11 1
+[in] 10 11 1
+[in] 9 11 1
+[in] 8 11 1
+[in] 7 11 1
+[in] 15 10 1
+[in] 15 9 1
+[in] 15 8 1
+[in] 15 7 1
+[in] 13 1 1
+[in] 13 4 1
+[in] 13 5 1
+[in] 13 6 1
+[in] 13 7 1
+[in] 13 8 1
+[in] 13 9 1
+[in] 13 3 10
+[in] 19 3 10
+[in] 1 10 10
+[in] 31 10 10
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+001
+200
+Standard Output Stream:
+|MOVE 0 17 10|MOVE 1 19 3
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+The_Jaro:
+- Pac 0 moved to (17, 10).
+- Pac 1 moved to (19, 3).
+Standard Error Stream:
+[in] 0 11
+[in] 2
+[in] 0 1 15 11 ROCK 5 9
+[in] 1 1 13 2 PAPER 5 9
+[in] 22
+[in] 14 11 1
+[in] 13 11 1
+[in] 12 11 1
+[in] 11 11 1
+[in] 10 11 1
+[in] 9 11 1
+[in] 8 11 1
+[in] 7 11 1
+[in] 15 10 1
+[in] 15 9 1
+[in] 15 8 1
+[in] 15 7 1
+[in] 13 1 1
+[in] 13 4 1
+[in] 13 5 1
+[in] 13 6 1
+[in] 13 7 1
+[in] 13 8 1
+[in] 13 9 1
+[in] 13 3 10
+[in] 1 10 10
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 15 10 | MOVE 1 13 3 | 
+002
+200
+Standard Output Stream:
+|MOVE 0 17 9|MOVE 1 18 3
+Game Summary:
+grsoares:
+- Pac 0 moved to (15, 10).
+- Pac 1 moved to (13, 3).
+The_Jaro:
+- Pac 0 moved to (17, 9).
+- Pac 1 moved to (18, 3).
+Standard Error Stream:
+[in] 11 13
+[in] 2
+[in] 0 1 15 10 ROCK 4 8
+[in] 1 1 13 3 PAPER 4 8
+[in] 16
+[in] 15 9 1
+[in] 15 8 1
+[in] 15 7 1
+[in] 12 3 1
+[in] 11 3 1
+[in] 14 3 1
+[in] 15 3 1
+[in] 13 1 1
+[in] 13 4 1
+[in] 13 5 1
+[in] 13 6 1
+[in] 13 7 1
+[in] 13 8 1
+[in] 13 9 1
+[in] 1 10 10
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 1 10 | MOVE 1 31 10 | 
+003
+200
+Standard Output Stream:
+|MOVE 0 17 8|MOVE 1 17 3
+Game Summary:
+grsoares:
+- Pac 0 moved to (15, 11).
+- Pac 1 moved to (13, 4).
+The_Jaro:
+- Pac 0 moved to (17, 8).
+- Pac 1 moved to (17, 3).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (14, 11).
+- Pac 1 moved to (13, 5).
+Standard Error Stream:
+[in] 14 15
+[in] 2
+[in] 0 1 14 11 ROCK 3 7
+[in] 1 1 13 5 PAPER 3 7
+[in] 16
+[in] 13 11 1
+[in] 12 11 1
+[in] 11 11 1
+[in] 10 11 1
+[in] 9 11 1
+[in] 8 11 1
+[in] 7 11 1
+[in] 12 5 1
+[in] 11 5 1
+[in] 13 1 1
+[in] 13 6 1
+[in] 13 7 1
+[in] 13 8 1
+[in] 13 9 1
+[in] 1 10 10
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 1 10 | MOVE 1 31 10 | 
+005
+200
+Standard Output Stream:
+|MOVE 0 17 7|MOVE 1 17 2
+Game Summary:
+grsoares:
+- Pac 0 moved to (13, 11).
+- Pac 1 moved to (12, 5).
+The_Jaro:
+- Pac 0 moved to (17, 7).
+- Pac 1 moved to (17, 2).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (12, 11).
+- Pac 1 moved to (11, 5).
+Standard Error Stream:
+[in] 18 17
+[in] 2
+[in] 0 1 12 11 ROCK 2 6
+[in] 1 1 11 5 PAPER 2 6
+[in] 12
+[in] 11 11 1
+[in] 10 11 1
+[in] 9 11 1
+[in] 8 11 1
+[in] 7 11 1
+[in] 11 6 1
+[in] 11 7 1
+[in] 11 8 1
+[in] 11 9 1
+[in] 11 10 1
+[in] 1 10 10
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 1 10 | MOVE 1 31 10 | 
+007
+200
+Standard Output Stream:
+|MOVE 0 16 7|MOVE 1 17 1
+Game Summary:
+grsoares:
+- Pac 0 moved to (11, 11).
+- Pac 1 moved to (11, 6).
+The_Jaro:
+- Pac 0 moved to (16, 7).
+- Pac 1 moved to (17, 1).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (10, 11).
+- Pac 1 moved to (11, 7).
+Standard Error Stream:
+[in] 22 19
+[in] 2
+[in] 0 1 10 11 ROCK 1 5
+[in] 1 1 11 7 PAPER 1 5
+[in] 14
+[in] 9 11 1
+[in] 8 11 1
+[in] 7 11 1
+[in] 10 7 1
+[in] 9 7 1
+[in] 8 7 1
+[in] 7 7 1
+[in] 6 7 1
+[in] 5 7 1
+[in] 11 8 1
+[in] 11 9 1
+[in] 11 10 1
+[in] 1 10 10
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 1 10 | MOVE 1 31 10 | 
+009
+200
+Standard Output Stream:
+|MOVE 0 15 7|MOVE 1 17 4
+Game Summary:
+grsoares:
+- Pac 0 moved to (9, 11).
+- Pac 1 moved to (10, 7).
+The_Jaro:
+- Pac 0 moved to (15, 7).
+- Pac 1 moved to (17, 2).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (8, 11).
+- Pac 1 moved to (9, 7).
+Standard Error Stream:
+[in] 26 20
+[in] 2
+[in] 0 1 8 11 ROCK 0 4
+[in] 1 1 9 7 PAPER 0 4
+[in] 13
+[in] 7 11 1
+[in] 8 7 1
+[in] 7 7 1
+[in] 6 7 1
+[in] 5 7 1
+[in] 9 6 1
+[in] 9 5 1
+[in] 9 4 1
+[in] 9 3 1
+[in] 9 2 1
+[in] 9 1 1
+[in] 1 10 10
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 1 10 | MOVE 1 31 10 | 
+011
+200
+Standard Output Stream:
+|MOVE 0 14 7|MOVE 1 17 4
+Game Summary:
+grsoares:
+- Pac 0 moved to (7, 11).
+- Pac 1 moved to (8, 7).
+The_Jaro:
+- Pac 0 moved to (14, 7).
+- Pac 1 moved to (17, 3).
+Standard Error Stream:
+[in] 28 21
+[in] 2
+[in] 0 1 7 11 ROCK 0 3
+[in] 1 1 8 7 PAPER 0 3
+[in] 8
+[in] 7 10 1
+[in] 7 9 1
+[in] 7 8 1
+[in] 7 7 1
+[in] 6 7 1
+[in] 5 7 1
+[in] 1 10 10
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 1 10 | MOVE 1 31 10 | 
+012
+200
+Standard Output Stream:
+|MOVE 0 13 7|MOVE 1 17 4
+Game Summary:
+grsoares:
+- Pac 0 moved to (7, 10).
+- Pac 1 moved to (7, 7).
+The_Jaro:
+- Pac 0 moved to (13, 7).
+- Pac 1 moved to (17, 4).
+Standard Error Stream:
+[in] 30 23
+[in] 2
+[in] 0 1 7 10 ROCK 0 2
+[in] 1 1 7 7 PAPER 0 2
+[in] 6
+[in] 7 9 1
+[in] 7 8 1
+[in] 6 7 1
+[in] 5 7 1
+[in] 1 10 10
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 1 10 | MOVE 1 31 10 | 
+013
+200
+Standard Output Stream:
+|MOVE 0 13 6|MOVE 1 17 5
+Game Summary:
+grsoares:
+- Pac 0 moved to (7, 9).
+- Pac 1 moved to (6, 7).
+The_Jaro:
+- Pac 0 moved to (13, 6).
+- Pac 1 moved to (17, 5).
+Standard Error Stream:
+[in] 32 25
+[in] 2
+[in] 0 1 7 9 ROCK 0 1
+[in] 1 1 6 7 PAPER 0 1
+[in] 8
+[in] 6 9 1
+[in] 5 9 1
+[in] 4 9 1
+[in] 3 9 1
+[in] 7 8 1
+[in] 5 7 1
+[in] 1 10 10
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 1 10 | MOVE 1 31 10 | 
+014
+200
+Standard Output Stream:
+SPEED 0|MOVE 1 16 5
+Game Summary:
+grsoares:
+- Pac 0 moved to (6, 9).
+- Pac 1 moved to (5, 7).
+The_Jaro:
+- Pac 0 used a speed boost.
+- Pac 1 moved to (16, 5).
+Standard Error Stream:
+[in] 34 26
+[in] 2
+[in] 0 1 6 9 ROCK 0 0
+[in] 1 1 5 7 PAPER 0 0
+[in] 9
+[in] 5 9 1
+[in] 4 9 1
+[in] 3 9 1
+[in] 5 6 1
+[in] 5 5 1
+[in] 5 4 1
+[in] 5 3 1
+[in] 1 10 10
+[in] 31 10 10
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+015
+200
+Standard Output Stream:
+|MOVE 0 13 8|MOVE 1 15 5
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+The_Jaro:
+- Pac 0 moved to (13, 7).
+- Pac 1 moved to (15, 5).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+The_Jaro:
+- Pac 0 moved to (13, 8).
+Standard Error Stream:
+[in] 34 28
+[in] 2
+[in] 0 1 6 9 ROCK 5 9
+[in] 1 1 5 7 PAPER 5 9
+[in] 9
+[in] 5 9 1
+[in] 4 9 1
+[in] 3 9 1
+[in] 5 6 1
+[in] 5 5 1
+[in] 5 4 1
+[in] 5 3 1
+[in] 1 10 10
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 4 9 | MOVE 1 5 9 | 
+017
+200
+Standard Output Stream:
+|MOVE 0 14 9|MOVE 1 15 4
+Game Summary:
+grsoares:
+- Pac 0 moved to (5, 9).
+- Pac 1 moved to (6, 7).
+The_Jaro:
+- Pac 0 moved to (13, 9).
+- Pac 1 moved to (15, 4).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (4, 9).
+- Pac 1 moved to (7, 7).
+The_Jaro:
+- Pac 0 moved to (14, 9).
+Standard Error Stream:
+[in] 36 31
+[in] 2
+[in] 0 1 4 9 ROCK 4 8
+[in] 1 1 7 7 PAPER 4 8
+[in] 4
+[in] 3 9 1
+[in] 7 8 1
+[in] 1 10 10
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 1 10 | MOVE 1 31 10 | 
+019
+200
+Standard Output Stream:
+|MOVE 0 15 8|MOVE 1 15 3
+Game Summary:
+grsoares:
+- Pac 0 moved to (3, 9).
+- Pac 1 moved to (6, 7).
+The_Jaro:
+- Pac 0 moved to (15, 9).
+- Pac 1 moved to (15, 3).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (3, 8).
+- Pac 1 moved to (5, 7).
+The_Jaro:
+- Pac 0 moved to (15, 8).
+Standard Error Stream:
+[in] 38 34
+[in] 2
+[in] 0 1 3 8 ROCK 3 7
+[in] 1 1 5 7 PAPER 3 7
+[in] 11
+[in] 3 7 1
+[in] 3 6 1
+[in] 3 5 1
+[in] 3 10 1
+[in] 3 11 1
+[in] 5 6 1
+[in] 5 5 1
+[in] 5 4 1
+[in] 5 3 1
+[in] 1 10 10
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 1 10 | MOVE 1 31 10 | 
+021
+200
+Standard Output Stream:
+|MOVE 0 12 3|MOVE 1 14 3
+Game Summary:
+grsoares:
+- Pac 0 moved to (3, 7).
+- Pac 1 moved to (5, 6).
+The_Jaro:
+- Pac 0 moved to (15, 7).
+- Pac 1 moved to (14, 3).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (2, 7).
+- Pac 1 moved to (5, 5).
+The_Jaro:
+- Pac 0 moved to (14, 7).
+Standard Error Stream:
+[in] 42 35
+[in] 2
+[in] 0 1 2 7 ROCK 2 6
+[in] 1 1 5 5 PAPER 2 6
+[in] 16
+[in] 1 7 1
+[in] 4 5 1
+[in] 3 5 1
+[in] 2 5 1
+[in] 1 5 1
+[in] 0 5 1
+[in] 32 5 1
+[in] 31 5 1
+[in] 30 5 1
+[in] 29 5 1
+[in] 28 5 1
+[in] 27 5 1
+[in] 5 4 1
+[in] 5 3 1
+[in] 1 10 10
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 1 10 | MOVE 1 31 10 | 
+023
+200
+Standard Output Stream:
+|MOVE 0 18 7|MOVE 1 12 3
+Game Summary:
+grsoares:
+- Pac 0 moved to (1, 7).
+- Pac 1 moved to (4, 5).
+The_Jaro:
+- Pac 0 moved to (15, 7).
+- Pac 1 moved to (13, 3).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (1, 8).
+- Pac 1 moved to (3, 5).
+The_Jaro:
+- Pac 0 moved to (16, 7).
+Standard Error Stream:
+[in] 46 35
+[in] 2
+[in] 0 1 1 8 ROCK 1 5
+[in] 1 1 3 5 PAPER 1 5
+[in] 16
+[in] 1 9 1
+[in] 1 11 1
+[in] 2 5 1
+[in] 1 5 1
+[in] 0 5 1
+[in] 32 5 1
+[in] 31 5 1
+[in] 30 5 1
+[in] 29 5 1
+[in] 28 5 1
+[in] 27 5 1
+[in] 3 6 1
+[in] 3 10 1
+[in] 3 11 1
+[in] 1 10 10
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 1 10 | MOVE 1 31 10 | 
+025
+200
+Standard Output Stream:
+|MOVE 0 18 7|MOVE 1 12 3
+Game Summary:
+grsoares:
+- Pac 0 moved to (1, 9).
+- Pac 1 moved to (2, 5).
+The_Jaro:
+- Pac 0 moved to (17, 7).
+- Pac 1 moved to (12, 3).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (1, 10).
+- Pac 1 moved to (1, 5).
+Standard Error Stream:
+[in] 59 36
+[in] 2
+[in] 0 1 1 10 ROCK 0 4
+[in] 1 1 1 5 PAPER 0 4
+[in] 9
+[in] 1 11 1
+[in] 0 5 1
+[in] 32 5 1
+[in] 31 5 1
+[in] 30 5 1
+[in] 29 5 1
+[in] 28 5 1
+[in] 27 5 1
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 31 10 | MOVE 1 0 5 | 
+027
+200
+Standard Output Stream:
+|MOVE 0 18 7|MOVE 1 11 3
+Game Summary:
+grsoares:
+- Pac 0 moved to (1, 9).
+- Pac 1 moved to (0, 5).
+The_Jaro:
+- Pac 0 moved to (18, 7).
+- Pac 1 moved to (11, 3).
+Standard Error Stream:
+[in] 60 38
+[in] 2
+[in] 0 1 1 9 ROCK 0 3
+[in] 1 1 0 5 PAPER 0 3
+[in] 8
+[in] 1 11 1
+[in] 32 5 1
+[in] 31 5 1
+[in] 30 5 1
+[in] 29 5 1
+[in] 28 5 1
+[in] 27 5 1
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 31 10 | MOVE 1 27 5 | 
+028
+200
+Standard Output Stream:
+|MOVE 0 19 7|MOVE 1 11 2
+Game Summary:
+grsoares:
+- Pac 0 moved to (1, 8).
+- Pac 1 moved to (32, 5).
+The_Jaro:
+- Pac 0 moved to (19, 7).
+- Pac 1 moved to (11, 2).
+Standard Error Stream:
+[in] 61 40
+[in] 2
+[in] 0 1 1 8 ROCK 0 2
+[in] 1 1 32 5 PAPER 0 2
+[in] 7
+[in] 1 11 1
+[in] 31 5 1
+[in] 30 5 1
+[in] 29 5 1
+[in] 28 5 1
+[in] 27 5 1
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 31 10 | MOVE 1 31 5 | 
+029
+200
+Standard Output Stream:
+|MOVE 0 19 6|MOVE 1 11 1
+Game Summary:
+grsoares:
+- Pac 0 moved to (1, 7).
+- Pac 1 moved to (31, 5).
+The_Jaro:
+- Pac 0 moved to (19, 6).
+- Pac 1 moved to (11, 1).
+Standard Error Stream:
+[in] 62 42
+[in] 2
+[in] 0 1 1 7 ROCK 0 1
+[in] 1 1 31 5 PAPER 0 1
+[in] 6
+[in] 1 11 1
+[in] 30 5 1
+[in] 29 5 1
+[in] 28 5 1
+[in] 27 5 1
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 31 10 | MOVE 1 30 5 | 
+030
+200
+Standard Output Stream:
+SPEED 0|MOVE 1 10 1
+Game Summary:
+grsoares:
+- Pac 0 moved to (2, 7).
+- Pac 1 moved to (30, 5).
+The_Jaro:
+- Pac 0 used a speed boost.
+- Pac 1 moved to (10, 1).
+Standard Error Stream:
+[in] 63 43
+[in] 2
+[in] 0 1 2 7 ROCK 0 0
+[in] 1 1 30 5 PAPER 0 0
+[in] 4
+[in] 29 5 1
+[in] 28 5 1
+[in] 27 5 1
+[in] 31 10 10
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+031
+200
+Standard Output Stream:
+|MOVE 0 19 4|MOVE 1 9 1
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+The_Jaro:
+- Pac 0 moved to (19, 5).
+- Pac 1 moved to (9, 1).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+The_Jaro:
+- Pac 0 moved to (19, 4).
+Standard Error Stream:
+[in] 63 46
+[in] 2
+[in] 0 1 2 7 ROCK 5 9
+[in] 1 1 30 5 PAPER 5 9
+[in] 4
+[in] 29 5 1
+[in] 28 5 1
+[in] 27 5 1
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 28 5 | MOVE 1 28 5 | 
+033
+200
+Standard Output Stream:
+|MOVE 0 19 1|MOVE 1 8 1
+Game Summary:
+grsoares:
+- Pac 0 moved to (3, 7).
+- Pac 1 moved to (29, 5).
+The_Jaro:
+- Pac 0 moved to (19, 3).
+- Pac 1 moved to (8, 1).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (3, 6).
+- Pac 1 moved to (28, 5).
+The_Jaro:
+- Pac 0 moved to (19, 2).
+Standard Error Stream:
+[in] 66 47
+[in] 2
+[in] 0 1 3 6 ROCK 4 8
+[in] 1 1 28 5 PAPER 4 8
+[in] 4
+[in] 3 10 1
+[in] 3 11 1
+[in] 27 5 1
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 31 10 | MOVE 1 27 5 | 
+035
+200
+Standard Output Stream:
+|MOVE 0 19 1|MOVE 1 7 1
+Game Summary:
+grsoares:
+- Pac 0 moved to (3, 5).
+- Pac 1 moved to (27, 5).
+The_Jaro:
+- Pac 0 moved to (19, 1).
+- Pac 1 moved to (7, 1).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (2, 5).
+Standard Error Stream:
+[in] 67 49
+[in] 2
+[in] 0 1 2 5 ROCK 3 7
+[in] 1 1 27 5 PAPER 3 7
+[in] 5
+[in] 27 4 1
+[in] 27 3 1
+[in] 27 6 1
+[in] 27 7 1
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 31 10 | MOVE 1 27 6 | 
+037
+200
+Standard Output Stream:
+|MOVE 0 19 8|MOVE 1 31 10
+Game Summary:
+grsoares:
+- Pac 0 moved to (1, 5).
+- Pac 1 moved to (27, 6).
+The_Jaro:
+- Pac 0 moved to (19, 2).
+- Pac 1 moved to (8, 1).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (0, 5).
+The_Jaro:
+- Pac 0 moved to (19, 3).
+Standard Error Stream:
+[in] 68 49
+[in] 2
+[in] 0 1 0 5 ROCK 2 6
+[in] 1 1 27 6 PAPER 2 6
+[in] 4
+[in] 27 4 1
+[in] 27 3 1
+[in] 27 7 1
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 31 10 | MOVE 1 27 7 | 
+039
+200
+Standard Output Stream:
+|MOVE 0 21 3|MOVE 1 31 10
+Game Summary:
+grsoares:
+- Pac 0 moved to (32, 5).
+- Pac 1 moved to (27, 7).
+The_Jaro:
+- Pac 0 moved to (20, 3).
+- Pac 1 moved to (9, 1).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (31, 5).
+The_Jaro:
+- Pac 0 moved to (21, 3).
+Standard Error Stream:
+[in] 69 51
+[in] 2
+[in] 0 1 31 5 ROCK 1 5
+[in] 1 1 27 7 PAPER 1 5
+[in] 9
+[in] 26 7 1
+[in] 25 7 1
+[in] 24 7 1
+[in] 23 7 1
+[in] 22 7 1
+[in] 21 7 1
+[in] 27 4 1
+[in] 27 3 1
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 31 10 | MOVE 1 25 7 | 
+041
+200
+Standard Output Stream:
+|MOVE 0 21 2|MOVE 1 9 2
+Game Summary:
+grsoares:
+- Pac 0 moved to (30, 5).
+- Pac 1 moved to (26, 7).
+The_Jaro:
+- Pac 0 moved to (21, 2).
+- Pac 1 moved to (9, 2).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (29, 5).
+- Pac 1 moved to (25, 7).
+Standard Error Stream:
+[in] 71 53
+[in] 2
+[in] 0 1 29 5 ROCK 0 4
+[in] 1 1 25 7 PAPER 0 4
+[in] 15
+[in] 29 6 1
+[in] 29 7 1
+[in] 29 8 1
+[in] 29 9 1
+[in] 29 10 1
+[in] 29 11 1
+[in] 24 7 1
+[in] 23 7 1
+[in] 22 7 1
+[in] 21 7 1
+[in] 25 8 1
+[in] 25 9 1
+[in] 25 10 1
+[in] 25 11 1
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 31 10 | MOVE 1 24 7 | 
+043
+200
+Standard Output Stream:
+|MOVE 0 21 1|MOVE 1 9 3
+Game Summary:
+grsoares:
+- Pac 0 moved to (29, 6).
+- Pac 1 moved to (24, 7).
+The_Jaro:
+- Pac 0 moved to (21, 1).
+- Pac 1 moved to (9, 3).
+Standard Error Stream:
+[in] 73 55
+[in] 2
+[in] 0 1 29 6 ROCK 0 3
+[in] 1 1 24 7 PAPER 0 3
+[in] 9
+[in] 29 7 1
+[in] 29 8 1
+[in] 29 9 1
+[in] 29 10 1
+[in] 29 11 1
+[in] 23 7 1
+[in] 22 7 1
+[in] 21 7 1
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 31 10 | MOVE 1 23 7 | 
+044
+200
+Standard Output Stream:
+|MOVE 0 22 1|MOVE 1 8 3
+Game Summary:
+grsoares:
+- Pac 0 moved to (29, 7).
+- Pac 1 moved to (23, 7).
+The_Jaro:
+- Pac 0 moved to (22, 1).
+- Pac 1 moved to (8, 3).
+Standard Error Stream:
+[in] 75 57
+[in] 2
+[in] 0 1 29 7 ROCK 0 2
+[in] 1 1 23 7 PAPER 0 2
+[in] 15
+[in] 30 7 1
+[in] 31 7 1
+[in] 29 8 1
+[in] 29 9 1
+[in] 29 10 1
+[in] 29 11 1
+[in] 22 7 1
+[in] 21 7 1
+[in] 23 6 1
+[in] 23 5 1
+[in] 23 4 1
+[in] 23 3 1
+[in] 23 2 1
+[in] 23 1 1
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 31 10 | MOVE 1 22 7 | 
+045
+200
+Standard Output Stream:
+|MOVE 0 23 1|MOVE 1 7 3
+Game Summary:
+grsoares:
+- Pac 0 moved to (30, 7).
+- Pac 1 moved to (22, 7).
+The_Jaro:
+- Pac 0 moved to (23, 1).
+- Pac 1 moved to (7, 3).
+Standard Error Stream:
+[in] 77 59
+[in] 2
+[in] 0 1 30 7 ROCK 0 1
+[in] 1 1 22 7 PAPER 0 1
+[in] 3
+[in] 31 7 1
+[in] 21 7 1
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 31 10 | MOVE 1 21 7 | 
+046
+200
+Standard Output Stream:
+SPEED 0|MOVE 1 6 3
+Game Summary:
+grsoares:
+- Pac 0 moved to (31, 7).
+- Pac 1 moved to (21, 7).
+The_Jaro:
+- Pac 0 used a speed boost.
+- Pac 1 moved to (6, 3).
+Standard Error Stream:
+[in] 79 60
+[in] 2
+[in] 0 1 31 7 ROCK 0 0
+[in] 1 1 21 7 PAPER 0 0
+[in] 10
+[in] 31 8 1
+[in] 31 9 1
+[in] 31 11 1
+[in] 21 6 1
+[in] 21 5 1
+[in] 21 8 1
+[in] 21 9 1
+[in] 21 10 1
+[in] 21 11 1
+[in] 31 10 10
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+047
+200
+Standard Output Stream:
+|MOVE 0 23 3|MOVE 1 5 3
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+The_Jaro:
+- Pac 0 moved to (23, 2).
+- Pac 1 moved to (5, 3).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+The_Jaro:
+- Pac 0 moved to (23, 3).
+Standard Error Stream:
+[in] 79 63
+[in] 2
+[in] 0 1 31 7 ROCK 5 9
+[in] 1 1 21 7 PAPER 5 9
+[in] 10
+[in] 31 8 1
+[in] 31 9 1
+[in] 31 11 1
+[in] 21 6 1
+[in] 21 5 1
+[in] 21 8 1
+[in] 21 9 1
+[in] 21 10 1
+[in] 21 11 1
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 31 9 | MOVE 1 21 8 | 
+049
+200
+Standard Output Stream:
+|MOVE 0 23 5|MOVE 1 4 3
+Game Summary:
+grsoares:
+- Pac 0 moved to (31, 8).
+- Pac 1 moved to (21, 8).
+The_Jaro:
+- Pac 0 moved to (23, 4).
+- Pac 1 moved to (4, 3).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (31, 9).
+The_Jaro:
+- Pac 0 moved to (23, 5).
+Standard Error Stream:
+[in] 82 66
+[in] 2
+[in] 0 1 31 9 ROCK 4 8
+[in] 1 1 21 8 PAPER 4 8
+[in] 7
+[in] 31 11 1
+[in] 21 6 1
+[in] 21 5 1
+[in] 21 9 1
+[in] 21 10 1
+[in] 21 11 1
+[in] 31 10 10
+Standard Output Stream:
+MOVE 0 31 10 | MOVE 1 21 9 | 
+051
+200
+Standard Output Stream:
+|MOVE 0 23 7|MOVE 1 3 3
+Game Summary:
+grsoares:
+- Pac 0 moved to (31, 10).
+- Pac 1 moved to (21, 9).
+The_Jaro:
+- Pac 0 moved to (23, 6).
+- Pac 1 moved to (3, 3).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+The_Jaro:
+- Pac 0 moved to (23, 7).
+Standard Error Stream:
+[in] 93 68
+[in] 2
+[in] 0 1 31 10 ROCK 3 7
+[in] 1 1 21 9 PAPER 3 7
+[in] 5
+[in] 31 11 1
+[in] 21 6 1
+[in] 21 5 1
+[in] 21 10 1
+[in] 21 11 1
+Standard Output Stream:
+MOVE 0 31 11 | MOVE 1 21 10 | 
+053
+200
+Standard Output Stream:
+MOVE 0 31 10|MOVE 1 2 3
+Game Summary:
+grsoares:
+- Pac 0 moved to (31, 11).
+- Pac 1 moved to (21, 10).
+The_Jaro:
+- Pac 0 moved to (24, 7).
+- Pac 1 moved to (2, 3).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+The_Jaro:
+- Pac 0 moved to (25, 7).
+Standard Error Stream:
+[in] 95 69
+[in] 2
+[in] 0 1 31 11 ROCK 2 6
+[in] 1 1 21 10 PAPER 2 6
+[in] 3
+[in] 21 6 1
+[in] 21 5 1
+[in] 21 11 1
+Standard Output Stream:
+MOVE 0 21 11 | MOVE 1 21 5 | 
+055
+200
+Standard Output Stream:
+|MOVE 0 25 9|MOVE 1 1 3
+Game Summary:
+grsoares:
+- Pac 0 moved to (31, 10).
+- Pac 1 moved to (21, 9).
+The_Jaro:
+- Pac 0 moved to (25, 8).
+- Pac 1 moved to (1, 3).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (31, 9).
+- Pac 1 moved to (21, 8).
+The_Jaro:
+- Pac 0 moved to (25, 9).
+Standard Error Stream:
+[in] 95 72
+[in] 2
+[in] 0 1 31 9 ROCK 1 5
+[in] 1 1 21 8 PAPER 1 5
+[in] 3
+[in] 21 6 1
+[in] 21 5 1
+[in] 21 11 1
+Standard Output Stream:
+MOVE 0 21 11 | MOVE 1 21 5 | 
+057
+200
+Standard Output Stream:
+|MOVE 0 25 10|MOVE 1 1 2
+Game Summary:
+grsoares:
+- Pac 0 moved to (31, 8).
+- Pac 1 moved to (21, 7).
+The_Jaro:
+- Pac 0 moved to (25, 10).
+- Pac 1 moved to (1, 2).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (31, 7).
+- Pac 1 moved to (21, 6).
+Standard Error Stream:
+[in] 96 74
+[in] 2
+[in] 0 1 31 7 ROCK 0 4
+[in] 1 1 21 6 PAPER 0 4
+[in] 2
+[in] 21 5 1
+[in] 21 11 1
+Standard Output Stream:
+MOVE 0 21 5 | MOVE 1 21 11 | 
+059
+200
+Standard Output Stream:
+|MOVE 0 25 11|MOVE 1 1 1
+Game Summary:
+grsoares:
+- Pac 0 moved to (30, 7).
+- Pac 1 moved to (21, 7).
+The_Jaro:
+- Pac 0 moved to (25, 11).
+- Pac 1 moved to (1, 1).
+Standard Error Stream:
+[in] 96 76
+[in] 2
+[in] 0 1 30 7 ROCK 0 3
+[in] 1 1 21 7 PAPER 0 3
+[in] 2
+[in] 21 5 1
+[in] 21 11 1
+Standard Output Stream:
+MOVE 0 21 5 | MOVE 1 21 11 | 
+060
+200
+Standard Output Stream:
+|MOVE 0 24 11|MOVE 1 31 10
+Game Summary:
+grsoares:
+- Pac 0 moved to (29, 7).
+- Pac 1 moved to (21, 8).
+The_Jaro:
+- Pac 0 moved to (24, 11).
+- Pac 1 moved to (1, 2).
+Standard Error Stream:
+[in] 96 77
+[in] 2
+[in] 0 1 29 7 ROCK 0 2
+[in] 1 1 21 8 PAPER 0 2
+[in] 6
+[in] 29 8 1
+[in] 29 9 1
+[in] 29 10 1
+[in] 29 11 1
+[in] 21 5 1
+[in] 21 11 1
+Standard Output Stream:
+MOVE 0 29 8 | MOVE 1 21 5 | 
+061
+200
+Standard Output Stream:
+|MOVE 0 23 11|MOVE 1 31 10
+Game Summary:
+grsoares:
+- Pac 0 moved to (29, 8).
+- Pac 1 moved to (21, 7).
+The_Jaro:
+- Pac 0 moved to (23, 11).
+- Pac 1 moved to (1, 3).
+Standard Error Stream:
+[in] 97 78
+[in] 2
+[in] 0 1 29 8 ROCK 0 1
+[in] 1 1 21 7 PAPER 0 1
+[in] 5
+[in] 29 9 1
+[in] 29 10 1
+[in] 29 11 1
+[in] 21 5 1
+[in] 21 11 1
+Standard Output Stream:
+MOVE 0 29 9 | MOVE 1 21 5 | 
+062
+200
+Standard Output Stream:
+SPEED 0|MOVE 1 31 10
+Game Summary:
+grsoares:
+- Pac 0 moved to (29, 9).
+- Pac 1 moved to (21, 6).
+The_Jaro:
+- Pac 0 used a speed boost.
+- Pac 1 moved to (2, 3).
+Standard Error Stream:
+[in] 98 78
+[in] 2
+[in] 0 1 29 9 ROCK 0 0
+[in] 1 1 21 6 PAPER 0 0
+[in] 7
+[in] 28 9 1
+[in] 27 9 1
+[in] 26 9 1
+[in] 29 10 1
+[in] 29 11 1
+[in] 21 5 1
+[in] 21 11 1
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+063
+200
+Standard Output Stream:
+|MOVE 0 21 11|MOVE 1 31 10
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+The_Jaro:
+- Pac 0 moved to (22, 11).
+- Pac 1 moved to (3, 3).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+The_Jaro:
+- Pac 0 moved to (21, 11).
+Standard Error Stream:
+[in] 98 80
+[in] 3
+[in] 0 1 29 9 ROCK 5 9
+[in] 0 0 21 11 ROCK 4 8
+[in] 1 1 21 6 PAPER 5 9
+[in] 6
+[in] 28 9 1
+[in] 27 9 1
+[in] 26 9 1
+[in] 29 10 1
+[in] 29 11 1
+[in] 21 5 1
+Standard Output Stream:
+MOVE 0 29 10 | MOVE 1 26 9 | 
+065
+200
+Standard Output Stream:
+|MOVE 0 19 11|MOVE 1 3 2
+Game Summary:
+grsoares:
+- Pac 0 moved to (29, 10).
+- Pac 1 moved to (21, 7).
+The_Jaro:
+- Pac 0 moved to (20, 11).
+- Pac 1 moved to (3, 2).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 1 moved to (22, 7).
+The_Jaro:
+- Pac 0 moved to (19, 11).
+Standard Error Stream:
+[in] 99 83
+[in] 2
+[in] 0 1 29 10 ROCK 4 8
+[in] 1 1 22 7 PAPER 4 8
+[in] 1
+[in] 29 11 1
+Standard Output Stream:
+MOVE 0 29 11 | MOVE 1 19 11 | 
+067
+200
+Standard Output Stream:
+|MOVE 0 17 11|MOVE 1 3 1
+Game Summary:
+grsoares:
+- Pac 0 moved to (29, 11).
+- Pac 1 moved to (21, 7).
+The_Jaro:
+- Pac 0 moved to (18, 11).
+- Pac 1 moved to (3, 1).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 1 moved to (21, 8).
+The_Jaro:
+- Pac 0 moved to (17, 11).
+Standard Error Stream:
+[in] 100 85
+[in] 2
+[in] 0 1 29 11 ROCK 3 7
+[in] 1 1 21 8 PAPER 3 7
+[in] 1
+[in] 21 5 1
+Standard Output Stream:
+MOVE 0 21 5 | MOVE 1 8 1 | 
+069
+200
+Standard Output Stream:
+MOVE 0 31 10|MOVE 1 4 1
+Game Summary:
+grsoares:
+- Pac 0 moved to (29, 10).
+- Pac 1 moved to (21, 7).
+The_Jaro:
+- Pac 0 moved to (18, 11).
+- Pac 1 moved to (4, 1).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (29, 9).
+- Pac 1 moved to (21, 6).
+The_Jaro:
+- Pac 0 moved to (19, 11).
+Standard Error Stream:
+[in] 100 86
+[in] 2
+[in] 0 1 29 9 ROCK 2 6
+[in] 1 1 21 6 PAPER 2 6
+[in] 4
+[in] 28 9 1
+[in] 27 9 1
+[in] 26 9 1
+[in] 21 5 1
+Standard Output Stream:
+MOVE 0 28 9 | MOVE 1 21 5 | 
+071
+200
+Standard Output Stream:
+MOVE 0 31 10|MOVE 1 5 1
+Game Summary:
+grsoares:
+- Pac 0 moved to (28, 9).
+- Pac 1 moved to (21, 5).
+The_Jaro:
+- Pac 0 moved to (20, 11).
+- Pac 1 moved to (5, 1).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+The_Jaro:
+- Pac 0 moved to (21, 11).
+Standard Error Stream:
+[in] 102 87
+[in] 3
+[in] 0 1 28 9 ROCK 1 5
+[in] 0 0 21 11 ROCK 0 4
+[in] 1 1 21 5 PAPER 1 5
+[in] 3
+[in] 27 9 1
+[in] 26 9 1
+[in] 20 5 1
+Standard Output Stream:
+MOVE 0 27 9 | MOVE 1 20 5 | 
+073
+200
+Standard Output Stream:
+MOVE 0 31 10|MOVE 1 31 10
+Game Summary:
+grsoares:
+- Pac 0 moved to (27, 9).
+- Pac 1 moved to (20, 5).
+The_Jaro:
+- Pac 0 moved to (22, 11).
+- Pac 1 moved to (4, 1).
+Standard Error Stream:
+[in] 104 87
+[in] 2
+[in] 0 1 27 9 ROCK 0 4
+[in] 1 1 20 5 PAPER 0 4
+[in] 3
+[in] 26 9 1
+[in] 27 10 1
+[in] 27 11 1
+Standard Output Stream:
+MOVE 0 26 9 | MOVE 1 27 10 | 
+074
+200
+Standard Output Stream:
+MOVE 0 31 10|MOVE 1 31 10
+Game Summary:
+grsoares:
+- Pac 0 moved to (26, 9).
+- Pac 1 moved to (21, 5).
+The_Jaro:
+- Pac 0 moved to (23, 11).
+- Pac 1 moved to (3, 1).
+Standard Error Stream:
+[in] 105 87
+[in] 2
+[in] 0 1 26 9 ROCK 0 3
+[in] 1 1 21 5 PAPER 0 3
+[in] 0
+Standard Output Stream:
+MOVE 0 31 11 | MOVE 1 16 7 | 
+075
+200
+Standard Output Stream:
+MOVE 0 31 10|MOVE 1 31 10
+Game Summary:
+grsoares:
+- Pac 0 moved to (27, 9).
+- Pac 1 moved to (20, 5).
+The_Jaro:
+- Pac 0 moved to (24, 11).
+- Pac 1 moved to (3, 2).
+Standard Error Stream:
+[in] 105 87
+[in] 2
+[in] 0 1 27 9 ROCK 0 2
+[in] 1 1 20 5 PAPER 0 2
+[in] 2
+[in] 27 10 1
+[in] 27 11 1
+Standard Output Stream:
+MOVE 0 27 10 | MOVE 1 27 11 | 
+076
+200
+Standard Output Stream:
+MOVE 0 31 10|MOVE 1 31 10
+Game Summary:
+grsoares:
+- Pac 0 moved to (27, 10).
+- Pac 1 moved to (21, 5).
+The_Jaro:
+- Pac 0 moved to (25, 11).
+- Pac 1 moved to (3, 3).
+Standard Error Stream:
+[in] 106 87
+[in] 2
+[in] 0 1 27 10 ROCK 0 1
+[in] 1 1 21 5 PAPER 0 1
+[in] 1
+[in] 27 11 1
+Standard Output Stream:
+MOVE 0 27 11 | MOVE 1 7 10 | 
+077
+200
+Standard Output Stream:
+SPEED 0|MOVE 1 31 10
+Game Summary:
+grsoares:
+- Pac 0 moved to (27, 11).
+- Pac 1 moved to (20, 5).
+The_Jaro:
+- Pac 0 used a speed boost.
+- Pac 1 moved to (4, 3).
+Standard Error Stream:
+[in] 107 87
+[in] 2
+[in] 0 1 27 11 ROCK 0 0
+[in] 1 1 20 5 PAPER 0 0
+[in] 0
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+078
+200
+Standard Output Stream:
+MOVE 0 31 10|MOVE 1 31 10
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+The_Jaro:
+- Pac 0 moved to (25, 10).
+- Pac 1 moved to (5, 3).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+The_Jaro:
+- Pac 0 moved to (25, 9).
+Standard Error Stream:
+[in] 107 87
+[in] 2
+[in] 0 1 27 11 ROCK 5 9
+[in] 1 1 20 5 PAPER 5 9
+[in] 0
+Standard Output Stream:
+MOVE 0 27 1 | MOVE 1 25 10 | 
+080
+200
+Standard Output Stream:
+MOVE 0 31 10|MOVE 1 5 4
+Game Summary:
+grsoares:
+- Pac 0 moved to (27, 10).
+- Pac 1 moved to (21, 5).
+The_Jaro:
+- Pac 0 moved to (26, 9).
+- Pac 1 moved to (5, 4).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 is blocked from entering (27, 9).
+- Pac 1 moved to (21, 6).
+The_Jaro:
+- Pac 0 is blocked from entering (27, 9).
+Standard Error Stream:
+[in] 107 88
+[in] 2
+[in] 0 1 27 10 ROCK 4 8
+[in] 1 1 21 6 PAPER 4 8
+[in] 0
+Standard Output Stream:
+MOVE 0 14 9 | MOVE 1 9 3 | 
+082
+200
+Standard Output Stream:
+MOVE 0 31 10|MOVE 1 31 10
+Game Summary:
+grsoares:
+- Pac 0 is blocked from entering (27, 9).
+- Pac 1 moved to (21, 5).
+The_Jaro:
+- Pac 0 is blocked from entering (27, 9).
+- Pac 1 moved to (5, 5).
