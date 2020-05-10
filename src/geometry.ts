@@ -63,8 +63,10 @@ export function findPath(
     }
   }
 
-  pacPoints.forEach(({ x, y }) => {
-    visitedPointsMatrix[y][x] = null;
+  pacPoints.forEach((point) => {
+    if (!areEqual(point, srcPoint)) {
+      visitedPointsMatrix[point.y][point.x] = null;
+    }
   });
 
   visitedPointsMatrix[srcPoint.y][srcPoint.x].distanceToSrc = 0;

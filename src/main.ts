@@ -6,6 +6,7 @@ import {
   Point,
   manhattanDistance,
   findRandomAvailablePosition,
+  findPath,
 } from "./geometry";
 import { areEqual } from "./geometry";
 import { Pac, PacDestination, Pellet } from "./game";
@@ -14,7 +15,7 @@ import { storeInput } from "./local";
 import { runLocally } from "./local";
 
 //storeInput();
-//runLocally("./src/replays/replay_1.txt");
+//runLocally("./src/replays/replay_2.txt");
 
 var inputs: string[] = readline().split(" ");
 const width: number = parseInt(inputs[0]); // size of the grid
@@ -28,7 +29,7 @@ for (let i = 0; i < height; i++) {
 
 let oldPacList: Pac[] = [];
 let bumpIterations: number[] = [];
-let lastRandomDestination: { [pacId: number]: Point } = {};
+let lastRandomDestinationPath: { [pacId: number]: Point[] } = {};
 // game loop
 while (true) {
   var inputs: string[] = readline().split(" ");
@@ -53,14 +54,6 @@ while (true) {
     //const speedTurnsLeft: number = parseInt(inputs[5]); // unused in wood leagues
   }
   const visiblePelletCount: number = parseInt(readline()); // all pellets in sight
-
-  if (
-    pacList.some(
-      ({ id, position }) => id === 1 && position.x === 21 && position.y === 6
-    )
-  ) {
-    debugger;
-  }
 
   let pacDestinations: { [key: number]: PacDestination } = {};
 
@@ -127,6 +120,8 @@ while (true) {
     }
   }
 
+  // TODO: refactor this and separate destination logic from path logic
+
   for (let i = 0; i < pacList.length; i++) {
     let pacId = pacList[i].id;
     let pacDestination = pacDestinations[pacId];
@@ -142,12 +137,28 @@ while (true) {
         pacDestination.destinationPoint =
           pacDestination.pelletDistanceList[0].pelletPoint;
       } else {
-        lastRandomDestination[pacId] =
-          !lastRandomDestination[pacId] ||
-          areEqual(lastRandomDestination[pacId], pacList[i].position)
-            ? findRandomAvailablePosition(map)
-            : lastRandomDestination[pacId];
-        pacDestination.destinationPoint = lastRandomDestination[pacId];
+        const lastRandomDstPath = lastRandomDestinationPath[pacId];
+
+        if (
+          !lastRandomDstPath ||
+          lastRandomDstPath.length === 0 ||
+          areEqual(
+            lastRandomDstPath[lastRandomDstPath.length - 1],
+            pacList[i].position
+          )
+        ) {
+          const randomDestination = findRandomAvailablePosition(map);
+          // TODO: store all pacs position, not only yours
+          lastRandomDestinationPath[pacId] = findPath(
+            map,
+            pacList.map((p) => p.position),
+            pacList[i].position,
+            randomDestination
+          ) || [randomDestination];
+        }
+
+        pacDestination.destinationPoint = lastRandomDestinationPath[pacId][0];
+        lastRandomDestinationPath[pacId].splice(0, 1);
       }
     } else {
       bumpIterations[i] = 1;

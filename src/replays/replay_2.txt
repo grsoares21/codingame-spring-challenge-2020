@@ -1,0 +1,3387 @@
+Standard Error Stream:
+[in] 35 14
+[in] ###################################
+[in]     #   #     #     #     #   #    
+[in] ### # # ##### # ### # ##### # # ###
+[in] #     #       # # # #       #     #
+[in] # ### ### ### # # # # ### ### ### #
+[in] #   # #   #     # #     #   # #   #
+[in] ### # # # # # # # # # # # # # # ###
+[in]     #     # #         # #     #    
+[in] ### # ### # ### # # ### # ### # ###
+[in]       #     #   # #   #     #      
+[in] ### # # # # # # # # # # # # # # ###
+[in]       # #       # #       # #      
+[in] ### # # ##### # ### # ##### # # ###
+[in] ###################################
+[in] 0 0
+[in] 2
+[in] 0 1 13 1 ROCK 0 0
+[in] 1 1 19 5 PAPER 0 0
+[in] 29
+[in] 12 1 1
+[in] 11 1 1
+[in] 10 1 1
+[in] 9 1 1
+[in] 13 2 1
+[in] 13 3 1
+[in] 13 4 1
+[in] 13 5 1
+[in] 13 6 1
+[in] 13 7 1
+[in] 20 5 1
+[in] 21 5 1
+[in] 22 5 1
+[in] 23 5 1
+[in] 19 4 1
+[in] 19 3 1
+[in] 19 2 1
+[in] 19 1 1
+[in] 19 6 1
+[in] 19 7 1
+[in] 19 8 1
+[in] 19 9 1
+[in] 19 10 1
+[in] 19 11 1
+[in] 19 12 1
+[in] 1 1 10
+[in] 33 1 10
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+001
+199
+Standard Output Stream:
+MOVE 0 33 1 H|MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+CanisLupus:
+- Pac 0 moved to (21, 2).
+- Pac 1 moved to (14, 5).
+Standard Error Stream:
+[in] 0 2
+[in] 2
+[in] 0 1 13 1 ROCK 5 9
+[in] 1 1 19 5 PAPER 5 9
+[in] 29
+[in] 12 1 1
+[in] 11 1 1
+[in] 10 1 1
+[in] 9 1 1
+[in] 13 2 1
+[in] 13 3 1
+[in] 13 4 1
+[in] 13 5 1
+[in] 13 6 1
+[in] 13 7 1
+[in] 20 5 1
+[in] 21 5 1
+[in] 22 5 1
+[in] 23 5 1
+[in] 19 4 1
+[in] 19 3 1
+[in] 19 2 1
+[in] 19 1 1
+[in] 19 6 1
+[in] 19 7 1
+[in] 19 8 1
+[in] 19 9 1
+[in] 19 10 1
+[in] 19 11 1
+[in] 19 12 1
+[in] 1 1 10
+[in] 33 1 10
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 13 2 | MOVE 1 19 4 | 
+002
+199
+Standard Output Stream:
+MOVE 0 33 1 H|MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (13, 2).
+- Pac 1 moved to (19, 4).
+CanisLupus:
+- Pac 0 moved to (21, 3).
+- Pac 1 moved to (13, 5).
+Standard Error Stream:
+[in] 2 4
+[in] 3
+[in] 0 1 13 2 ROCK 4 8
+[in] 1 1 19 4 PAPER 4 8
+[in] 1 0 13 5 PAPER 0 0
+[in] 18
+[in] 13 3 1
+[in] 13 4 1
+[in] 13 6 1
+[in] 13 7 1
+[in] 19 3 1
+[in] 19 2 1
+[in] 19 1 1
+[in] 19 6 1
+[in] 19 7 1
+[in] 19 8 1
+[in] 19 9 1
+[in] 19 10 1
+[in] 19 11 1
+[in] 19 12 1
+[in] 1 1 10
+[in] 33 1 10
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 1 1 | MOVE 1 33 1 | 
+003
+199
+Standard Output Stream:
+MOVE 0 33 1 H|MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (13, 3).
+- Pac 1 moved to (19, 5).
+CanisLupus:
+- Pac 0 moved to (22, 3).
+- Pac 1 moved to (12, 5).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (12, 3).
+- Pac 1 moved to (20, 5).
+Standard Error Stream:
+[in] 5 6
+[in] 2
+[in] 0 1 12 3 ROCK 3 7
+[in] 1 1 20 5 PAPER 3 7
+[in] 12
+[in] 11 3 1
+[in] 10 3 1
+[in] 9 3 1
+[in] 8 3 1
+[in] 7 3 1
+[in] 21 5 1
+[in] 22 5 1
+[in] 23 5 1
+[in] 1 1 10
+[in] 33 1 10
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 1 1 | MOVE 1 34 7 | 
+005
+199
+Standard Output Stream:
+MOVE 0 33 1 H|MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (11, 3).
+- Pac 1 moved to (21, 5).
+CanisLupus:
+- Pac 0 moved to (23, 3).
+- Pac 1 moved to (11, 5).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (10, 3).
+- Pac 1 moved to (21, 4).
+Standard Error Stream:
+[in] 9 8
+[in] 2
+[in] 0 1 10 3 ROCK 2 6
+[in] 1 1 21 4 PAPER 2 6
+[in] 9
+[in] 9 3 1
+[in] 8 3 1
+[in] 7 3 1
+[in] 21 6 1
+[in] 21 7 1
+[in] 1 1 10
+[in] 33 1 10
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 1 1 | MOVE 1 33 1 | 
+007
+199
+Standard Output Stream:
+MOVE 0 33 1 H|MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (9, 3).
+- Pac 1 moved to (21, 3).
+CanisLupus:
+- Pac 0 moved to (24, 3).
+- Pac 1 moved to (11, 6).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (8, 3).
+- Pac 1 moved to (22, 3).
+Standard Error Stream:
+[in] 11 10
+[in] 3
+[in] 0 1 8 3 ROCK 1 5
+[in] 0 0 24 3 ROCK 0 0
+[in] 1 1 22 3 PAPER 1 5
+[in] 8
+[in] 7 3 1
+[in] 25 3 1
+[in] 26 3 1
+[in] 27 3 1
+[in] 1 1 10
+[in] 33 1 10
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 1 1 | MOVE 1 33 1 | 
+009
+199
+Standard Output Stream:
+MOVE 0 33 1 H|MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (7, 3).
+- Pac 1 moved to (23, 3).
+CanisLupus:
+- Pac 0 moved to (25, 3).
+- Pac 1 moved to (11, 7).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (7, 2).
+- Pac 1 moved to (24, 3).
+Standard Error Stream:
+[in] 13 12
+[in] 3
+[in] 0 1 7 2 ROCK 0 4
+[in] 0 0 25 3 ROCK 0 0
+[in] 1 1 24 3 PAPER 0 4
+[in] 7
+[in] 7 1 1
+[in] 26 3 1
+[in] 27 3 1
+[in] 1 1 10
+[in] 33 1 10
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 1 1 | MOVE 1 33 1 | 
+011
+199
+Standard Output Stream:
+MOVE 0 33 1 H|MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (7, 1).
+- Pac 1 moved to (25, 3).
+CanisLupus:
+- Pac 0 moved to (26, 3).
+- Pac 1 moved to (11, 8).
+Standard Error Stream:
+[in] 14 14
+[in] 3
+[in] 0 1 7 1 ROCK 0 3
+[in] 0 0 26 3 ROCK 0 0
+[in] 1 1 25 3 PAPER 0 3
+[in] 15
+[in] 6 1 1
+[in] 5 1 1
+[in] 27 3 1
+[in] 25 4 1
+[in] 25 5 1
+[in] 25 6 1
+[in] 25 7 1
+[in] 25 8 1
+[in] 25 9 1
+[in] 25 10 1
+[in] 25 11 1
+[in] 1 1 10
+[in] 33 1 10
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 1 1 | MOVE 1 33 1 | 
+012
+199
+Standard Output Stream:
+MOVE 0 33 1 H|MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (6, 1).
+- Pac 1 moved to (26, 3).
+CanisLupus:
+- Pac 0 moved to (27, 3).
+- Pac 1 moved to (11, 9).
+Standard Error Stream:
+[in] 15 16
+[in] 3
+[in] 0 1 6 1 ROCK 0 2
+[in] 0 0 27 3 ROCK 0 0
+[in] 1 1 26 3 PAPER 0 2
+[in] 5
+[in] 5 1 1
+[in] 1 1 10
+[in] 33 1 10
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 1 1 | MOVE 1 33 1 | 
+013
+199
+Standard Output Stream:
+MOVE 0 33 1 H|MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (5, 1).
+- Pac 1 moved to (27, 3).
+CanisLupus:
+- Pac 0 moved to (27, 2).
+- Pac 1 moved to (10, 9).
+Standard Error Stream:
+[in] 16 18
+[in] 3
+[in] 0 1 5 1 ROCK 0 1
+[in] 0 0 27 2 ROCK 0 0
+[in] 1 1 27 3 PAPER 0 1
+[in] 16
+[in] 5 2 1
+[in] 5 3 1
+[in] 5 4 1
+[in] 5 5 1
+[in] 5 6 1
+[in] 5 7 1
+[in] 5 8 1
+[in] 5 9 1
+[in] 5 10 1
+[in] 5 11 1
+[in] 5 12 1
+[in] 27 1 1
+[in] 1 1 10
+[in] 33 1 10
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 1 1 | MOVE 1 33 1 | 
+014
+199
+Standard Output Stream:
+MOVE 0 33 1 H|MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (5, 2).
+- Pac 1 moved to (27, 2).
+CanisLupus:
+- Pac 0 moved to (27, 1).
+- Pac 1 moved to (9, 9).
+Standard Error Stream:
+[in] 17 20
+[in] 3
+[in] 0 1 5 2 ROCK 0 0
+[in] 0 0 27 1 ROCK 0 0
+[in] 1 1 27 2 PAPER 0 0
+[in] 14
+[in] 5 3 1
+[in] 5 4 1
+[in] 5 5 1
+[in] 5 6 1
+[in] 5 7 1
+[in] 5 8 1
+[in] 5 9 1
+[in] 5 10 1
+[in] 5 11 1
+[in] 5 12 1
+[in] 1 1 10
+[in] 33 1 10
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+015
+199
+Standard Output Stream:
+MOVE 0 33 1 H|MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+CanisLupus:
+- Pac 0 moved to (28, 1).
+- Pac 1 moved to (9, 8).
+Standard Error Stream:
+[in] 17 22
+[in] 2
+[in] 0 1 5 2 ROCK 5 9
+[in] 1 1 27 2 PAPER 5 9
+[in] 14
+[in] 5 3 1
+[in] 5 4 1
+[in] 5 5 1
+[in] 5 6 1
+[in] 5 7 1
+[in] 5 8 1
+[in] 5 9 1
+[in] 5 10 1
+[in] 5 11 1
+[in] 5 12 1
+[in] 1 1 10
+[in] 33 1 10
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 5 4 | MOVE 1 34 7 | 
+016
+199
+Standard Output Stream:
+MOVE 0 33 1 H|MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (5, 3).
+- Pac 1 moved to (27, 1).
+CanisLupus:
+- Pac 0 moved to (29, 1).
+- Pac 1 moved to (9, 7).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (5, 4).
+- Pac 1 moved to (28, 1).
+Standard Error Stream:
+[in] 19 24
+[in] 3
+[in] 0 1 5 4 ROCK 4 8
+[in] 0 0 29 1 ROCK 0 0
+[in] 1 1 28 1 PAPER 4 8
+[in] 12
+[in] 5 5 1
+[in] 5 6 1
+[in] 5 7 1
+[in] 5 8 1
+[in] 5 9 1
+[in] 5 10 1
+[in] 5 11 1
+[in] 5 12 1
+[in] 1 1 10
+[in] 33 1 10
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 1 1 | MOVE 1 33 1 | 
+018
+199
+Standard Output Stream:
+MOVE 0 33 1 H|MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (5, 3).
+- Pac 1 moved to (29, 1).
+CanisLupus:
+- Pac 0 moved to (29, 2).
+- Pac 1 moved to (8, 7).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (4, 3).
+- Pac 1 moved to (29, 2).
+CanisLupus:
+- Pac 0 has died.
+Standard Error Stream:
+[in] 20 26
+[in] 2
+[in] 0 1 4 3 ROCK 3 7
+[in] 1 1 29 2 PAPER 3 7
+[in] 17
+[in] 3 3 1
+[in] 2 3 1
+[in] 1 3 1
+[in] 29 3 1
+[in] 29 4 1
+[in] 29 5 1
+[in] 29 6 1
+[in] 29 7 1
+[in] 29 8 1
+[in] 29 9 1
+[in] 29 10 1
+[in] 29 11 1
+[in] 29 12 1
+[in] 1 1 10
+[in] 33 1 10
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 1 1 | MOVE 1 33 1 | 
+020
+199
+Standard Output Stream:
+MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (3, 3).
+- Pac 1 moved to (29, 3).
+CanisLupus:
+- Pac 1 moved to (7, 7).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (3, 2).
+- Pac 1 moved to (30, 3).
+Standard Error Stream:
+[in] 24 27
+[in] 2
+[in] 0 1 3 2 ROCK 2 6
+[in] 1 1 30 3 PAPER 2 6
+[in] 8
+[in] 3 1 1
+[in] 31 3 1
+[in] 32 3 1
+[in] 33 3 1
+[in] 1 1 10
+[in] 33 1 10
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 1 1 | MOVE 1 33 1 | 
+022
+199
+Standard Output Stream:
+MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (3, 1).
+- Pac 1 moved to (31, 3).
+CanisLupus:
+- Pac 1 moved to (6, 7).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (2, 1).
+- Pac 1 moved to (31, 2).
+Standard Error Stream:
+[in] 28 28
+[in] 2
+[in] 0 1 2 1 ROCK 1 5
+[in] 1 1 31 2 PAPER 1 5
+[in] 8
+[in] 0 1 1
+[in] 34 1 1
+[in] 32 1 1
+[in] 31 1 1
+[in] 1 1 10
+[in] 33 1 10
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 1 1 | MOVE 1 33 1 | 
+024
+199
+Standard Output Stream:
+MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (1, 1).
+- Pac 1 moved to (31, 1).
+CanisLupus:
+- Pac 1 moved to (5, 7).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 1 moved to (32, 1).
+Standard Error Stream:
+[in] 40 29
+[in] 2
+[in] 0 1 1 1 ROCK 0 4
+[in] 1 1 32 1 PAPER 0 4
+[in] 5
+[in] 0 1 1
+[in] 34 1 1
+[in] 33 1 10
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 0 7 | MOVE 1 33 1 | 
+026
+199
+Standard Output Stream:
+MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (2, 1).
+- Pac 1 moved to (33, 1).
+CanisLupus:
+- Pac 1 moved to (5, 8).
+Standard Error Stream:
+[in] 50 30
+[in] 2
+[in] 0 1 2 1 ROCK 0 3
+[in] 1 1 33 1 PAPER 0 3
+[in] 4
+[in] 0 1 1
+[in] 34 1 1
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 0 7 | MOVE 1 34 7 | 
+027
+199
+Standard Output Stream:
+MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (3, 1).
+- Pac 1 moved to (32, 1).
+CanisLupus:
+- Pac 1 moved to (5, 9).
+Standard Error Stream:
+[in] 50 31
+[in] 2
+[in] 0 1 3 1 ROCK 0 2
+[in] 1 1 32 1 PAPER 0 2
+[in] 4
+[in] 0 1 1
+[in] 34 1 1
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 0 7 | MOVE 1 34 7 | 
+028
+199
+Standard Output Stream:
+MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (3, 2).
+- Pac 1 moved to (31, 1).
+CanisLupus:
+- Pac 1 moved to (4, 9).
+Standard Error Stream:
+[in] 50 32
+[in] 2
+[in] 0 1 3 2 ROCK 0 1
+[in] 1 1 31 1 PAPER 0 1
+[in] 4
+[in] 34 1 1
+[in] 0 1 1
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 0 7 | MOVE 1 34 7 | 
+029
+199
+Standard Output Stream:
+MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (3, 3).
+- Pac 1 moved to (31, 2).
+CanisLupus:
+- Pac 1 moved to (3, 9).
+Standard Error Stream:
+[in] 50 33
+[in] 2
+[in] 0 1 3 3 ROCK 0 0
+[in] 1 1 31 2 PAPER 0 0
+[in] 4
+[in] 2 3 1
+[in] 1 3 1
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+030
+199
+Standard Output Stream:
+MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+CanisLupus:
+- Pac 1 moved to (3, 8).
+Standard Error Stream:
+[in] 50 34
+[in] 2
+[in] 0 1 3 3 ROCK 5 9
+[in] 1 1 31 2 PAPER 5 9
+[in] 4
+[in] 2 3 1
+[in] 1 3 1
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 1 3 | MOVE 1 2 3 | 
+031
+199
+Standard Output Stream:
+MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (2, 3).
+- Pac 1 moved to (31, 1).
+CanisLupus:
+- Pac 1 moved to (3, 7).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (1, 3).
+- Pac 1 moved to (32, 1).
+Standard Error Stream:
+[in] 52 35
+[in] 2
+[in] 0 1 1 3 ROCK 4 8
+[in] 1 1 32 1 PAPER 4 8
+[in] 6
+[in] 1 4 1
+[in] 1 5 1
+[in] 34 1 1
+[in] 0 1 1
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 0 7 | MOVE 1 34 7 | 
+033
+199
+Standard Output Stream:
+MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (1, 4).
+- Pac 1 moved to (31, 1).
+CanisLupus:
+- Pac 1 moved to (2, 7).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (1, 5).
+- Pac 1 moved to (31, 2).
+Standard Error Stream:
+[in] 54 36
+[in] 2
+[in] 0 1 1 5 ROCK 3 7
+[in] 1 1 31 2 PAPER 3 7
+[in] 4
+[in] 2 5 1
+[in] 3 5 1
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 0 7 | MOVE 1 34 7 | 
+035
+199
+Standard Output Stream:
+MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (2, 5).
+- Pac 1 moved to (31, 3).
+CanisLupus:
+- Pac 1 moved to (1, 7).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (3, 5).
+- Pac 1 moved to (32, 3).
+Standard Error Stream:
+[in] 57 37
+[in] 2
+[in] 0 1 3 5 ROCK 2 6
+[in] 1 1 32 3 PAPER 2 6
+[in] 7
+[in] 3 6 1
+[in] 3 10 1
+[in] 3 11 1
+[in] 3 12 1
+[in] 33 3 1
+[in] 0 7 10
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 0 7 | MOVE 1 34 7 | 
+037
+199
+Standard Output Stream:
+MOVE 1 0 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (3, 6).
+- Pac 1 moved to (33, 3).
+CanisLupus:
+- Pac 1 moved to (0, 7).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (3, 7).
+- Pac 1 moved to (33, 4).
+Standard Error Stream:
+[in] 60 47
+[in] 3
+[in] 0 1 3 7 ROCK 1 5
+[in] 1 1 33 4 PAPER 1 5
+[in] 1 0 0 7 PAPER 0 0
+[in] 8
+[in] 33 7 1
+[in] 32 7 1
+[in] 31 7 1
+[in] 3 10 1
+[in] 3 11 1
+[in] 3 12 1
+[in] 33 5 1
+[in] 34 7 10
+Standard Output Stream:
+MOVE 0 34 7 | MOVE 1 33 5 | 
+039
+199
+Standard Output Stream:
+MOVE 1 34 7 H
+Game Summary:
+grsoares:
+- Pac 0 moved to (2, 7).
+- Pac 1 moved to (33, 5).
+CanisLupus:
+- Pac 1 moved to (34, 7).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (1, 7).
+Standard Error Stream:
+[in] 61 57
+[in] 3
+[in] 0 1 1 7 ROCK 0 4
+[in] 1 1 33 5 PAPER 0 4
+[in] 1 0 34 7 PAPER 0 0
+[in] 5
+[in] 33 7 1
+[in] 32 7 1
+[in] 31 7 1
+[in] 32 5 1
+[in] 31 5 1
+Standard Output Stream:
+MOVE 0 31 7 | MOVE 1 32 5 | 
+041
+199
+Standard Output Stream:
+MOVE 1 33 7 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (0, 7).
+- Pac 1 moved to (32, 5).
+CanisLupus:
+- Pac 1 moved to (33, 7).
+Standard Error Stream:
+[in] 62 58
+[in] 3
+[in] 0 1 0 7 ROCK 0 3
+[in] 1 1 32 5 PAPER 0 3
+[in] 1 0 33 7 PAPER 0 0
+[in] 3
+[in] 32 7 1
+[in] 31 7 1
+[in] 31 5 1
+Standard Output Stream:
+MOVE 0 31 7 | MOVE 1 31 5 | 
+042
+199
+Standard Output Stream:
+MOVE 1 32 7 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (34, 7).
+- Pac 1 moved to (31, 5).
+CanisLupus:
+- Pac 1 moved to (32, 7).
+Standard Error Stream:
+[in] 63 59
+[in] 3
+[in] 0 1 34 7 ROCK 0 2
+[in] 1 1 31 5 PAPER 0 2
+[in] 1 0 32 7 PAPER 0 0
+[in] 7
+[in] 31 7 1
+[in] 31 6 1
+[in] 31 8 1
+[in] 31 9 1
+[in] 31 10 1
+[in] 31 11 1
+[in] 31 12 1
+Standard Output Stream:
+MOVE 0 31 7 | MOVE 1 31 6 | 
+043
+199
+Standard Output Stream:
+MOVE 1 31 7 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (33, 7).
+- Pac 1 moved to (31, 6).
+CanisLupus:
+- Pac 1 moved to (31, 7).
+Standard Error Stream:
+[in] 64 60
+[in] 3
+[in] 0 1 33 7 ROCK 0 1
+[in] 1 1 31 6 PAPER 0 1
+[in] 1 0 31 7 PAPER 0 0
+[in] 5
+[in] 31 8 1
+[in] 31 9 1
+[in] 31 10 1
+[in] 31 11 1
+[in] 31 12 1
+Standard Output Stream:
+MOVE 0 31 8 | MOVE 1 31 9 | 
+044
+199
+Standard Output Stream:
+MOVE 1 31 8 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (32, 7).
+- Pac 1 moved to (31, 7).
+CanisLupus:
+- Pac 1 moved to (31, 8).
+Standard Error Stream:
+[in] 64 61
+[in] 3
+[in] 0 1 32 7 ROCK 0 0
+[in] 1 1 31 7 PAPER 0 0
+[in] 1 0 31 8 PAPER 0 0
+[in] 4
+[in] 31 9 1
+[in] 31 10 1
+[in] 31 11 1
+[in] 31 12 1
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+045
+199
+Standard Output Stream:
+MOVE 1 31 9 C
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+CanisLupus:
+- Pac 1 moved to (31, 9).
+Standard Error Stream:
+[in] 64 62
+[in] 3
+[in] 0 1 32 7 ROCK 5 9
+[in] 1 1 31 7 PAPER 5 9
+[in] 1 0 31 9 PAPER 0 0
+[in] 3
+[in] 31 10 1
+[in] 31 11 1
+[in] 31 12 1
+Standard Output Stream:
+MOVE 0 31 11 | MOVE 1 31 11 | 
+046
+199
+Standard Output Stream:
+MOVE 1 30 9 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (31, 7).
+- Pac 1 moved to (31, 8).
+CanisLupus:
+- Pac 1 moved to (30, 9).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (31, 8).
+- Pac 1 moved to (31, 9).
+Standard Error Stream:
+[in] 64 63
+[in] 3
+[in] 0 1 31 8 ROCK 4 8
+[in] 1 1 31 9 PAPER 4 8
+[in] 1 0 30 9 PAPER 0 0
+[in] 10
+[in] 31 10 1
+[in] 31 11 1
+[in] 31 12 1
+[in] 29 9 1
+[in] 32 9 1
+[in] 33 9 1
+[in] 34 9 1
+[in] 0 9 1
+[in] 1 9 1
+[in] 2 9 1
+Standard Output Stream:
+MOVE 0 31 10 | MOVE 1 32 9 | 
+048
+199
+Standard Output Stream:
+MOVE 1 29 9 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (31, 9).
+- Pac 1 moved to (32, 9).
+CanisLupus:
+- Pac 1 moved to (29, 9).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (31, 10).
+Standard Error Stream:
+[in] 66 64
+[in] 3
+[in] 0 1 31 10 ROCK 3 7
+[in] 1 1 32 9 PAPER 3 7
+[in] 1 0 29 9 PAPER 0 0
+[in] 7
+[in] 31 11 1
+[in] 31 12 1
+[in] 33 9 1
+[in] 34 9 1
+[in] 0 9 1
+[in] 1 9 1
+[in] 2 9 1
+Standard Output Stream:
+MOVE 0 31 11 | MOVE 1 33 9 | 
+050
+199
+Standard Output Stream:
+MOVE 1 29 8 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (31, 11).
+- Pac 1 moved to (33, 9).
+CanisLupus:
+- Pac 1 moved to (29, 8).
+Standard Error Stream:
+[in] 68 65
+[in] 2
+[in] 0 1 31 11 ROCK 2 6
+[in] 1 1 33 9 PAPER 2 6
+[in] 16
+[in] 30 11 1
+[in] 29 11 1
+[in] 32 11 1
+[in] 33 11 1
+[in] 34 11 1
+[in] 0 11 1
+[in] 1 11 1
+[in] 2 11 1
+[in] 3 11 1
+[in] 4 11 1
+[in] 5 11 1
+[in] 31 12 1
+[in] 34 9 1
+[in] 0 9 1
+[in] 1 9 1
+[in] 2 9 1
+Standard Output Stream:
+MOVE 0 30 11 | MOVE 1 34 9 | 
+051
+199
+Standard Output Stream:
+MOVE 1 29 7 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (30, 11).
+- Pac 1 moved to (34, 9).
+CanisLupus:
+- Pac 1 moved to (29, 7).
+Standard Error Stream:
+[in] 70 66
+[in] 2
+[in] 0 1 30 11 ROCK 1 5
+[in] 1 1 34 9 PAPER 1 5
+[in] 13
+[in] 29 11 1
+[in] 32 11 1
+[in] 33 11 1
+[in] 34 11 1
+[in] 0 11 1
+[in] 1 11 1
+[in] 2 11 1
+[in] 3 11 1
+[in] 4 11 1
+[in] 5 11 1
+[in] 0 9 1
+[in] 1 9 1
+[in] 2 9 1
+Standard Output Stream:
+MOVE 0 29 11 | MOVE 1 34 11 | 
+052
+199
+Standard Output Stream:
+MOVE 1 28 7 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (29, 11).
+- Pac 1 moved to (33, 9).
+CanisLupus:
+- Pac 1 moved to (28, 7).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 1 moved to (32, 9).
+Standard Error Stream:
+[in] 71 67
+[in] 2
+[in] 0 1 29 11 ROCK 0 4
+[in] 1 1 32 9 PAPER 0 4
+[in] 17
+[in] 32 11 1
+[in] 33 11 1
+[in] 34 11 1
+[in] 0 11 1
+[in] 1 11 1
+[in] 2 11 1
+[in] 3 11 1
+[in] 4 11 1
+[in] 5 11 1
+[in] 29 10 1
+[in] 29 6 1
+[in] 29 5 1
+[in] 29 4 1
+[in] 29 12 1
+[in] 0 9 1
+[in] 1 9 1
+[in] 2 9 1
+Standard Output Stream:
+MOVE 0 29 10 | MOVE 1 32 11 | 
+054
+199
+Standard Output Stream:
+MOVE 1 27 7 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (29, 10).
+- Pac 1 moved to (31, 9).
+CanisLupus:
+- Pac 1 moved to (27, 7).
+Standard Error Stream:
+[in] 72 68
+[in] 2
+[in] 0 1 29 10 ROCK 0 3
+[in] 1 1 31 9 PAPER 0 3
+[in] 8
+[in] 29 6 1
+[in] 29 5 1
+[in] 29 4 1
+[in] 29 12 1
+[in] 0 9 1
+[in] 1 9 1
+[in] 2 9 1
+[in] 31 12 1
+Standard Output Stream:
+MOVE 0 29 12 | MOVE 1 31 12 | 
+055
+199
+Standard Output Stream:
+MOVE 1 26 7 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (29, 11).
+- Pac 1 moved to (31, 10).
+CanisLupus:
+- Pac 1 moved to (26, 7).
+Standard Error Stream:
+[in] 72 69
+[in] 2
+[in] 0 1 29 11 ROCK 0 2
+[in] 1 1 31 10 PAPER 0 2
+[in] 14
+[in] 32 11 1
+[in] 33 11 1
+[in] 34 11 1
+[in] 0 11 1
+[in] 1 11 1
+[in] 2 11 1
+[in] 3 11 1
+[in] 4 11 1
+[in] 5 11 1
+[in] 29 6 1
+[in] 29 5 1
+[in] 29 4 1
+[in] 29 12 1
+[in] 31 12 1
+Standard Output Stream:
+MOVE 0 29 12 | MOVE 1 32 11 | 
+056
+199
+Standard Output Stream:
+MOVE 1 25 7 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (29, 12).
+- Pac 1 moved to (31, 11).
+CanisLupus:
+- Pac 1 moved to (25, 7).
+Standard Error Stream:
+[in] 73 70
+[in] 2
+[in] 0 1 29 12 ROCK 0 1
+[in] 1 1 31 11 PAPER 0 1
+[in] 13
+[in] 29 6 1
+[in] 29 5 1
+[in] 29 4 1
+[in] 32 11 1
+[in] 33 11 1
+[in] 34 11 1
+[in] 0 11 1
+[in] 1 11 1
+[in] 2 11 1
+[in] 3 11 1
+[in] 4 11 1
+[in] 5 11 1
+[in] 31 12 1
+Standard Output Stream:
+MOVE 0 31 12 | MOVE 1 32 11 | 
+057
+199
+Standard Output Stream:
+MOVE 1 25 6 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (29, 11).
+- Pac 1 moved to (32, 11).
+CanisLupus:
+- Pac 1 moved to (25, 6).
+Standard Error Stream:
+[in] 74 71
+[in] 2
+[in] 0 1 29 11 ROCK 0 0
+[in] 1 1 32 11 PAPER 0 0
+[in] 11
+[in] 33 11 1
+[in] 34 11 1
+[in] 0 11 1
+[in] 1 11 1
+[in] 2 11 1
+[in] 3 11 1
+[in] 4 11 1
+[in] 5 11 1
+[in] 29 6 1
+[in] 29 5 1
+[in] 29 4 1
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+058
+199
+Standard Output Stream:
+MOVE 1 25 5 C
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+CanisLupus:
+- Pac 1 moved to (25, 5).
+Standard Error Stream:
+[in] 74 72
+[in] 2
+[in] 0 1 29 11 ROCK 5 9
+[in] 1 1 32 11 PAPER 5 9
+[in] 11
+[in] 33 11 1
+[in] 34 11 1
+[in] 0 11 1
+[in] 1 11 1
+[in] 2 11 1
+[in] 3 11 1
+[in] 4 11 1
+[in] 5 11 1
+[in] 29 6 1
+[in] 29 5 1
+[in] 29 4 1
+Standard Output Stream:
+MOVE 0 34 11 | MOVE 1 34 11 | 
+059
+199
+Standard Output Stream:
+MOVE 1 26 5 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (30, 11).
+- Pac 1 moved to (33, 11).
+CanisLupus:
+- Pac 1 moved to (26, 5).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (31, 11).
+- Pac 1 moved to (34, 11).
+Standard Error Stream:
+[in] 76 73
+[in] 2
+[in] 0 1 31 11 ROCK 4 8
+[in] 1 1 34 11 PAPER 4 8
+[in] 7
+[in] 0 11 1
+[in] 1 11 1
+[in] 2 11 1
+[in] 3 11 1
+[in] 4 11 1
+[in] 5 11 1
+[in] 31 12 1
+Standard Output Stream:
+MOVE 0 31 12 | MOVE 1 5 11 | 
+061
+199
+Standard Output Stream:
+MOVE 1 27 5 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (31, 12).
+- Pac 1 moved to (0, 11).
+CanisLupus:
+- Pac 1 moved to (27, 5).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 1 moved to (1, 11).
+Standard Error Stream:
+[in] 79 74
+[in] 2
+[in] 0 1 31 12 ROCK 3 7
+[in] 1 1 1 11 PAPER 3 7
+[in] 4
+[in] 2 11 1
+[in] 3 11 1
+[in] 4 11 1
+[in] 5 11 1
+Standard Output Stream:
+MOVE 0 5 11 | MOVE 1 2 11 | 
+063
+199
+Standard Output Stream:
+MOVE 1 27 6 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (31, 11).
+- Pac 1 moved to (2, 11).
+CanisLupus:
+- Pac 1 moved to (27, 6).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (32, 11).
+Standard Error Stream:
+[in] 80 75
+[in] 2
+[in] 0 1 32 11 ROCK 2 6
+[in] 1 1 2 11 PAPER 2 6
+[in] 3
+[in] 3 11 1
+[in] 4 11 1
+[in] 5 11 1
+Standard Output Stream:
+MOVE 0 5 11 | MOVE 1 3 11 | 
+065
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (33, 11).
+- Pac 1 moved to (3, 11).
+CanisLupus:
+- Pac 1 moved to (27, 5).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (34, 11).
+Standard Error Stream:
+[in] 81 75
+[in] 2
+[in] 0 1 34 11 ROCK 1 5
+[in] 1 1 3 11 PAPER 1 5
+[in] 4
+[in] 4 11 1
+[in] 5 11 1
+[in] 3 10 1
+[in] 3 12 1
+Standard Output Stream:
+MOVE 0 5 11 | MOVE 1 4 11 | 
+067
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (0, 11).
+- Pac 1 moved to (4, 11).
+CanisLupus:
+- Pac 1 moved to (26, 5).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (1, 11).
+Standard Error Stream:
+[in] 82 75
+[in] 2
+[in] 0 1 1 11 ROCK 0 4
+[in] 1 1 4 11 PAPER 0 4
+[in] 1
+[in] 5 11 1
+Standard Output Stream:
+MOVE 0 5 11 | MOVE 1 4 11 | 
+069
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (2, 11).
+CanisLupus:
+- Pac 1 moved to (25, 5).
+Standard Error Stream:
+[in] 82 75
+[in] 2
+[in] 0 1 2 11 ROCK 0 3
+[in] 1 1 4 11 PAPER 0 3
+[in] 1
+[in] 5 11 1
+Standard Output Stream:
+MOVE 0 5 11 | MOVE 1 5 11 | 
+070
+199
+Standard Output Stream:
+MOVE 1 25 4 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (3, 11).
+- Pac 1 moved to (5, 11).
+CanisLupus:
+- Pac 1 moved to (25, 4).
+Standard Error Stream:
+[in] 83 76
+[in] 2
+[in] 0 1 3 11 ROCK 0 2
+[in] 1 1 5 11 PAPER 0 2
+[in] 6
+[in] 3 10 1
+[in] 3 12 1
+[in] 5 10 1
+[in] 5 6 1
+[in] 5 5 1
+[in] 5 12 1
+Standard Output Stream:
+MOVE 0 3 10 | MOVE 1 5 10 | 
+071
+199
+Standard Output Stream:
+MOVE 1 25 8 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (3, 10).
+- Pac 1 moved to (5, 10).
+CanisLupus:
+- Pac 1 moved to (25, 5).
+Standard Error Stream:
+[in] 85 76
+[in] 2
+[in] 0 1 3 10 ROCK 0 1
+[in] 1 1 5 10 PAPER 0 1
+[in] 4
+[in] 3 12 1
+[in] 5 6 1
+[in] 5 5 1
+[in] 5 12 1
+Standard Output Stream:
+MOVE 0 3 12 | MOVE 1 5 12 | 
+072
+199
+Standard Output Stream:
+MOVE 1 25 8 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (3, 11).
+- Pac 1 moved to (5, 11).
+CanisLupus:
+- Pac 1 moved to (25, 6).
+Standard Error Stream:
+[in] 85 76
+[in] 2
+[in] 0 1 3 11 ROCK 0 0
+[in] 1 1 5 11 PAPER 0 0
+[in] 4
+[in] 3 12 1
+[in] 5 6 1
+[in] 5 5 1
+[in] 5 12 1
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+073
+199
+Standard Output Stream:
+MOVE 1 25 8 C
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+CanisLupus:
+- Pac 1 moved to (25, 7).
+Standard Error Stream:
+[in] 85 76
+[in] 2
+[in] 0 1 3 11 ROCK 5 9
+[in] 1 1 5 11 PAPER 5 9
+[in] 4
+[in] 3 12 1
+[in] 5 6 1
+[in] 5 5 1
+[in] 5 12 1
+Standard Output Stream:
+MOVE 0 5 12 | MOVE 1 3 12 | 
+074
+199
+Standard Output Stream:
+MOVE 1 25 8 C
+Game Summary:
+grsoares:
+- Pac 0 is blocked from entering (4, 11).
+- Pac 1 is blocked from entering (4, 11).
+CanisLupus:
+- Pac 1 moved to (25, 8).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 is blocked from entering (4, 11).
+- Pac 1 is blocked from entering (4, 11).
+Standard Error Stream:
+[in] 85 77
+[in] 2
+[in] 0 1 3 11 ROCK 4 8
+[in] 1 1 5 11 PAPER 4 8
+[in] 4
+[in] 3 12 1
+[in] 5 6 1
+[in] 5 5 1
+[in] 5 12 1
+Standard Output Stream:
+MOVE 0 5 6 | MOVE 1 5 6 | 
+076
+199
+Standard Output Stream:
+MOVE 1 25 9 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (3, 10).
+- Pac 1 moved to (5, 10).
+CanisLupus:
+- Pac 1 moved to (25, 9).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (3, 9).
+- Pac 1 moved to (5, 9).
+Standard Error Stream:
+[in] 85 78
+[in] 2
+[in] 0 1 3 9 ROCK 3 7
+[in] 1 1 5 9 PAPER 3 7
+[in] 7
+[in] 2 9 1
+[in] 1 9 1
+[in] 0 9 1
+[in] 3 12 1
+[in] 5 6 1
+[in] 5 5 1
+[in] 5 12 1
+Standard Output Stream:
+MOVE 0 2 9 | MOVE 1 5 6 | 
+078
+199
+Standard Output Stream:
+MOVE 1 24 9 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (2, 9).
+- Pac 1 moved to (5, 8).
+CanisLupus:
+- Pac 1 moved to (24, 9).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 1 moved to (5, 7).
+Standard Error Stream:
+[in] 86 79
+[in] 2
+[in] 0 1 2 9 ROCK 2 6
+[in] 1 1 5 7 PAPER 2 6
+[in] 5
+[in] 1 9 1
+[in] 0 9 1
+[in] 5 6 1
+[in] 5 5 1
+[in] 5 12 1
+Standard Output Stream:
+MOVE 0 1 9 | MOVE 1 5 6 | 
+080
+199
+Standard Output Stream:
+MOVE 1 23 9 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (1, 9).
+- Pac 1 moved to (5, 6).
+CanisLupus:
+- Pac 1 moved to (23, 9).
+Standard Error Stream:
+[in] 88 80
+[in] 2
+[in] 0 1 1 9 ROCK 1 5
+[in] 1 1 5 6 PAPER 1 5
+[in] 3
+[in] 0 9 1
+[in] 5 5 1
+[in] 5 12 1
+Standard Output Stream:
+MOVE 0 0 9 | MOVE 1 5 5 | 
+081
+199
+Standard Output Stream:
+MOVE 1 23 8 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (0, 9).
+- Pac 1 moved to (5, 5).
+CanisLupus:
+- Pac 1 moved to (23, 8).
+Standard Error Stream:
+[in] 90 81
+[in] 2
+[in] 0 1 0 9 ROCK 0 4
+[in] 1 1 5 5 PAPER 0 4
+[in] 1
+[in] 5 12 1
+Standard Output Stream:
+MOVE 0 5 12 | MOVE 1 5 10 | 
+082
+199
+Standard Output Stream:
+MOVE 1 23 7 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (1, 9).
+- Pac 1 moved to (5, 6).
+CanisLupus:
+- Pac 1 moved to (23, 7).
+Standard Error Stream:
+[in] 90 82
+[in] 2
+[in] 0 1 1 9 ROCK 0 3
+[in] 1 1 5 6 PAPER 0 3
+[in] 1
+[in] 5 12 1
+Standard Output Stream:
+MOVE 0 5 12 | MOVE 1 5 9 | 
+083
+199
+Standard Output Stream:
+MOVE 1 23 6 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (2, 9).
+- Pac 1 moved to (5, 7).
+CanisLupus:
+- Pac 1 moved to (23, 6).
+Standard Error Stream:
+[in] 90 83
+[in] 2
+[in] 0 1 2 9 ROCK 0 2
+[in] 1 1 5 7 PAPER 0 2
+[in] 1
+[in] 5 12 1
+Standard Output Stream:
+MOVE 0 5 12 | MOVE 1 5 8 | 
+084
+199
+Standard Output Stream:
+MOVE 1 23 5 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (3, 9).
+- Pac 1 moved to (5, 8).
+CanisLupus:
+- Pac 1 moved to (23, 5).
+Standard Error Stream:
+[in] 90 84
+[in] 2
+[in] 0 1 3 9 ROCK 0 1
+[in] 1 1 5 8 PAPER 0 1
+[in] 2
+[in] 3 12 1
+[in] 5 12 1
+Standard Output Stream:
+MOVE 0 3 12 | MOVE 1 5 12 | 
+085
+199
+Standard Output Stream:
+MOVE 1 22 5 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (3, 10).
+- Pac 1 moved to (5, 9).
+CanisLupus:
+- Pac 1 moved to (22, 5).
+Standard Error Stream:
+[in] 90 85
+[in] 2
+[in] 0 1 3 10 ROCK 0 0
+[in] 1 1 5 9 PAPER 0 0
+[in] 2
+[in] 3 12 1
+[in] 5 12 1
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+086
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+CanisLupus:
+- Pac 1 moved to (21, 5).
+Standard Error Stream:
+[in] 90 85
+[in] 2
+[in] 0 1 3 10 ROCK 5 9
+[in] 1 1 5 9 PAPER 5 9
+[in] 2
+[in] 3 12 1
+[in] 5 12 1
+Standard Output Stream:
+MOVE 0 5 12 | MOVE 1 3 12 | 
+087
+199
+Standard Output Stream:
+MOVE 1 21 6 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (3, 11).
+- Pac 1 moved to (5, 10).
+CanisLupus:
+- Pac 1 moved to (21, 6).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (4, 11).
+- Pac 1 moved to (5, 11).
+Standard Error Stream:
+[in] 90 86
+[in] 2
+[in] 0 1 4 11 ROCK 4 8
+[in] 1 1 5 11 PAPER 4 8
+[in] 1
+[in] 5 12 1
+Standard Output Stream:
+MOVE 0 5 12 | MOVE 1 5 7 | 
+089
+199
+Standard Output Stream:
+MOVE 1 21 7 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (5, 11).
+- Pac 1 moved to (5, 10).
+CanisLupus:
+- Pac 1 moved to (21, 7).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (5, 12).
+- Pac 1 moved to (5, 9).
+Standard Error Stream:
+[in] 91 87
+[in] 2
+[in] 0 1 5 12 ROCK 3 7
+[in] 1 1 5 9 PAPER 3 7
+[in] 0
+Standard Output Stream:
+MOVE 0 5 12 | MOVE 1 6 7 | 
+091
+199
+Standard Output Stream:
+MOVE 1 20 7 C
+Game Summary:
+grsoares:
+- Pac 1 moved to (5, 8).
+CanisLupus:
+- Pac 1 moved to (20, 7).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 1 moved to (5, 7).
+Standard Error Stream:
+[in] 91 88
+[in] 2
+[in] 0 1 5 12 ROCK 2 6
+[in] 1 1 5 7 PAPER 2 6
+[in] 0
+Standard Output Stream:
+MOVE 0 5 11 | MOVE 1 7 7 | 
+093
+199
+Standard Output Stream:
+MOVE 1 19 7 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (5, 11).
+- Pac 1 moved to (6, 7).
+CanisLupus:
+- Pac 1 moved to (19, 7).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 1 moved to (7, 7).
+Standard Error Stream:
+[in] 91 89
+[in] 2
+[in] 0 1 5 11 ROCK 1 5
+[in] 1 1 7 7 PAPER 1 5
+[in] 2
+[in] 7 6 1
+[in] 7 5 1
+Standard Output Stream:
+MOVE 0 7 6 | MOVE 1 7 5 | 
+095
+199
+Standard Output Stream:
+MOVE 1 18 7 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (5, 10).
+- Pac 1 moved to (7, 6).
+CanisLupus:
+- Pac 1 moved to (18, 7).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (5, 9).
+- Pac 1 moved to (7, 5).
+Standard Error Stream:
+[in] 93 90
+[in] 2
+[in] 0 1 5 9 ROCK 0 4
+[in] 1 1 7 5 PAPER 0 4
+[in] 2
+[in] 8 5 1
+[in] 9 5 1
+Standard Output Stream:
+MOVE 0 8 5 | MOVE 1 9 5 | 
+097
+199
+Standard Output Stream:
+MOVE 1 17 7 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (5, 8).
+- Pac 1 moved to (8, 5).
+CanisLupus:
+- Pac 1 moved to (17, 7).
+Standard Error Stream:
+[in] 94 91
+[in] 2
+[in] 0 1 5 8 ROCK 0 3
+[in] 1 1 8 5 PAPER 0 3
+[in] 1
+[in] 9 5 1
+Standard Output Stream:
+MOVE 0 9 5 | MOVE 1 8 7 | 
+098
+199
+Standard Output Stream:
+MOVE 1 16 7 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (5, 7).
+- Pac 1 moved to (7, 5).
+CanisLupus:
+- Pac 1 moved to (16, 7).
+Standard Error Stream:
+[in] 94 92
+[in] 2
+[in] 0 1 5 7 ROCK 0 2
+[in] 1 1 7 5 PAPER 0 2
+[in] 1
+[in] 9 5 1
+Standard Output Stream:
+MOVE 0 9 5 | MOVE 1 9 7 | 
+099
+199
+Standard Output Stream:
+MOVE 1 15 7 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (6, 7).
+- Pac 1 moved to (8, 5).
+CanisLupus:
+- Pac 1 moved to (15, 7).
+Standard Error Stream:
+[in] 94 93
+[in] 2
+[in] 0 1 6 7 ROCK 0 1
+[in] 1 1 8 5 PAPER 0 1
+[in] 1
+[in] 9 5 1
+Standard Output Stream:
+MOVE 0 9 5 | MOVE 1 9 8 | 
+100
+199
+Standard Output Stream:
+MOVE 1 14 7 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (7, 7).
+- Pac 1 moved to (9, 5).
+CanisLupus:
+- Pac 1 moved to (14, 7).
+Standard Error Stream:
+[in] 95 94
+[in] 2
+[in] 0 1 7 7 ROCK 0 0
+[in] 1 1 9 5 PAPER 0 0
+[in] 4
+[in] 9 4 1
+[in] 9 6 1
+[in] 9 10 1
+[in] 9 11 1
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+101
+199
+Standard Output Stream:
+MOVE 1 13 7 C
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+CanisLupus:
+- Pac 1 moved to (13, 7).
+Standard Error Stream:
+[in] 95 95
+[in] 2
+[in] 0 1 7 7 ROCK 5 9
+[in] 1 1 9 5 PAPER 5 9
+[in] 4
+[in] 9 4 1
+[in] 9 6 1
+[in] 9 10 1
+[in] 9 11 1
+Standard Output Stream:
+MOVE 0 9 4 | MOVE 1 9 6 | 
+102
+199
+Standard Output Stream:
+MOVE 1 13 6 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (8, 7).
+- Pac 1 moved to (9, 6).
+CanisLupus:
+- Pac 1 moved to (13, 6).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (9, 7).
+Standard Error Stream:
+[in] 96 96
+[in] 2
+[in] 0 1 9 7 ROCK 4 8
+[in] 1 1 9 6 PAPER 4 8
+[in] 3
+[in] 9 4 1
+[in] 9 10 1
+[in] 9 11 1
+Standard Output Stream:
+MOVE 0 9 4 | MOVE 1 9 10 | 
+104
+199
+Standard Output Stream:
+MOVE 1 13 4 C
+Game Summary:
+grsoares:
+- Pac 0 is blocked from entering (9, 6).
+- Pac 1 is blocked from entering (9, 7).
+CanisLupus:
+- Pac 1 moved to (13, 5).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 is blocked from entering (9, 6).
+- Pac 1 is blocked from entering (9, 7).
+Standard Error Stream:
+[in] 96 96
+[in] 2
+[in] 0 1 9 7 ROCK 3 7
+[in] 1 1 9 6 PAPER 3 7
+[in] 3
+[in] 9 4 1
+[in] 9 10 1
+[in] 9 11 1
+Standard Output Stream:
+MOVE 0 9 10 | MOVE 1 9 10 | 
+106
+199
+Standard Output Stream:
+MOVE 1 13 4 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (9, 8).
+- Pac 1 moved to (9, 7).
+CanisLupus:
+- Pac 1 moved to (13, 4).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (9, 9).
+- Pac 1 moved to (9, 8).
+Standard Error Stream:
+[in] 96 97
+[in] 2
+[in] 0 1 9 9 ROCK 2 6
+[in] 1 1 9 8 PAPER 2 6
+[in] 5
+[in] 8 9 1
+[in] 7 9 1
+[in] 9 4 1
+[in] 9 10 1
+[in] 9 11 1
+Standard Output Stream:
+MOVE 0 8 9 | MOVE 1 9 10 | 
+108
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (8, 9).
+- Pac 1 moved to (9, 9).
+CanisLupus:
+- Pac 1 moved to (13, 5).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 1 moved to (9, 10).
+Standard Error Stream:
+[in] 98 97
+[in] 2
+[in] 0 1 8 9 ROCK 1 5
+[in] 1 1 9 10 PAPER 1 5
+[in] 3
+[in] 7 9 1
+[in] 9 4 1
+[in] 9 11 1
+Standard Output Stream:
+MOVE 0 7 9 | MOVE 1 9 11 | 
+110
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (7, 9).
+- Pac 1 moved to (9, 11).
+CanisLupus:
+- Pac 1 moved to (14, 5).
+Standard Error Stream:
+[in] 100 97
+[in] 2
+[in] 0 1 7 9 ROCK 0 4
+[in] 1 1 9 11 PAPER 0 4
+[in] 10
+[in] 7 10 1
+[in] 7 11 1
+[in] 7 12 1
+[in] 10 11 1
+[in] 11 11 1
+[in] 12 11 1
+[in] 13 11 1
+[in] 14 11 1
+[in] 15 11 1
+[in] 9 4 1
+Standard Output Stream:
+MOVE 0 7 10 | MOVE 1 10 11 | 
+111
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (7, 10).
+- Pac 1 moved to (10, 11).
+CanisLupus:
+- Pac 1 moved to (15, 5).
+Standard Error Stream:
+[in] 102 97
+[in] 2
+[in] 0 1 7 10 ROCK 0 3
+[in] 1 1 10 11 PAPER 0 3
+[in] 7
+[in] 7 11 1
+[in] 7 12 1
+[in] 11 11 1
+[in] 12 11 1
+[in] 13 11 1
+[in] 14 11 1
+[in] 15 11 1
+Standard Output Stream:
+MOVE 0 7 11 | MOVE 1 11 11 | 
+112
+199
+Standard Output Stream:
+MOVE 1 15 4 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (7, 11).
+- Pac 1 moved to (11, 11).
+CanisLupus:
+- Pac 1 moved to (15, 4).
+Standard Error Stream:
+[in] 104 98
+[in] 2
+[in] 0 1 7 11 ROCK 0 2
+[in] 1 1 11 11 PAPER 0 2
+[in] 6
+[in] 7 12 1
+[in] 12 11 1
+[in] 13 11 1
+[in] 14 11 1
+[in] 15 11 1
+[in] 11 10 1
+Standard Output Stream:
+MOVE 0 7 12 | MOVE 1 12 11 | 
+113
+199
+Standard Output Stream:
+MOVE 1 15 3 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (7, 12).
+- Pac 1 moved to (12, 11).
+CanisLupus:
+- Pac 1 moved to (15, 3).
+Standard Error Stream:
+[in] 106 99
+[in] 2
+[in] 0 1 7 12 ROCK 0 1
+[in] 1 1 12 11 PAPER 0 1
+[in] 3
+[in] 13 11 1
+[in] 14 11 1
+[in] 15 11 1
+Standard Output Stream:
+MOVE 0 13 11 | MOVE 1 14 11 | 
+114
+199
+Standard Output Stream:
+MOVE 1 15 2 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (7, 11).
+- Pac 1 moved to (13, 11).
+CanisLupus:
+- Pac 1 moved to (15, 2).
+Standard Error Stream:
+[in] 107 100
+[in] 2
+[in] 0 1 7 11 ROCK 0 0
+[in] 1 1 13 11 PAPER 0 0
+[in] 5
+[in] 14 11 1
+[in] 15 11 1
+[in] 13 10 1
+[in] 13 9 1
+[in] 13 12 1
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+115
+199
+Standard Output Stream:
+MOVE 1 15 1 C
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+CanisLupus:
+- Pac 1 moved to (15, 1).
+Standard Error Stream:
+[in] 107 101
+[in] 2
+[in] 0 1 7 11 ROCK 5 9
+[in] 1 1 13 11 PAPER 5 9
+[in] 5
+[in] 14 11 1
+[in] 15 11 1
+[in] 13 10 1
+[in] 13 9 1
+[in] 13 12 1
+Standard Output Stream:
+MOVE 0 13 10 | MOVE 1 13 10 | 
+116
+199
+Standard Output Stream:
+MOVE 1 16 1 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (7, 10).
+- Pac 1 moved to (13, 10).
+CanisLupus:
+- Pac 1 moved to (16, 1).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (7, 9).
+Standard Error Stream:
+[in] 108 102
+[in] 2
+[in] 0 1 7 9 ROCK 4 8
+[in] 1 1 13 10 PAPER 4 8
+[in] 2
+[in] 13 9 1
+[in] 13 12 1
+Standard Output Stream:
+MOVE 0 13 9 | MOVE 1 13 12 | 
+118
+199
+Standard Output Stream:
+MOVE 1 17 1 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (8, 9).
+- Pac 1 moved to (13, 11).
+CanisLupus:
+- Pac 1 moved to (17, 1).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (9, 9).
+- Pac 1 moved to (13, 12).
+Standard Error Stream:
+[in] 109 103
+[in] 2
+[in] 0 1 9 9 ROCK 3 7
+[in] 1 1 13 12 PAPER 3 7
+[in] 2
+[in] 9 4 1
+[in] 13 9 1
+Standard Output Stream:
+MOVE 0 13 9 | MOVE 1 9 4 | 
+120
+199
+Standard Output Stream:
+MOVE 1 18 1 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (10, 9).
+- Pac 1 moved to (13, 11).
+CanisLupus:
+- Pac 1 moved to (18, 1).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (11, 9).
+- Pac 1 moved to (12, 11).
+Standard Error Stream:
+[in] 109 104
+[in] 2
+[in] 0 1 11 9 ROCK 2 6
+[in] 1 1 12 11 PAPER 2 6
+[in] 3
+[in] 11 10 1
+[in] 14 11 1
+[in] 15 11 1
+Standard Output Stream:
+MOVE 0 11 10 | MOVE 1 14 11 | 
+122
+199
+Standard Output Stream:
+MOVE 1 19 1 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (11, 10).
+- Pac 1 moved to (13, 11).
+CanisLupus:
+- Pac 1 moved to (19, 1).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 1 moved to (14, 11).
+Standard Error Stream:
+[in] 111 105
+[in] 2
+[in] 0 1 11 10 ROCK 1 5
+[in] 1 1 14 11 PAPER 1 5
+[in] 1
+[in] 15 11 1
+Standard Output Stream:
+MOVE 0 15 11 | MOVE 1 9 9 | 
+124
+199
+Standard Output Stream:
+MOVE 1 19 2 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (11, 11).
+- Pac 1 moved to (13, 11).
+CanisLupus:
+- Pac 1 moved to (19, 2).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 is blocked from entering (12, 11).
+- Pac 1 is blocked from entering (12, 11).
+Standard Error Stream:
+[in] 111 106
+[in] 2
+[in] 0 1 11 11 ROCK 0 4
+[in] 1 1 13 11 PAPER 0 4
+[in] 2
+[in] 15 11 1
+[in] 13 9 1
+Standard Output Stream:
+MOVE 0 15 11 | MOVE 1 13 9 | 
+126
+199
+Standard Output Stream:
+MOVE 1 19 3 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (12, 11).
+- Pac 1 moved to (13, 10).
+CanisLupus:
+- Pac 1 moved to (19, 3).
+Standard Error Stream:
+[in] 111 107
+[in] 2
+[in] 0 1 12 11 ROCK 0 3
+[in] 1 1 13 10 PAPER 0 3
+[in] 2
+[in] 15 11 1
+[in] 13 9 1
+Standard Output Stream:
+MOVE 0 15 11 | MOVE 1 13 9 | 
+127
+199
+Standard Output Stream:
+MOVE 1 19 6 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (13, 11).
+- Pac 1 moved to (13, 9).
+CanisLupus:
+- Pac 1 moved to (19, 4).
+Standard Error Stream:
+[in] 112 107
+[in] 2
+[in] 0 1 13 11 ROCK 0 2
+[in] 1 1 13 9 PAPER 0 2
+[in] 3
+[in] 15 11 1
+[in] 14 9 1
+[in] 15 9 1
+Standard Output Stream:
+MOVE 0 15 11 | MOVE 1 14 9 | 
+128
+199
+Standard Output Stream:
+MOVE 1 19 6 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (14, 11).
+- Pac 1 moved to (14, 9).
+CanisLupus:
+- Pac 1 moved to (19, 5).
+Standard Error Stream:
+[in] 113 107
+[in] 2
+[in] 0 1 14 11 ROCK 0 1
+[in] 1 1 14 9 PAPER 0 1
+[in] 2
+[in] 15 11 1
+[in] 15 9 1
+Standard Output Stream:
+MOVE 0 15 11 | MOVE 1 15 9 | 
+129
+199
+Standard Output Stream:
+MOVE 1 19 6 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (15, 11).
+- Pac 1 moved to (15, 9).
+CanisLupus:
+- Pac 1 moved to (19, 6).
+Standard Error Stream:
+[in] 115 108
+[in] 2
+[in] 0 1 15 11 ROCK 0 0
+[in] 1 1 15 9 PAPER 0 0
+[in] 4
+[in] 15 10 1
+[in] 15 8 1
+[in] 15 6 1
+[in] 15 12 1
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+130
+199
+Standard Output Stream:
+MOVE 1 19 8 C
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+CanisLupus:
+- Pac 1 moved to (19, 7).
+Standard Error Stream:
+[in] 115 108
+[in] 2
+[in] 0 1 15 11 ROCK 5 9
+[in] 1 1 15 9 PAPER 5 9
+[in] 4
+[in] 15 10 1
+[in] 15 8 1
+[in] 15 6 1
+[in] 15 12 1
+Standard Output Stream:
+MOVE 0 15 12 | MOVE 1 15 8 | 
+131
+199
+Standard Output Stream:
+MOVE 1 19 8 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (15, 12).
+- Pac 1 moved to (15, 8).
+CanisLupus:
+- Pac 1 moved to (19, 8).
+Standard Error Stream:
+[in] 117 109
+[in] 2
+[in] 0 1 15 12 ROCK 4 8
+[in] 1 1 15 8 PAPER 4 8
+[in] 2
+[in] 15 10 1
+[in] 15 6 1
+Standard Output Stream:
+MOVE 0 15 10 | MOVE 1 15 6 | 
+132
+199
+Standard Output Stream:
+MOVE 1 19 9 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (15, 11).
+- Pac 1 moved to (15, 7).
+CanisLupus:
+- Pac 1 moved to (19, 9).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (15, 10).
+- Pac 1 moved to (15, 6).
+Standard Error Stream:
+[in] 119 110
+[in] 2
+[in] 0 1 15 10 ROCK 3 7
+[in] 1 1 15 6 PAPER 3 7
+[in] 0
+Standard Output Stream:
+MOVE 0 4 11 | MOVE 1 10 9 | 
+134
+199
+Standard Output Stream:
+MOVE 1 20 9 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (15, 11).
+- Pac 1 moved to (15, 5).
+CanisLupus:
+- Pac 1 moved to (20, 9).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (14, 11).
+- Pac 1 moved to (14, 5).
+Standard Error Stream:
+[in] 119 111
+[in] 2
+[in] 0 1 14 11 ROCK 2 6
+[in] 1 1 14 5 PAPER 2 6
+[in] 0
+Standard Output Stream:
+MOVE 0 3 11 | MOVE 1 11 9 | 
+136
+199
+Standard Output Stream:
+MOVE 1 21 9 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (13, 11).
+- Pac 1 moved to (13, 5).
+CanisLupus:
+- Pac 1 moved to (21, 9).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (12, 11).
+- Pac 1 moved to (12, 5).
+Standard Error Stream:
+[in] 119 112
+[in] 2
+[in] 0 1 12 11 ROCK 1 5
+[in] 1 1 12 5 PAPER 1 5
+[in] 0
+Standard Output Stream:
+MOVE 0 3 10 | MOVE 1 11 10 | 
+138
+199
+Standard Output Stream:
+MOVE 1 21 10 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (11, 11).
+- Pac 1 moved to (11, 5).
+CanisLupus:
+- Pac 1 moved to (21, 10).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (11, 10).
+- Pac 1 moved to (11, 6).
+Standard Error Stream:
+[in] 119 113
+[in] 2
+[in] 0 1 11 10 ROCK 0 4
+[in] 1 1 11 6 PAPER 0 4
+[in] 0
+Standard Output Stream:
+MOVE 0 3 9 | MOVE 1 11 11 | 
+140
+199
+Standard Output Stream:
+MOVE 1 21 11 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (11, 9).
+- Pac 1 moved to (11, 7).
+CanisLupus:
+- Pac 1 moved to (21, 11).
+Standard Error Stream:
+[in] 119 114
+[in] 2
+[in] 0 1 11 9 ROCK 0 3
+[in] 1 1 11 7 PAPER 0 3
+[in] 0
+Standard Output Stream:
+MOVE 0 3 8 | MOVE 1 12 11 | 
+141
+199
+Standard Output Stream:
+MOVE 1 20 11 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (10, 9).
+- Pac 1 moved to (11, 8).
+CanisLupus:
+- Pac 1 moved to (20, 11).
+Standard Error Stream:
+[in] 119 115
+[in] 2
+[in] 0 1 10 9 ROCK 0 2
+[in] 1 1 11 8 PAPER 0 2
+[in] 0
+Standard Output Stream:
+MOVE 0 3 7 | MOVE 1 13 11 | 
+142
+199
+Standard Output Stream:
+MOVE 1 19 11 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (9, 9).
+- Pac 1 moved to (11, 9).
+CanisLupus:
+- Pac 1 moved to (19, 11).
+Standard Error Stream:
+[in] 119 116
+[in] 2
+[in] 0 1 9 9 ROCK 0 1
+[in] 1 1 11 9 PAPER 0 1
+[in] 1
+[in] 9 4 1
+Standard Output Stream:
+MOVE 0 9 4 | MOVE 1 14 11 | 
+143
+199
+Standard Output Stream:
+MOVE 1 19 10 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (9, 8).
+- Pac 1 moved to (11, 10).
+CanisLupus:
+- Pac 1 moved to (19, 10).
+Standard Error Stream:
+[in] 119 117
+[in] 2
+[in] 0 1 9 8 ROCK 0 0
+[in] 1 1 11 10 PAPER 0 0
+[in] 1
+[in] 9 4 1
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+144
+199
+Standard Output Stream:
+MOVE 1 19 12 C
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+CanisLupus:
+- Pac 1 moved to (19, 11).
+Standard Error Stream:
+[in] 119 117
+[in] 2
+[in] 0 1 9 8 ROCK 5 9
+[in] 1 1 11 10 PAPER 5 9
+[in] 1
+[in] 9 4 1
+Standard Output Stream:
+MOVE 0 9 4 | MOVE 1 9 4 | 
+145
+199
+Standard Output Stream:
+MOVE 1 19 12 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (9, 7).
+- Pac 1 moved to (11, 9).
+CanisLupus:
+- Pac 1 moved to (19, 12).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (9, 6).
+- Pac 1 moved to (10, 9).
+Standard Error Stream:
+[in] 119 118
+[in] 2
+[in] 0 1 9 6 ROCK 4 8
+[in] 1 1 10 9 PAPER 4 8
+[in] 1
+[in] 9 4 1
+Standard Output Stream:
+MOVE 0 9 4 | MOVE 1 15 10 | 
+147
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (9, 5).
+- Pac 1 moved to (11, 9).
+CanisLupus:
+- Pac 1 moved to (19, 11).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (9, 4).
+- Pac 1 moved to (11, 10).
+Standard Error Stream:
+[in] 120 118
+[in] 2
+[in] 0 1 9 4 ROCK 3 7
+[in] 1 1 11 10 PAPER 3 7
+[in] 0
+Standard Output Stream:
+MOVE 0 3 6 | MOVE 1 15 9 | 
+149
+199
+Standard Output Stream:
+MOVE 1 22 11 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (9, 5).
+- Pac 1 moved to (11, 11).
+CanisLupus:
+- Pac 1 moved to (20, 11).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (9, 6).
+- Pac 1 moved to (12, 11).
+Standard Error Stream:
+[in] 120 118
+[in] 2
+[in] 0 1 9 6 ROCK 2 6
+[in] 1 1 12 11 PAPER 2 6
+[in] 0
+Standard Output Stream:
+MOVE 0 3 5 | MOVE 1 15 8 | 
+151
+199
+Standard Output Stream:
+MOVE 1 22 11 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (9, 7).
+- Pac 1 moved to (13, 11).
+CanisLupus:
+- Pac 1 moved to (21, 11).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (8, 7).
+- Pac 1 moved to (13, 10).
+Standard Error Stream:
+[in] 120 118
+[in] 2
+[in] 0 1 8 7 ROCK 1 5
+[in] 1 1 13 10 PAPER 1 5
+[in] 0
+Standard Output Stream:
+MOVE 0 2 5 | MOVE 1 15 7 | 
+153
+199
+Standard Output Stream:
+MOVE 1 22 11 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (7, 7).
+- Pac 1 moved to (13, 9).
+CanisLupus:
+- Pac 1 moved to (22, 11).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (6, 7).
+- Pac 1 moved to (14, 9).
+Standard Error Stream:
+[in] 120 119
+[in] 2
+[in] 0 1 6 7 ROCK 0 4
+[in] 1 1 14 9 PAPER 0 4
+[in] 0
+Standard Output Stream:
+MOVE 0 1 5 | MOVE 1 16 7 | 
+155
+199
+Standard Output Stream:
+MOVE 1 23 11 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (5, 7).
+- Pac 1 moved to (15, 9).
+CanisLupus:
+- Pac 1 moved to (23, 11).
+Standard Error Stream:
+[in] 120 120
+[in] 2
+[in] 0 1 5 7 ROCK 0 3
+[in] 1 1 15 9 PAPER 0 3
+[in] 0
+Standard Output Stream:
+MOVE 0 1 4 | MOVE 1 17 7 | 
+156
+199
+Standard Output Stream:
+MOVE 1 24 11 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (5, 6).
+- Pac 1 moved to (15, 8).
+CanisLupus:
+- Pac 1 moved to (24, 11).
+Standard Error Stream:
+[in] 120 121
+[in] 2
+[in] 0 1 5 6 ROCK 0 2
+[in] 1 1 15 8 PAPER 0 2
+[in] 0
+Standard Output Stream:
+MOVE 0 1 3 | MOVE 1 18 7 | 
+157
+199
+Standard Output Stream:
+MOVE 1 25 11 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (5, 5).
+- Pac 1 moved to (15, 7).
+CanisLupus:
+- Pac 1 moved to (25, 11).
+Standard Error Stream:
+[in] 120 122
+[in] 2
+[in] 0 1 5 5 ROCK 0 1
+[in] 1 1 15 7 PAPER 0 1
+[in] 0
+Standard Output Stream:
+MOVE 0 2 3 | MOVE 1 19 7 | 
+158
+199
+Standard Output Stream:
+MOVE 1 25 10 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (5, 4).
+- Pac 1 moved to (16, 7).
+CanisLupus:
+- Pac 1 moved to (25, 10).
+Standard Error Stream:
+[in] 120 123
+[in] 2
+[in] 0 1 5 4 ROCK 0 0
+[in] 1 1 16 7 PAPER 0 0
+[in] 0
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+159
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+CanisLupus:
+- Pac 1 moved to (25, 11).
+Standard Error Stream:
+[in] 120 123
+[in] 2
+[in] 0 1 5 4 ROCK 5 9
+[in] 1 1 16 7 PAPER 5 9
+[in] 0
+Standard Output Stream:
+MOVE 0 4 3 | MOVE 1 19 9 | 
+160
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (5, 3).
+- Pac 1 moved to (17, 7).
+CanisLupus:
+- Pac 1 moved to (24, 11).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (4, 3).
+- Pac 1 moved to (18, 7).
+Standard Error Stream:
+[in] 120 123
+[in] 2
+[in] 0 1 4 3 ROCK 4 8
+[in] 1 1 18 7 PAPER 4 8
+[in] 0
+Standard Output Stream:
+MOVE 0 5 3 | MOVE 1 20 9 | 
+162
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (5, 3).
+- Pac 1 moved to (19, 7).
+CanisLupus:
+- Pac 1 moved to (23, 11).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 1 moved to (19, 8).
+Standard Error Stream:
+[in] 120 123
+[in] 2
+[in] 0 1 5 3 ROCK 3 7
+[in] 1 1 19 8 PAPER 3 7
+[in] 0
+Standard Output Stream:
+MOVE 0 5 2 | MOVE 1 21 9 | 
+164
+199
+Standard Output Stream:
+MOVE 1 23 10 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (5, 2).
+- Pac 1 moved to (19, 9).
+CanisLupus:
+- Pac 1 moved to (23, 10).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 1 moved to (20, 9).
+Standard Error Stream:
+[in] 120 124
+[in] 2
+[in] 0 1 5 2 ROCK 2 6
+[in] 1 1 20 9 PAPER 2 6
+[in] 0
+Standard Output Stream:
+MOVE 0 5 1 | MOVE 1 21 10 | 
+166
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (5, 1).
+- Pac 1 moved to (21, 9).
+CanisLupus:
+- Pac 1 moved to (23, 11).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 1 moved to (21, 10).
+Standard Error Stream:
+[in] 120 124
+[in] 2
+[in] 0 1 5 1 ROCK 1 5
+[in] 1 1 21 10 PAPER 1 5
+[in] 1
+[in] 21 12 1
+Standard Output Stream:
+MOVE 0 21 12 | MOVE 1 21 11 | 
+168
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (6, 1).
+- Pac 1 moved to (21, 11).
+CanisLupus:
+- Pac 1 moved to (22, 11).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (7, 1).
+Standard Error Stream:
+[in] 120 124
+[in] 3
+[in] 0 1 7 1 ROCK 0 4
+[in] 1 1 21 11 PAPER 0 4
+[in] 1 0 22 11 PAPER 0 0
+[in] 1
+[in] 21 12 1
+Standard Output Stream:
+MOVE 0 21 12 | MOVE 1 22 11 | 
+170
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (7, 2).
+- Pac 1 is blocked from entering (22, 11).
+CanisLupus:
+- Pac 1 is blocked from entering (21, 11).
+Standard Error Stream:
+[in] 120 124
+[in] 3
+[in] 0 1 7 2 ROCK 0 3
+[in] 1 1 21 11 PAPER 0 3
+[in] 1 0 22 11 PAPER 0 0
+[in] 1
+[in] 21 12 1
+Standard Output Stream:
+MOVE 0 21 12 | MOVE 1 23 11 | 
+171
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (7, 3).
+- Pac 1 is blocked from entering (22, 11).
+CanisLupus:
+- Pac 1 is blocked from entering (21, 11).
+Standard Error Stream:
+[in] 120 124
+[in] 3
+[in] 0 1 7 3 ROCK 0 2
+[in] 1 1 21 11 PAPER 0 2
+[in] 1 0 22 11 PAPER 0 0
+[in] 1
+[in] 21 12 1
+Standard Output Stream:
+MOVE 0 21 12 | MOVE 1 24 11 | 
+172
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (8, 3).
+- Pac 1 is blocked from entering (22, 11).
+CanisLupus:
+- Pac 1 is blocked from entering (21, 11).
+Standard Error Stream:
+[in] 120 124
+[in] 3
+[in] 0 1 8 3 ROCK 0 1
+[in] 1 1 21 11 PAPER 0 1
+[in] 1 0 22 11 PAPER 0 0
+[in] 1
+[in] 21 12 1
+Standard Output Stream:
+MOVE 0 21 12 | MOVE 1 25 11 | 
+173
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (9, 3).
+- Pac 1 is blocked from entering (22, 11).
+CanisLupus:
+- Pac 1 is blocked from entering (21, 11).
+Standard Error Stream:
+[in] 120 124
+[in] 3
+[in] 0 1 9 3 ROCK 0 0
+[in] 1 1 21 11 PAPER 0 0
+[in] 1 0 22 11 PAPER 0 0
+[in] 1
+[in] 21 12 1
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+174
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+CanisLupus:
+- Pac 1 is blocked from entering (21, 11).
+Standard Error Stream:
+[in] 120 124
+[in] 3
+[in] 0 1 9 3 ROCK 5 9
+[in] 1 1 21 11 PAPER 5 9
+[in] 1 0 22 11 PAPER 0 0
+[in] 1
+[in] 21 12 1
+Standard Output Stream:
+MOVE 0 21 12 | MOVE 1 21 12 | 
+175
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (10, 3).
+- Pac 1 moved to (21, 12).
+CanisLupus:
+- Pac 1 moved to (21, 11).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (11, 3).
+Standard Error Stream:
+[in] 121 124
+[in] 3
+[in] 0 1 11 3 ROCK 4 8
+[in] 1 1 21 12 PAPER 4 8
+[in] 1 0 21 11 PAPER 0 0
+[in] 0
+Standard Output Stream:
+MOVE 0 6 1 | MOVE 1 25 9 | 
+177
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (10, 3).
+- Pac 1 moved to (21, 11).
+CanisLupus:
+- Pac 1 moved to (20, 11).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (9, 3).
+- Pac 1 moved to (22, 11).
+Standard Error Stream:
+[in] 121 124
+[in] 3
+[in] 0 1 9 3 ROCK 3 7
+[in] 1 1 22 11 PAPER 3 7
+[in] 1 0 20 11 PAPER 0 0
+[in] 0
+Standard Output Stream:
+MOVE 0 7 1 | MOVE 1 25 8 | 
+179
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (8, 3).
+- Pac 1 moved to (23, 11).
+CanisLupus:
+- Pac 1 moved to (19, 11).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (7, 3).
+- Pac 1 moved to (23, 10).
+Standard Error Stream:
+[in] 121 124
+[in] 2
+[in] 0 1 7 3 ROCK 2 6
+[in] 1 1 23 10 PAPER 2 6
+[in] 0
+Standard Output Stream:
+MOVE 0 7 2 | MOVE 1 25 7 | 
+181
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (7, 2).
+- Pac 1 moved to (23, 9).
+CanisLupus:
+- Pac 1 moved to (19, 10).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 1 moved to (24, 9).
+Standard Error Stream:
+[in] 121 124
+[in] 2
+[in] 0 1 7 2 ROCK 1 5
+[in] 1 1 24 9 PAPER 1 5
+[in] 2
+[in] 26 9 1
+[in] 27 9 1
+Standard Output Stream:
+MOVE 0 26 9 | MOVE 1 27 9 | 
+183
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (7, 3).
+- Pac 1 moved to (25, 9).
+CanisLupus:
+- Pac 1 moved to (19, 9).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (8, 3).
+- Pac 1 moved to (26, 9).
+Standard Error Stream:
+[in] 122 124
+[in] 2
+[in] 0 1 8 3 ROCK 0 4
+[in] 1 1 26 9 PAPER 0 4
+[in] 1
+[in] 27 9 1
+Standard Output Stream:
+MOVE 0 27 9 | MOVE 1 26 7 | 
+185
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (9, 3).
+- Pac 1 moved to (25, 9).
+CanisLupus:
+- Pac 1 moved to (19, 8).
+Standard Error Stream:
+[in] 122 124
+[in] 2
+[in] 0 1 9 3 ROCK 0 3
+[in] 1 1 25 9 PAPER 0 3
+[in] 1
+[in] 27 9 1
+Standard Output Stream:
+MOVE 0 27 9 | MOVE 1 27 7 | 
+186
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (10, 3).
+- Pac 1 moved to (25, 8).
+CanisLupus:
+- Pac 1 moved to (19, 7).
+Standard Error Stream:
+[in] 122 124
+[in] 2
+[in] 0 1 10 3 ROCK 0 2
+[in] 1 1 25 8 PAPER 0 2
+[in] 0
+Standard Output Stream:
+MOVE 0 7 3 | MOVE 1 28 7 | 
+187
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (9, 3).
+- Pac 1 moved to (25, 7).
+CanisLupus:
+- Pac 1 moved to (18, 7).
+Standard Error Stream:
+[in] 122 124
+[in] 2
+[in] 0 1 9 3 ROCK 0 1
+[in] 1 1 25 7 PAPER 0 1
+[in] 0
+Standard Output Stream:
+MOVE 0 8 3 | MOVE 1 29 7 | 
+188
+199
+Standard Output Stream:
+MOVE 1 17 7 R
+Game Summary:
+grsoares:
+- Pac 0 moved to (8, 3).
+- Pac 1 moved to (26, 7).
+CanisLupus:
+- Pac 1 moved to (17, 7).
+Standard Error Stream:
+[in] 122 124
+[in] 2
+[in] 0 1 8 3 ROCK 0 0
+[in] 1 1 26 7 PAPER 0 0
+[in] 0
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+189
+199
+Standard Output Stream:
+MOVE 1 17 6 C
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+CanisLupus:
+- Pac 1 moved to (17, 6).
+Standard Error Stream:
+[in] 122 125
+[in] 2
+[in] 0 1 8 3 ROCK 5 9
+[in] 1 1 26 7 PAPER 5 9
+[in] 0
+Standard Output Stream:
+MOVE 0 10 3 | MOVE 1 29 9 | 
+190
+199
+Standard Output Stream:
+MOVE 1 17 5 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (9, 3).
+- Pac 1 moved to (27, 7).
+CanisLupus:
+- Pac 1 moved to (17, 5).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (10, 3).
+- Pac 1 moved to (28, 7).
+Standard Error Stream:
+[in] 122 126
+[in] 2
+[in] 0 1 10 3 ROCK 4 8
+[in] 1 1 28 7 PAPER 4 8
+[in] 0
+Standard Output Stream:
+MOVE 0 11 3 | MOVE 1 29 10 | 
+192
+199
+Standard Output Stream:
+MOVE 1 17 4 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (11, 3).
+- Pac 1 moved to (29, 7).
+CanisLupus:
+- Pac 1 moved to (17, 4).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 1 moved to (29, 8).
+Standard Error Stream:
+[in] 122 127
+[in] 2
+[in] 0 1 11 3 ROCK 3 7
+[in] 1 1 29 8 PAPER 3 7
+[in] 3
+[in] 29 6 1
+[in] 29 5 1
+[in] 29 4 1
+Standard Output Stream:
+MOVE 0 29 4 | MOVE 1 29 6 | 
+194
+199
+Standard Output Stream:
+MOVE 1 17 3 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (10, 3).
+- Pac 1 moved to (29, 7).
+CanisLupus:
+- Pac 1 moved to (17, 3).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (9, 3).
+- Pac 1 moved to (29, 6).
+Standard Error Stream:
+[in] 123 128
+[in] 2
+[in] 0 1 9 3 ROCK 2 6
+[in] 1 1 29 6 PAPER 2 6
+[in] 2
+[in] 29 5 1
+[in] 29 4 1
+Standard Output Stream:
+MOVE 0 29 4 | MOVE 1 29 5 | 
+196
+199
+Standard Output Stream:
+MOVE 1 17 8 C
+Game Summary:
+grsoares:
+- Pac 0 moved to (8, 3).
+- Pac 1 moved to (29, 5).
+CanisLupus:
+- Pac 1 moved to (17, 4).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (7, 3).
+Standard Error Stream:
+[in] 124 128
+[in] 2
+[in] 0 1 7 3 ROCK 1 5
+[in] 1 1 29 5 PAPER 1 5
+[in] 1
+[in] 29 4 1
+TypeError: Cannot read property 'x' of undefined
+at Answer.js. on line 114
+198
+199
+Standard Output Stream:
+MOVE 1 17 8 C
+Game Summary:
+grsoares has not provided 1 lines in time
+CanisLupus:
+- Pac 1 moved to (17, 5).
+Game Summary:
+Only CanisLupus still has pacs standing!
+CanisLupus wins with 148 pellets
