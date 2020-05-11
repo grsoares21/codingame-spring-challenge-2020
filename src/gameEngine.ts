@@ -170,7 +170,7 @@ export function findPathToDestinations(
       }
     });
     pacPaths[pacId] = findPath(
-      map,
+      newMap,
       currentPac.position,
       pacDestinations[pacId]
     );
