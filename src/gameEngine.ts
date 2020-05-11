@@ -72,12 +72,11 @@ export interface PacDestination {
   pelletDistanceList: PelletDistance[];
 }
 
+let pacLastRandomDestinations: { [pacId: number]: Point } = {};
+
 export function findPacDestinations(
   visiblePacs: Pac[],
   visiblePellets: Pellet[],
-  oldVisiblePacs: Pac[],
-  bumpIterations: number[],
-  lastRandomDestinationPath: { [pacId: number]: Point[] },
   map: string[][]
 ): { [pacId: number]: Point } {
   let pacDestinations: { [key: number]: PacDestination } = {};
@@ -115,24 +114,14 @@ export function findPacDestinations(
         pelletPoint
       );
 
-      //TODO: remove this logic
       if (
-        (pelletDistance < pacDestinations[currentVisiblePac.id].distance ||
-          value > pacDestinations[currentVisiblePac.id].value) &&
-        (!oldVisiblePacs[j] ||
-          !areEqual(currentVisiblePac.position, oldVisiblePacs[j].position))
+        pelletDistance < pacDestinations[currentVisiblePac.id].distance ||
+        value > pacDestinations[currentVisiblePac.id].value
       ) {
         pacDestinations[currentVisiblePac.id].value = value;
         pacDestinations[currentVisiblePac.id].distance = pelletDistance;
         pacDestinations[currentVisiblePac.id].destinationPoint = pelletPoint;
-      } else if (
-        oldVisiblePacs[j] &&
-        areEqual(currentVisiblePac.position, oldVisiblePacs[j].position)
-      ) {
-        pacDestinations[currentVisiblePac.id].pelletDistanceList.push({
-          pelletPoint,
-          pelletDistance,
-        });
+        pacLastRandomDestinations[currentVisiblePac.id] = null;
       }
     }
 
@@ -140,49 +129,17 @@ export function findPacDestinations(
       let pacId = visiblePacs[i].id;
       let pacDestination = pacDestinations[pacId];
       if (!pacDestination.destinationPoint) {
-        pacDestination.pelletDistanceList.sort(
-          (pelletA, pelletB) => pelletA.pelletDistance - pelletB.pelletDistance
-        );
-        if (pacDestination.pelletDistanceList.length > bumpIterations[i]) {
-          pacDestination.destinationPoint =
-            pacDestination.pelletDistanceList[bumpIterations[i]].pelletPoint;
-          bumpIterations[i]++;
-        } else if (pacDestination.pelletDistanceList.length > 0) {
-          pacDestination.destinationPoint =
-            pacDestination.pelletDistanceList[0].pelletPoint;
-        } else {
-          const lastRandomDstPath = lastRandomDestinationPath[pacId];
+        // no pellets visible
+        const lastRandomDestination = pacLastRandomDestinations[pacId];
 
-          if (
-            !lastRandomDstPath ||
-            lastRandomDstPath.length === 0 ||
-            areEqual(
-              lastRandomDstPath[lastRandomDstPath.length - 1],
-              visiblePacs[i].position
-            )
-          ) {
-            const randomDestination = findRandomAvailablePosition(map);
-            // TODO: store all pacs position, not only yours
-            let newMap = map.map((line) => [...line]);
-            visiblePacs
-              .map((p) => p.position)
-              .forEach((point) => {
-                if (!areEqual(point, visiblePacs[i].position)) {
-                  newMap[point.y][point.x] = "#";
-                }
-              });
-            lastRandomDestinationPath[pacId] = findPath(
-              map,
-              visiblePacs[i].position,
-              randomDestination
-            ) || [randomDestination];
-          }
-
-          pacDestination.destinationPoint = lastRandomDestinationPath[pacId][0];
-          lastRandomDestinationPath[pacId].splice(0, 1);
+        if (
+          !lastRandomDestination ||
+          areEqual(pacLastRandomDestinations[pacId], visiblePacs[i].position)
+        ) {
+          pacLastRandomDestinations[pacId] = findRandomAvailablePosition(map);
         }
-      } else {
-        bumpIterations[i] = 1;
+
+        pacDestination.destinationPoint = pacLastRandomDestinations[pacId];
       }
     }
 

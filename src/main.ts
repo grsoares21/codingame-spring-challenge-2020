@@ -19,24 +19,11 @@ import {
 
 const { map } = parseFirstInput();
 
-let oldVisiblePacs: Pac[] = [];
-let bumpIterations: number[] = [];
-let lastRandomDestinationPath: { [pacId: number]: Point[] } = {};
 // game loop
 while (true) {
   let { visiblePellets, visiblePacs } = parseTurnInput();
 
-  // TODO: refactor this and separate destination logic from path logic
-
-  const pacDestinations = findPacDestinations(
-    visiblePacs,
-    visiblePellets,
-    oldVisiblePacs,
-    bumpIterations,
-    lastRandomDestinationPath,
-    map
-  );
-
+  const pacDestinations = findPacDestinations(visiblePacs, visiblePellets, map);
   const pacPaths = findPathToDestinations(pacDestinations, visiblePacs, map);
 
   let orders = "";
@@ -45,13 +32,20 @@ while (true) {
     if (pac.abilityCooldown === 0) {
       orders += `SPEED ${pac.id} | `;
     } else {
-      const destinationPoint = pacPaths[pac.id][0];
+      let destinationPoint: Point;
+      if (pacPaths[pac.id]) {
+        destinationPoint =
+          pacPaths[pac.id].length > 1
+            ? pacPaths[pac.id][1]
+            : pacPaths[pac.id][0];
+      } else {
+        destinationPoint = pac.position;
+      }
       orders += `MOVE ${pac.id} ${destinationPoint.x} ${destinationPoint.y} | `;
     }
   });
 
   console.log(orders);
-  oldVisiblePacs = visiblePacs;
   // Write an action using console.log()
   // To debug: console.error('Debug messages...');
 }
