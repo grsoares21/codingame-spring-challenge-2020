@@ -161,19 +161,23 @@ export function findPathToDestinations(
 ): { [pacId: number]: Point[] } {
   let pacPaths: { [pacId: number]: Point[] } = {};
   let pacPoints = pacList.map((pac) => pac.position);
+  let newMap = map.map((line) => [...line]);
+  pacPoints.forEach((point) => {
+    newMap[point.y][point.x] = "#";
+  });
   for (let pacId of Object.keys(pacDestinations).map((key) => parseInt(key))) {
     let currentPac = pacList.find((pac) => pac.id === pacId);
-    let newMap = map.map((line) => [...line]);
-    pacPoints.forEach((point) => {
-      if (!areEqual(point, currentPac.position)) {
-        newMap[point.y][point.x] = "#";
-      }
-    });
-    pacPaths[pacId] = findPath(
+    newMap[currentPac.position.y][currentPac.position.x] = " ";
+    const pacPath = findPath(
       newMap,
       currentPac.position,
       pacDestinations[pacId]
     );
+    pacPaths[pacId] = pacPath;
+    if (pacPath) {
+      newMap[pacPath[0].y][pacPath[0].x] = "#";
+    }
+    newMap[currentPac.position.y][currentPac.position.x] = "#";
   }
 
   return pacPaths;
