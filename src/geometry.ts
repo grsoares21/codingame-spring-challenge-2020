@@ -26,7 +26,6 @@ export function findRandomAvailablePosition(map: string[][]): Point {
 
 export function findPath(
   map: string[][],
-  pacPoints: Point[],
   srcPoint: Point,
   dstPoint: Point
 ): Point[] {
@@ -63,12 +62,6 @@ export function findPath(
     }
   }
 
-  pacPoints.forEach((point) => {
-    if (!areEqual(point, srcPoint)) {
-      visitedPointsMatrix[point.y][point.x] = null;
-    }
-  });
-
   visitedPointsMatrix[srcPoint.y][srcPoint.x].distanceToSrc = 0;
   pointsQueue.queue(visitedPointsMatrix[srcPoint.y][srcPoint.x]);
 
@@ -83,6 +76,7 @@ export function findPath(
         path = [currentPathPoint.throughPoint, ...path];
         currentPathPoint = currentPathPoint.throughPoint;
       }
+      path.splice(0, 1); // delete first point as it is the src point
 
       return path.map((visitingPoint) => visitingPoint.point);
     }

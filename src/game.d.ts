@@ -10,15 +10,16 @@ interface Pellet {
   position: Point;
   value: number;
 }
-interface PelletDistance {
-  pelletPoint: Point;
-  pelletDistance: number;
+
+interface GameState {
+  visiblePellets: Pellet[];
+  visiblePacs: Pac[];
+  myScore: number;
+  opponentScore: number;
 }
 
-interface PacDestination {
-  id: number;
-  destinationPoint: Point;
-  distance: number;
-  value: number;
-  pelletDistanceList: PelletDistance[];
+interface GameConditions {
+  map: string[][];
+  width: number;
+  height: number;
 }
