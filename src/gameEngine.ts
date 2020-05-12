@@ -124,32 +124,32 @@ export function findPacDestinations(
         pacLastRandomDestinations[currentVisiblePac.id] = null;
       }
     }
-
-    for (let i = 0; i < visiblePacs.length; i++) {
-      let pacId = visiblePacs[i].id;
-      let pacDestination = pacDestinations[pacId];
-      if (!pacDestination.destinationPoint) {
-        // no pellets visible
-        const lastRandomDestination = pacLastRandomDestinations[pacId];
-
-        if (
-          !lastRandomDestination ||
-          areEqual(pacLastRandomDestinations[pacId], visiblePacs[i].position)
-        ) {
-          pacLastRandomDestinations[pacId] = findRandomAvailablePosition(map);
-        }
-
-        pacDestination.destinationPoint = pacLastRandomDestinations[pacId];
-      }
-    }
-
-    let pacDestinationPoints: { [pacId: number]: Point } = {};
-    for (let { id, destinationPoint } of Object.values(pacDestinations)) {
-      pacDestinationPoints[id] = destinationPoint;
-    }
-
-    return pacDestinationPoints;
   }
+
+  for (let i = 0; i < visiblePacs.length; i++) {
+    let pacId = visiblePacs[i].id;
+    let pacDestination = pacDestinations[pacId];
+    if (!pacDestination.destinationPoint) {
+      // no pellets visible
+      const lastRandomDestination = pacLastRandomDestinations[pacId];
+
+      if (
+        !lastRandomDestination ||
+        areEqual(pacLastRandomDestinations[pacId], visiblePacs[i].position)
+      ) {
+        pacLastRandomDestinations[pacId] = findRandomAvailablePosition(map);
+      }
+
+      pacDestination.destinationPoint = pacLastRandomDestinations[pacId];
+    }
+  }
+
+  let pacDestinationPoints: { [pacId: number]: Point } = {};
+  for (let { id, destinationPoint } of Object.values(pacDestinations)) {
+    pacDestinationPoints[id] = destinationPoint;
+  }
+
+  return pacDestinationPoints;
 }
 
 export function findPathToDestinations(
