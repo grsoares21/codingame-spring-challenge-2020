@@ -13,7 +13,8 @@ interface Pellet {
 
 interface GameState {
   visiblePellets: Pellet[];
-  visiblePacs: Pac[];
+  myPacs: Pac[];
+  enemyPacs: Pac[];
   myScore: number;
   opponentScore: number;
 }

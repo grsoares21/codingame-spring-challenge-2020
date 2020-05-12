@@ -15,20 +15,34 @@ import {
 } from "./gameEngine";
 
 //storeInput();
-//runLocally("./src/replays/replay_2.txt");
+//runLocally("./src/replays/replay_4.txt");
 
 const { map } = parseFirstInput();
 
 // game loop
 while (true) {
-  let { visiblePellets, visiblePacs } = parseTurnInput();
+  let { visiblePellets, myPacs, enemyPacs } = parseTurnInput();
 
-  const pacDestinations = findPacDestinations(visiblePacs, visiblePellets, map);
-  const pacPaths = findPathToDestinations(pacDestinations, visiblePacs, map);
+  /*if (
+    myPacs.some(
+      (pac) => pac.id === 0 && pac.position.x === 14 && pac.position.y === 1
+    )
+  ) {
+    debugger;
+  }*/
+  const pacDestinations = findPacDestinations(myPacs, visiblePellets, map);
+  //console.error(`Pac destinations: ${JSON.stringify(pacDestinations)}`);
+  const pacPaths = findPathToDestinations(
+    pacDestinations,
+    myPacs,
+    enemyPacs,
+    map
+  );
+  //console.error(`Path paths: ${JSON.stringify(pacPaths)}`);
 
   let orders = "";
 
-  visiblePacs.forEach((pac) => {
+  myPacs.forEach((pac) => {
     if (pac.abilityCooldown === 0) {
       orders += `SPEED ${pac.id} | `;
     } else {
