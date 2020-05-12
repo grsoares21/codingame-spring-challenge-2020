@@ -27,7 +27,8 @@ export function parseTurnInput(): GameState {
   const opponentScore: number = parseInt(inputs[1]);
   const visiblePacCount: number = parseInt(readline()); // all your pacs and enemy pacs in sight
 
-  let visiblePacs: Pac[] = [];
+  let myPacs: Pac[] = [];
+  let enemyPacs: Pac[] = [];
 
   for (let i = 0; i < visiblePacCount; i++) {
     var inputs: string[] = readline().split(" ");
@@ -39,7 +40,9 @@ export function parseTurnInput(): GameState {
 
     // TODO: add all pacs tothe list
     if (mine) {
-      visiblePacs.push({ id: pacId, position: { x, y }, abilityCooldown });
+      myPacs.push({ id: pacId, position: { x, y }, abilityCooldown });
+    } else {
+      enemyPacs.push({ id: pacId, position: { x, y }, abilityCooldown });
     }
     //const typeId: string = inputs[4]; // unused in wood leagues
     //const speedTurnsLeft: number = parseInt(inputs[5]); // unused in wood leagues
@@ -56,7 +59,7 @@ export function parseTurnInput(): GameState {
     visiblePellets.push({ position, value });
   }
 
-  return { visiblePellets, visiblePacs, myScore, opponentScore };
+  return { visiblePellets, myPacs, myScore, opponentScore, enemyPacs };
 }
 
 interface PelletDistance {
@@ -75,13 +78,13 @@ export interface PacDestination {
 let pacLastRandomDestinations: { [pacId: number]: Point } = {};
 
 export function findPacDestinations(
-  visiblePacs: Pac[],
+  myPacs: Pac[],
   visiblePellets: Pellet[],
   map: string[][]
 ): { [pacId: number]: Point } {
-  let pacDestinations: { [key: number]: PacDestination } = {};
+  let pacDestinations: { [pacId: number]: PacDestination } = {};
 
-  visiblePacs.forEach((pac) => {
+  myPacs.forEach((pac) => {
     pacDestinations[pac.id] = {
       id: pac.id,
       destinationPoint: null,
@@ -91,43 +94,54 @@ export function findPacDestinations(
     };
   });
 
-  for (let j = 0; j < visiblePacs.length; j++) {
-    let currentVisiblePac = visiblePacs[j];
-    for (let i = 0; i < visiblePellets.length; i++) {
-      let pelletAvailable = true;
-      let pelletPoint = visiblePellets[i].position;
-      let { value } = visiblePellets[i];
+  let pelletPool = [...visiblePellets];
 
-      for (let { destinationPoint } of Object.values(pacDestinations)) {
-        if (destinationPoint && areEqual(destinationPoint, pelletPoint)) {
-          pelletAvailable = false;
-          break;
-        }
-      }
+  while (pelletPool.length > 0) {
+    let currentPellet = pelletPool.pop();
+    myPacs.sort(
+      (pacA, pacB) =>
+        manhattanDistance(pacA.position, currentPellet.position) -
+        manhattanDistance(pacB.position, currentPellet.position)
+    );
 
-      if (!pelletAvailable) {
-        continue;
-      }
-
-      const pelletDistance = manhattanDistance(
-        currentVisiblePac.position,
-        pelletPoint
+    for (let i = 0; i < myPacs.length; i++) {
+      let currentPac = myPacs[i];
+      let currentPacDistance = manhattanDistance(
+        currentPellet.position,
+        currentPac.position
       );
-
-      if (
-        pelletDistance < pacDestinations[currentVisiblePac.id].distance ||
-        value > pacDestinations[currentVisiblePac.id].value
+      if (!pacDestinations[currentPac.id].destinationPoint) {
+        pacDestinations[currentPac.id].destinationPoint =
+          currentPellet.position;
+        pacDestinations[currentPac.id].distance = currentPacDistance;
+        pacDestinations[currentPac.id].value = currentPellet.value;
+        pacLastRandomDestinations[currentPac.id] = null;
+        break;
+      } else if (
+        currentPellet.value > pacDestinations[currentPac.id].value ||
+        (currentPellet.value === pacDestinations[currentPac.id].value &&
+          currentPacDistance < pacDestinations[currentPac.id].distance)
       ) {
-        pacDestinations[currentVisiblePac.id].value = value;
-        pacDestinations[currentVisiblePac.id].distance = pelletDistance;
-        pacDestinations[currentVisiblePac.id].destinationPoint = pelletPoint;
-        pacLastRandomDestinations[currentVisiblePac.id] = null;
+        pelletPool.push(
+          visiblePellets.find((p) =>
+            areEqual(
+              pacDestinations[currentPac.id].destinationPoint,
+              p.position
+            )
+          )
+        );
+        pacDestinations[currentPac.id].destinationPoint =
+          currentPellet.position;
+        pacDestinations[currentPac.id].distance = currentPacDistance;
+        pacDestinations[currentPac.id].value = currentPellet.value;
+        pacLastRandomDestinations[currentPac.id] = null;
+        break;
       }
     }
   }
 
-  for (let i = 0; i < visiblePacs.length; i++) {
-    let pacId = visiblePacs[i].id;
+  for (let i = 0; i < myPacs.length; i++) {
+    let pacId = myPacs[i].id;
     let pacDestination = pacDestinations[pacId];
     if (!pacDestination.destinationPoint) {
       // no pellets visible
@@ -135,7 +149,7 @@ export function findPacDestinations(
 
       if (
         !lastRandomDestination ||
-        areEqual(pacLastRandomDestinations[pacId], visiblePacs[i].position)
+        areEqual(pacLastRandomDestinations[pacId], myPacs[i].position)
       ) {
         pacLastRandomDestinations[pacId] = findRandomAvailablePosition(map);
       }
@@ -156,17 +170,22 @@ export function findPathToDestinations(
   pacDestinations: {
     [pacId: number]: Point;
   },
-  pacList: Pac[],
+  myPacs: Pac[],
+  enemyPacs: Pac[],
   map: string[][]
 ): { [pacId: number]: Point[] } {
   let pacPaths: { [pacId: number]: Point[] } = {};
-  let pacPoints = pacList.map((pac) => pac.position);
+  let pacPoints = myPacs.map((pac) => pac.position);
+  let enemyPacPoints = enemyPacs.map((pac) => pac.position);
   let newMap = map.map((line) => [...line]);
   pacPoints.forEach((point) => {
     newMap[point.y][point.x] = "#";
   });
+  enemyPacPoints.forEach((point) => {
+    newMap[point.y][point.x] = "#";
+  });
   for (let pacId of Object.keys(pacDestinations).map((key) => parseInt(key))) {
-    let currentPac = pacList.find((pac) => pac.id === pacId);
+    let currentPac = myPacs.find((pac) => pac.id === pacId);
     newMap[currentPac.position.y][currentPac.position.x] = " ";
     const pacPath = findPath(
       newMap,
