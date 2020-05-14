@@ -28,7 +28,7 @@ export function findPath(
   map: string[][],
   srcPoint: Point,
   dstPoint: Point
-): Point[] {
+): { path: Point[]; distance: number } {
   type VisitingPoint = {
     point: Point;
     visited: boolean;
@@ -76,10 +76,14 @@ export function findPath(
         path = [currentPathPoint.throughPoint, ...path];
         currentPathPoint = currentPathPoint.throughPoint;
       }
-      path.splice(0, 1); // delete first point as it is the src point
 
-      return path.map((visitingPoint) => visitingPoint.point);
+      return {
+        path: path.map((visitingPoint) => visitingPoint.point),
+        distance: path[path.length - 1].distanceToSrc,
+      };
     }
+
+    const width = visitedPointsMatrix[currentPointToVisit.point.y].length;
 
     const northPoint =
       visitedPointsMatrix[currentPointToVisit.point.y - 1] &&
@@ -93,11 +97,13 @@ export function findPath(
       ];
     const eastPoint =
       visitedPointsMatrix[currentPointToVisit.point.y][
-        currentPointToVisit.point.x + 1
+        (currentPointToVisit.point.x + 1) % width
       ];
     const westPoint =
       visitedPointsMatrix[currentPointToVisit.point.y][
-        currentPointToVisit.point.x - 1
+        currentPointToVisit.point.x -
+          1 +
+          (currentPointToVisit.point.x - 1 < 0 ? width : 0)
       ];
     if (northPoint) {
       if (northPoint.distanceToSrc > currentPointToVisit.distanceToSrc + 1) {

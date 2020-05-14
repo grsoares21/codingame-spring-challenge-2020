@@ -1,9 +1,13 @@
 import { Point } from "./geometry";
 
+type PacType = "SCISSORS" | "PAPER" | "ROCK";
+
 interface Pac {
   position: Point;
   id: number;
   abilityCooldown: number;
+  speedTurnsLeft: number;
+  type: PacType;
 }
 
 interface Pellet {

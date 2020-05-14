@@ -1,4 +1,4 @@
-import { GameConditions, GameState, Pellet, Pac } from "./game";
+import { GameConditions, GameState, Pellet, Pac, PacType } from "./game";
 import {
   Point,
   areEqual,
@@ -36,16 +36,27 @@ export function parseTurnInput(): GameState {
     const mine: boolean = inputs[1] !== "0"; // true if this pac is yours
     const x: number = parseInt(inputs[2]); // position in the grid
     const y: number = parseInt(inputs[3]); // position in the grid
-    const abilityCooldown: number = parseInt(inputs[6]); // unused in wood leagues
+    const type: PacType = inputs[4] as PacType;
+    const speedTurnsLeft: number = parseInt(inputs[5]);
+    const abilityCooldown: number = parseInt(inputs[6]);
 
-    // TODO: add all pacs tothe list
     if (mine) {
-      myPacs.push({ id: pacId, position: { x, y }, abilityCooldown });
+      myPacs.push({
+        id: pacId,
+        position: { x, y },
+        abilityCooldown,
+        type,
+        speedTurnsLeft,
+      });
     } else {
-      enemyPacs.push({ id: pacId, position: { x, y }, abilityCooldown });
+      enemyPacs.push({
+        id: pacId,
+        position: { x, y },
+        abilityCooldown,
+        type,
+        speedTurnsLeft,
+      });
     }
-    //const typeId: string = inputs[4]; // unused in wood leagues
-    //const speedTurnsLeft: number = parseInt(inputs[5]); // unused in wood leagues
   }
   const visiblePelletCount: number = parseInt(readline()); // all pellets in sight
 
@@ -98,18 +109,30 @@ export function findPacDestinations(
 
   while (pelletPool.length > 0) {
     let currentPellet = pelletPool.pop();
-    myPacs.sort(
-      (pacA, pacB) =>
-        manhattanDistance(pacA.position, currentPellet.position) -
-        manhattanDistance(pacB.position, currentPellet.position)
-    );
+    myPacs.sort((pacA, pacB) => {
+      let pathPacA = findPath(map, pacA.position, currentPellet.position);
+      let pathPacB = findPath(map, pacB.position, currentPellet.position);
+
+      return (
+        (pathPacA?.distance ?? Number.POSITIVE_INFINITY) -
+        (pathPacB?.distance ?? Number.POSITIVE_INFINITY)
+      );
+    });
 
     for (let i = 0; i < myPacs.length; i++) {
       let currentPac = myPacs[i];
-      let currentPacDistance = manhattanDistance(
-        currentPellet.position,
-        currentPac.position
+      let currentPacPath = findPath(
+        map,
+        currentPac.position,
+        currentPellet.position
       );
+      let currentPacDistance = currentPacPath
+        ? currentPacPath.distance
+        : Number.POSITIVE_INFINITY;
+
+      if (currentPacDistance > 10) {
+        continue;
+      }
       if (!pacDestinations[currentPac.id].destinationPoint) {
         pacDestinations[currentPac.id].destinationPoint =
           currentPellet.position;
@@ -120,7 +143,12 @@ export function findPacDestinations(
       } else if (
         currentPellet.value > pacDestinations[currentPac.id].value ||
         (currentPellet.value === pacDestinations[currentPac.id].value &&
-          currentPacDistance < pacDestinations[currentPac.id].distance)
+          currentPacDistance < pacDestinations[currentPac.id].distance &&
+          currentPac.speedTurnsLeft === 0) ||
+        (currentPac.speedTurnsLeft > 0 &&
+          currentPellet.value === pacDestinations[currentPac.id].value &&
+          currentPacDistance < pacDestinations[currentPac.id].distance &&
+          currentPacDistance > 1)
       ) {
         pelletPool.push(
           visiblePellets.find((p) =>
@@ -192,12 +220,44 @@ export function findPathToDestinations(
       currentPac.position,
       pacDestinations[pacId]
     );
-    pacPaths[pacId] = pacPath;
-    if (pacPath) {
-      newMap[pacPath[0].y][pacPath[0].x] = "#";
+
+    pacPaths[pacId] = pacPath ? pacPath.path : null;
+    if (pacPath?.path.length > 1) {
+      newMap[pacPath.path[1].y][pacPath.path[1].x] = "#";
     }
     newMap[currentPac.position.y][currentPac.position.x] = "#";
   }
 
   return pacPaths;
 }
+
+export function getAbility(pac: Pac, enemyPacs: Pac[]): string {
+  if (enemyPacs.length > 0) {
+    enemyPacs.sort(
+      (enemyPacA, enemyPacB) =>
+        manhattanDistance(enemyPacA.position, pac.position) -
+        manhattanDistance(enemyPacB.position, pac.position)
+    );
+
+    if (
+      manhattanDistance(enemyPacs[0].position, pac.position) <= 3 &&
+      pac.type !== typeIsKilledBy[enemyPacs[0].type]
+    ) {
+      return `SWITCH ${pac.id} ${typeIsKilledBy[enemyPacs[0].type]}`;
+    }
+  }
+
+  return `SPEED ${pac.id}`;
+}
+
+const typeKills = {
+  ROCK: "SCISSORS",
+  PAPER: "ROCK",
+  SCISSORS: "PAPER",
+};
+
+const typeIsKilledBy = {
+  ROCK: "PAPER",
+  PAPER: "SCISSORS",
+  SCISSORS: "ROCK",
+};

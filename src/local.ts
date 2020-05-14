@@ -3,7 +3,6 @@ export const runLocally = (filePath: string) => {
     .readFileSync(filePath, "utf8")
     .trim()
     .split("\n")
-    .map((line: string) => line.trim())
     .filter((line: string) => line.startsWith("[in] "))
     .map((line: string) => line.substr(5))
     .reverse();

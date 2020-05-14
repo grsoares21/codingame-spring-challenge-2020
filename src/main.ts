@@ -12,10 +12,11 @@ import {
   parseTurnInput,
   findPacDestinations,
   findPathToDestinations,
+  getAbility,
 } from "./gameEngine";
 
-//storeInput();
-//runLocally("./src/replays/replay_4.txt");
+storeInput();
+//runLocally("./src/replays/replay_5.txt");
 
 const { map } = parseFirstInput();
 
@@ -25,7 +26,7 @@ while (true) {
 
   /*if (
     myPacs.some(
-      (pac) => pac.id === 0 && pac.position.x === 14 && pac.position.y === 1
+      (pac) => pac.id === 0 && pac.position.x === 22 && pac.position.y === 9
     )
   ) {
     debugger;
@@ -44,12 +45,14 @@ while (true) {
 
   myPacs.forEach((pac) => {
     if (pac.abilityCooldown === 0) {
-      orders += `SPEED ${pac.id} | `;
+      orders += `${getAbility(pac, enemyPacs)} | `;
     } else {
       let destinationPoint: Point;
       if (pacPaths[pac.id]) {
         destinationPoint =
-          pacPaths[pac.id].length > 1
+          pacPaths[pac.id].length > 2
+            ? pacPaths[pac.id][2]
+            : pacPaths[pac.id].length > 1
             ? pacPaths[pac.id][1]
             : pacPaths[pac.id][0];
       } else {
