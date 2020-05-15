@@ -1,6 +1,6 @@
 import { Point } from "./geometry";
 
-type PacType = "SCISSORS" | "PAPER" | "ROCK";
+type PacType = "SCISSORS" | "PAPER" | "ROCK" | "DEAD";
 
 interface Pac {
   position: Point;

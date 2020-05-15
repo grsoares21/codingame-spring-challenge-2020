@@ -24,3 +24,14 @@ export const storeInput = () => {
     return line;
   };
 };
+
+export function prettyPrintNumberMatrix(matrix: number[][]): string {
+  return matrix
+    .map((line) =>
+      line
+        .map((num) => num.toFixed(1))
+        .map((num) => (num === "-Infinity" ? "###" : num))
+        .join(" ")
+    )
+    .join("\n");
+}

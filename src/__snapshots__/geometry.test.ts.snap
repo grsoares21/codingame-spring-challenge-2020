@@ -1,75 +1,65 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should get shortest past with A* 1`] = `
-Array [
-  Object {
-    "x": 1,
-    "y": 0,
-  },
-  Object {
-    "x": 2,
-    "y": 0,
-  },
-  Object {
-    "x": 3,
-    "y": 0,
-  },
-  Object {
-    "x": 3,
-    "y": 1,
-  },
-  Object {
-    "x": 3,
-    "y": 2,
-  },
-  Object {
-    "x": 3,
-    "y": 3,
-  },
-  Object {
-    "x": 4,
-    "y": 3,
-  },
-]
+Object {
+  "distance": 6,
+  "path": Array [
+    Object {
+      "x": 0,
+      "y": 0,
+    },
+    Object {
+      "x": 4,
+      "y": 0,
+    },
+    Object {
+      "x": 3,
+      "y": 0,
+    },
+    Object {
+      "x": 3,
+      "y": 1,
+    },
+    Object {
+      "x": 3,
+      "y": 2,
+    },
+    Object {
+      "x": 3,
+      "y": 3,
+    },
+    Object {
+      "x": 4,
+      "y": 3,
+    },
+  ],
+}
 `;
 
 exports[`should get shortest past with A* with pac in the way 1`] = `
-Array [
-  Object {
-    "x": 0,
-    "y": 1,
-  },
-  Object {
-    "x": 0,
-    "y": 2,
-  },
-  Object {
-    "x": 0,
-    "y": 3,
-  },
-  Object {
-    "x": 1,
-    "y": 3,
-  },
-  Object {
-    "x": 1,
-    "y": 4,
-  },
-  Object {
-    "x": 2,
-    "y": 4,
-  },
-  Object {
-    "x": 3,
-    "y": 4,
-  },
-  Object {
-    "x": 3,
-    "y": 3,
-  },
-  Object {
-    "x": 4,
-    "y": 3,
-  },
-]
+Object {
+  "distance": 4,
+  "path": Array [
+    Object {
+      "x": 0,
+      "y": 0,
+    },
+    Object {
+      "x": 0,
+      "y": 1,
+    },
+    Object {
+      "x": 0,
+      "y": 2,
+    },
+    Object {
+      "x": 0,
+      "y": 3,
+    },
+    Object {
+      "x": 4,
+      "y": 3,
+    },
+  ],
+}
 `;

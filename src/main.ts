@@ -4,22 +4,21 @@
 
 import { Point } from "./geometry";
 import { Pac } from "./game";
-import { storeInput } from "./local";
+import { storeInput } from "./debug";
 
-import { runLocally } from "./local";
+import { runLocally } from "./debug";
 import {
   parseFirstInput,
   parseTurnInput,
   findPacDestinations,
   findPathToDestinations,
   getAbility,
+  findPacDestinationsWithSignal,
 } from "./gameEngine";
 
-storeInput();
+//storeInput();
 //runLocally("./src/replays/replay_5.txt");
-
 const { map } = parseFirstInput();
-
 // game loop
 while (true) {
   let { visiblePellets, myPacs, enemyPacs } = parseTurnInput();
@@ -31,7 +30,11 @@ while (true) {
   ) {
     debugger;
   }*/
-  const pacDestinations = findPacDestinations(myPacs, visiblePellets, map);
+  const pacDestinations = findPacDestinationsWithSignal(
+    myPacs,
+    visiblePellets,
+    map
+  );
   //console.error(`Pac destinations: ${JSON.stringify(pacDestinations)}`);
   const pacPaths = findPathToDestinations(
     pacDestinations,
