@@ -73,7 +73,9 @@ export function getSignalMatrix(
     if (northPoint) {
       if (northPoint.distanceToSrc > currentPointToVisit.distanceToSrc + 1) {
         northPoint.distanceToSrc = currentPointToVisit.distanceToSrc + 1;
-        northPoint.value = currentPointToVisit.value * diffusionFactor;
+        northPoint.value =
+          signalPointValue /
+          Math.pow(northPoint.distanceToSrc, diffusionFactor);
       }
       if (!northPoint.visited && northPoint.distanceToSrc < maxSignalDistance) {
         pointsQueue.queue(northPoint);
@@ -82,7 +84,9 @@ export function getSignalMatrix(
     if (southPoint) {
       if (southPoint.distanceToSrc > currentPointToVisit.distanceToSrc + 1) {
         southPoint.distanceToSrc = currentPointToVisit.distanceToSrc + 1;
-        southPoint.value = currentPointToVisit.value * diffusionFactor;
+        southPoint.value =
+          signalPointValue /
+          Math.pow(southPoint.distanceToSrc, diffusionFactor);
       }
       if (!southPoint.visited && southPoint.distanceToSrc < maxSignalDistance) {
         pointsQueue.queue(southPoint);
@@ -91,7 +95,8 @@ export function getSignalMatrix(
     if (eastPoint) {
       if (eastPoint.distanceToSrc > currentPointToVisit.distanceToSrc + 1) {
         eastPoint.distanceToSrc = currentPointToVisit.distanceToSrc + 1;
-        eastPoint.value = currentPointToVisit.value * diffusionFactor;
+        eastPoint.value =
+          signalPointValue / Math.pow(eastPoint.distanceToSrc, diffusionFactor);
       }
       if (!eastPoint.visited && eastPoint.distanceToSrc < maxSignalDistance) {
         pointsQueue.queue(eastPoint);
@@ -100,7 +105,8 @@ export function getSignalMatrix(
     if (westPoint) {
       if (westPoint.distanceToSrc > currentPointToVisit.distanceToSrc + 1) {
         westPoint.distanceToSrc = currentPointToVisit.distanceToSrc + 1;
-        westPoint.value = currentPointToVisit.value * diffusionFactor;
+        westPoint.value =
+          signalPointValue / Math.pow(westPoint.distanceToSrc, diffusionFactor);
       }
       if (!westPoint.visited && westPoint.distanceToSrc < maxSignalDistance) {
         pointsQueue.queue(westPoint);

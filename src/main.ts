@@ -17,53 +17,50 @@ import {
 } from "./gameEngine";
 
 //storeInput();
-//runLocally("./src/replays/replay_5.txt");
+//runLocally("./src/replays/replay_6.txt");
 const { map } = parseFirstInput();
 // game loop
 while (true) {
   let { visiblePellets, myPacs, enemyPacs } = parseTurnInput();
 
-  /*if (
+  if (
     myPacs.some(
-      (pac) => pac.id === 0 && pac.position.x === 22 && pac.position.y === 9
+      (pac) => pac.id === 0 && pac.position.x === 21 && pac.position.y === 7
     )
   ) {
     debugger;
-  }*/
+  }
+  const initialTime = new Date().getTime();
   const pacDestinations = findPacDestinationsWithSignal(
     myPacs,
     visiblePellets,
     map
   );
+  console.error(
+    `Time to find destinations: ${new Date().getTime() - initialTime}ms`
+  );
   //console.error(`Pac destinations: ${JSON.stringify(pacDestinations)}`);
-  const pacPaths = findPathToDestinations(
+  /*const pacPaths = findPathToDestinations(
     pacDestinations,
     myPacs,
     enemyPacs,
     map
-  );
+  );*/
   //console.error(`Path paths: ${JSON.stringify(pacPaths)}`);
 
   let orders = "";
 
-  myPacs.forEach((pac) => {
-    if (pac.abilityCooldown === 0) {
-      orders += `${getAbility(pac, enemyPacs)} | `;
-    } else {
-      let destinationPoint: Point;
-      if (pacPaths[pac.id]) {
-        destinationPoint =
-          pacPaths[pac.id].length > 2
-            ? pacPaths[pac.id][2]
-            : pacPaths[pac.id].length > 1
-            ? pacPaths[pac.id][1]
-            : pacPaths[pac.id][0];
+  myPacs
+    .filter((pac) => pac.type !== "DEAD")
+    .forEach((pac) => {
+      if (pac.abilityCooldown === 0) {
+        orders += `${getAbility(pac, enemyPacs)} | `;
       } else {
-        destinationPoint = pac.position;
+        let destinationPoint = pacDestinations[pac.id];
+
+        orders += `MOVE ${pac.id} ${destinationPoint.x} ${destinationPoint.y} | `;
       }
-      orders += `MOVE ${pac.id} ${destinationPoint.x} ${destinationPoint.y} | `;
-    }
-  });
+    });
 
   console.log(orders);
   // Write an action using console.log()

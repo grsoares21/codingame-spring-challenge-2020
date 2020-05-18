@@ -1,0 +1,594 @@
+[in] 31 14
+[in] ###############################
+[in] ### #     #   # #   #     # ###
+[in] ### # # # # ### ### # # # # ###
+[in] #     # #     # #     # #     #
+[in] # ##### # # # # # # # # ##### #
+[in] #       #   #     #   #       #
+[in] ### # # ### # ### # ### # # ###
+[in]     #       # # # #       #    
+[in] ### ### # ### # # ### # ### ###
+[in] ### #   #             #   # ###
+[in] ### # # ### ####### ### # # ###
+[in]         #     ###     #        
+[in] ##### # # # # ### # # # # #####
+[in] ###############################
+[in] 0 0
+[in] 2
+[in] 0 1 17 11 ROCK 0 0
+[in] 1 1 23 6 PAPER 0 0
+[in] 20
+[in] 18 11 1
+[in] 19 11 1
+[in] 20 11 1
+[in] 21 11 1
+[in] 17 12 1
+[in] 23 5 1
+[in] 23 4 1
+[in] 23 3 1
+[in] 23 2 1
+[in] 23 1 1
+[in] 23 7 1
+[in] 23 8 1
+[in] 23 9 1
+[in] 23 10 1
+[in] 23 11 1
+[in] 23 12 1
+[in] 1 11 10
+[in] 29 11 10
+[in] 11 12 10
+[in] 19 12 10
+Time to find destinations: 9ms
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+01
+52
+Standard Output Stream:
+SPEED 0 | SPEED 1
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+Clyde:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+Standard Error Stream:
+[in] 0 0
+[in] 2
+[in] 0 1 17 11 ROCK 5 9
+[in] 1 1 23 6 PAPER 5 9
+[in] 20
+[in] 18 11 1
+[in] 19 11 1
+[in] 20 11 1
+[in] 21 11 1
+[in] 17 12 1
+[in] 23 5 1
+[in] 23 4 1
+[in] 23 3 1
+[in] 23 2 1
+[in] 23 1 1
+[in] 23 7 1
+[in] 23 8 1
+[in] 23 9 1
+[in] 23 10 1
+[in] 23 11 1
+[in] 23 12 1
+[in] 1 11 10
+[in] 29 11 10
+[in] 11 12 10
+[in] 19 12 10
+Time to find destinations: 2ms
+Standard Output Stream:
+MOVE 0 18 11 | MOVE 1 23 7 | 
+02
+52
+Standard Output Stream:
+MOVE 0 11 12 | MOVE 1 1 11
+Game Summary:
+grsoares:
+- Pac 0 moved to (18, 11).
+- Pac 1 moved to (23, 7).
+Clyde:
+- Pac 0 moved to (12, 11).
+- Pac 1 moved to (7, 7).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+Clyde:
+- Pac 0 moved to (11, 11).
+- Pac 1 moved to (7, 8).
+Standard Error Stream:
+[in] 2 4
+[in] 2
+[in] 0 1 18 11 ROCK 4 8
+[in] 1 1 23 7 PAPER 4 8
+[in] 23
+[in] 19 11 1
+[in] 20 11 1
+[in] 21 11 1
+[in] 22 7 1
+[in] 21 7 1
+[in] 20 7 1
+[in] 19 7 1
+[in] 24 7 1
+[in] 25 7 1
+[in] 23 5 1
+[in] 23 4 1
+[in] 23 3 1
+[in] 23 2 1
+[in] 23 1 1
+[in] 23 8 1
+[in] 23 9 1
+[in] 23 10 1
+[in] 23 11 1
+[in] 23 12 1
+[in] 1 11 10
+[in] 29 11 10
+[in] 11 12 10
+[in] 19 12 10
+Time to find destinations: 2ms
+Standard Output Stream:
+MOVE 0 19 11 | MOVE 1 23 8 | 
+04
+52
+Standard Output Stream:
+MOVE 0 11 12 | MOVE 1 1 11
+Game Summary:
+grsoares:
+- Pac 0 moved to (19, 11).
+- Pac 1 moved to (23, 8).
+Clyde:
+- Pac 0 moved to (11, 12).
+- Pac 1 moved to (7, 9).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+Clyde:
+- Pac 1 moved to (7, 10).
+Standard Error Stream:
+[in] 4 16
+[in] 2
+[in] 0 1 19 11 ROCK 3 7
+[in] 1 1 23 8 PAPER 3 7
+[in] 16
+[in] 20 11 1
+[in] 21 11 1
+[in] 19 10 1
+[in] 19 9 1
+[in] 23 5 1
+[in] 23 4 1
+[in] 23 3 1
+[in] 23 2 1
+[in] 23 1 1
+[in] 23 9 1
+[in] 23 10 1
+[in] 23 11 1
+[in] 23 12 1
+[in] 1 11 10
+[in] 29 11 10
+[in] 19 12 10
+Time to find destinations: 2ms
+Standard Output Stream:
+MOVE 0 19 12 | MOVE 1 23 7 | 
+06
+52
+Standard Output Stream:
+MOVE 0 19 12 | MOVE 1 1 11
+Game Summary:
+grsoares:
+- Pac 0 moved to (19, 12).
+- Pac 1 moved to (23, 7).
+Clyde:
+- Pac 0 moved to (11, 11).
+- Pac 1 moved to (7, 11).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+Clyde:
+- Pac 0 moved to (11, 10).
+- Pac 1 moved to (6, 11).
+Standard Error Stream:
+[in] 14 19
+[in] 2
+[in] 0 1 19 12 ROCK 2 6
+[in] 1 1 23 7 PAPER 2 6
+[in] 19
+[in] 19 10 1
+[in] 19 9 1
+[in] 22 7 1
+[in] 21 7 1
+[in] 20 7 1
+[in] 19 7 1
+[in] 24 7 1
+[in] 25 7 1
+[in] 23 5 1
+[in] 23 4 1
+[in] 23 3 1
+[in] 23 2 1
+[in] 23 1 1
+[in] 23 9 1
+[in] 23 10 1
+[in] 23 11 1
+[in] 23 12 1
+[in] 1 11 10
+[in] 29 11 10
+Time to find destinations: 0ms
+Standard Output Stream:
+MOVE 0 19 11 | MOVE 1 23 8 | 
+08
+52
+Standard Output Stream:
+MOVE 0 29 11 | MOVE 1 1 11
+Game Summary:
+grsoares:
+- Pac 0 moved to (19, 11).
+- Pac 1 moved to (23, 8).
+Clyde:
+- Pac 0 moved to (11, 9).
+- Pac 1 moved to (5, 11).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+Clyde:
+- Pac 0 moved to (10, 9).
+- Pac 1 moved to (4, 11).
+Standard Error Stream:
+[in] 14 23
+[in] 2
+[in] 0 1 19 11 ROCK 1 5
+[in] 1 1 23 8 PAPER 1 5
+[in] 15
+[in] 20 11 1
+[in] 21 11 1
+[in] 19 10 1
+[in] 19 9 1
+[in] 23 5 1
+[in] 23 4 1
+[in] 23 3 1
+[in] 23 2 1
+[in] 23 1 1
+[in] 23 9 1
+[in] 23 10 1
+[in] 23 11 1
+[in] 23 12 1
+[in] 1 11 10
+[in] 29 11 10
+Time to find destinations: 0ms
+Standard Output Stream:
+MOVE 0 19 10 | MOVE 1 23 9 | 
+10
+52
+Standard Output Stream:
+MOVE 0 29 11 | MOVE 1 1 11
+Game Summary:
+grsoares:
+- Pac 0 moved to (19, 10).
+- Pac 1 moved to (23, 9).
+Clyde:
+- Pac 0 moved to (9, 9).
+- Pac 1 moved to (3, 11).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+Clyde:
+- Pac 0 moved to (9, 8).
+- Pac 1 moved to (2, 11).
+Standard Error Stream:
+[in] 16 27
+[in] 2
+[in] 0 1 19 10 ROCK 0 4
+[in] 1 1 23 9 PAPER 0 4
+[in] 13
+[in] 19 9 1
+[in] 24 9 1
+[in] 25 9 1
+[in] 23 5 1
+[in] 23 4 1
+[in] 23 3 1
+[in] 23 2 1
+[in] 23 1 1
+[in] 23 10 1
+[in] 23 11 1
+[in] 23 12 1
+[in] 1 11 10
+[in] 29 11 10
+Time to find destinations: 1ms
+Standard Output Stream:
+MOVE 0 19 9 | MOVE 1 23 10 | 
+12
+52
+Standard Output Stream:
+MOVE 0 29 11 | MOVE 1 1 11
+Game Summary:
+grsoares:
+- Pac 0 moved to (19, 9).
+- Pac 1 moved to (23, 10).
+Clyde:
+- Pac 0 moved to (9, 7).
+- Pac 1 moved to (1, 11).
+Standard Error Stream:
+[in] 18 38
+[in] 2
+[in] 0 1 19 9 ROCK 0 3
+[in] 1 1 23 10 PAPER 0 3
+[in] 17
+[in] 18 9 1
+[in] 17 9 1
+[in] 16 9 1
+[in] 15 9 1
+[in] 14 9 1
+[in] 13 9 1
+[in] 12 9 1
+[in] 20 9 1
+[in] 21 9 1
+[in] 23 5 1
+[in] 23 4 1
+[in] 23 3 1
+[in] 23 2 1
+[in] 23 1 1
+[in] 23 11 1
+[in] 23 12 1
+[in] 29 11 10
+Time to find destinations: 2ms
+Standard Output Stream:
+MOVE 0 20 9 | MOVE 1 23 11 | 
+13
+52
+Standard Output Stream:
+MOVE 0 7 7 | MOVE 1 29 11
+Game Summary:
+grsoares:
+- Pac 0 moved to (20, 9).
+- Pac 1 moved to (23, 11).
+Clyde:
+- Pac 0 moved to (8, 7).
+- Pac 1 moved to (0, 11).
+Standard Error Stream:
+[in] 20 40
+[in] 3
+[in] 0 1 20 9 ROCK 0 2
+[in] 1 1 23 11 PAPER 0 2
+[in] 1 0 0 11 PAPER 0 2
+[in] 21
+[in] 18 9 1
+[in] 17 9 1
+[in] 16 9 1
+[in] 15 9 1
+[in] 14 9 1
+[in] 13 9 1
+[in] 12 9 1
+[in] 21 9 1
+[in] 24 11 1
+[in] 25 11 1
+[in] 26 11 1
+[in] 27 11 1
+[in] 28 11 1
+[in] 30 11 1
+[in] 23 5 1
+[in] 23 4 1
+[in] 23 3 1
+[in] 23 2 1
+[in] 23 1 1
+[in] 23 12 1
+[in] 29 11 10
+Time to find destinations: 3ms
+Standard Output Stream:
+MOVE 0 21 9 | MOVE 1 24 11 | 
+14
+52
+Standard Output Stream:
+MOVE 0 6 7 | MOVE 1 29 11
+Game Summary:
+grsoares:
+- Pac 0 moved to (21, 9).
+- Pac 1 moved to (24, 11).
+Clyde:
+- Pac 0 moved to (7, 7).
+- Pac 1 moved to (30, 11).
+Standard Error Stream:
+[in] 22 41
+[in] 3
+[in] 0 1 21 9 ROCK 0 1
+[in] 1 1 24 11 PAPER 0 1
+[in] 1 0 30 11 PAPER 0 1
+[in] 14
+[in] 18 9 1
+[in] 17 9 1
+[in] 16 9 1
+[in] 15 9 1
+[in] 14 9 1
+[in] 13 9 1
+[in] 12 9 1
+[in] 21 8 1
+[in] 21 7 1
+[in] 25 11 1
+[in] 26 11 1
+[in] 27 11 1
+[in] 28 11 1
+[in] 29 11 10
+Time to find destinations: 1ms
+Standard Output Stream:
+MOVE 0 21 8 | MOVE 1 25 11 | 
+15
+52
+Standard Output Stream:
+MOVE 0 5 7 | MOVE 1 29 11
+Game Summary:
+grsoares:
+- Pac 0 moved to (21, 8).
+- Pac 1 moved to (25, 11).
+Clyde:
+- Pac 0 moved to (6, 7).
+- Pac 1 moved to (29, 11).
+Standard Error Stream:
+[in] 24 52
+[in] 3
+[in] 0 1 21 8 ROCK 0 0
+[in] 1 1 25 11 PAPER 0 0
+[in] 1 0 29 11 PAPER 0 0
+[in] 7
+[in] 21 7 1
+[in] 26 11 1
+[in] 27 11 1
+[in] 28 11 1
+[in] 25 10 1
+[in] 25 9 1
+[in] 25 12 1
+Time to find destinations: 1ms
+Standard Output Stream:
+SPEED 0 | SPEED 1 | 
+16
+52
+Standard Output Stream:
+SPEED 0 | SPEED 1
+Game Summary:
+grsoares:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+Clyde:
+- Pac 0 used a speed boost.
+- Pac 1 used a speed boost.
+Standard Error Stream:
+[in] 24 52
+[in] 3
+[in] 0 1 21 8 ROCK 5 9
+[in] 1 1 25 11 PAPER 5 9
+[in] 1 0 29 11 PAPER 5 9
+[in] 7
+[in] 21 7 1
+[in] 26 11 1
+[in] 27 11 1
+[in] 28 11 1
+[in] 25 10 1
+[in] 25 9 1
+[in] 25 12 1
+Time to find destinations: 0ms
+Standard Output Stream:
+MOVE 0 21 7 | MOVE 1 25 10 | 
+17
+52
+Standard Output Stream:
+MOVE 0 5 6 | MOVE 1 27 11
+Game Summary:
+grsoares:
+- Pac 0 moved to (21, 7).
+- Pac 1 moved to (25, 10).
+Clyde:
+- Pac 0 moved to (5, 7).
+- Pac 1 moved to (28, 11).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+Clyde:
+- Pac 0 moved to (5, 6).
+- Pac 1 moved to (27, 11).
+Standard Error Stream:
+[in] 26 56
+[in] 2
+[in] 0 1 21 7 ROCK 4 8
+[in] 1 1 25 10 PAPER 4 8
+[in] 7
+[in] 20 7 1
+[in] 19 7 1
+[in] 22 7 1
+[in] 24 7 1
+[in] 25 7 1
+[in] 25 9 1
+[in] 25 12 1
+Time to find destinations: 0ms
+Standard Output Stream:
+MOVE 0 0 7 | MOVE 1 25 11 | 
+19
+52
+Standard Output Stream:
+MOVE 0 6 5 | MOVE 1 27 9
+Game Summary:
+grsoares:
+- Pac 0 moved to (22, 7).
+- Pac 1 moved to (25, 11).
+Clyde:
+- Pac 0 moved to (5, 5).
+- Pac 1 moved to (27, 10).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+grsoares:
+- Pac 0 moved to (23, 7).
+Clyde:
+- Pac 0 moved to (6, 5).
+- Pac 1 moved to (27, 9).
+Standard Error Stream:
+[in] 27 60
+[in] 2
+[in] 0 1 23 7 ROCK 3 7
+[in] 1 1 25 11 PAPER 3 7
+[in] 13
+[in] 20 7 1
+[in] 19 7 1
+[in] 24 7 1
+[in] 25 7 1
+[in] 23 5 1
+[in] 23 4 1
+[in] 23 3 1
+[in] 23 2 1
+[in] 23 1 1
+[in] 23 12 1
+[in] 26 11 1
+[in] 25 9 1
+[in] 25 12 1
+Time to find destinations: 0ms
+Standard Output Stream:
+MOVE 0 24 7 | MOVE 1 25 12 | 
+21
+52
+Standard Output Stream:
+MOVE 0 7 4 | MOVE 1 27 7
+Game Summary:
+grsoares:
+- Pac 0 moved to (24, 7).
+- Pac 1 moved to (25, 12).
+Clyde:
+- Pac 0 moved to (7, 5).
+- Pac 1 moved to (27, 8).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+Clyde:
+- Pac 0 moved to (7, 4).
+- Pac 1 moved to (27, 7).
+Standard Error Stream:
+[in] 29 64
+[in] 2
+[in] 0 1 24 7 ROCK 2 6
+[in] 1 1 25 12 PAPER 2 6
+[in] 4
+[in] 20 7 1
+[in] 19 7 1
+[in] 25 7 1
+[in] 25 9 1
+Time to find destinations: 1ms
+Standard Output Stream:
+MOVE 0 25 7 | MOVE 1 25 11 | 
+23
+52
+Standard Output Stream:
+MOVE 0 7 2 | MOVE 1 27 5
+Game Summary:
+grsoares:
+- Pac 0 moved to (25, 7).
+- Pac 1 moved to (25, 11).
+Clyde:
+- Pac 0 moved to (7, 3).
+- Pac 1 moved to (27, 6).
+Game Summary:
+Only pacs with the SPEED ability enabled can move:
+Clyde:
+- Pac 0 moved to (7, 2).
+- Pac 1 moved to (27, 5).
+Standard Error Stream:
+[in] 30 68
+[in] 2
+[in] 0 1 25 7 ROCK 1 5
+[in] 1 1 25 11 PAPER 1 5
+[in] 6
+[in] 20 7 1
+[in] 19 7 1
+[in] 25 6 1
+[in] 25 5 1
+[in] 26 11 1
+[in] 25 9 1
+Time to find destinations: 2ms
+Standard Output Stream:

@@ -8,6 +8,16 @@ it(`should emit 10 signal with 10 max distance and 0.9 diffusion factor`, () => 
   ).toMatchSnapshot();
 });
 
+it(`should cross map when emitting signal`, () => {
+  let map = getMap();
+  expect(
+    prettyPrintNumberMatrix(getSignalMatrix(map, { x: 3, y: 4 }, 10, 0.9, 9))
+  ).toMatchSnapshot();
+  expect(
+    prettyPrintNumberMatrix(getSignalMatrix(map, { x: 31, y: 5 }, 10, 0.9, 9))
+  ).toMatchSnapshot();
+});
+
 it(`should emit 1 signal with 5 max distance and 0.5 diffusion factor`, () => {
   let map = getMap();
   expect(

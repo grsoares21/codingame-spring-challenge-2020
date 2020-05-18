@@ -8,12 +8,24 @@ import {
   findPath,
 } from "./geometry";
 import { prettyPrintNumberMatrix } from "./debug";
+import { PriorityQueue } from "./queues";
 
 type DiffusionMatrices = {
-  highlyAttractiveDiffusionMatrix: number[][][][];
-  slightlyAttractiveDiffusionMatrix: number[][][][];
-  //slightlyRepellingMatrix: number[][][][];
-  repellingDiffusionMatrix: number[][][][];
+  bigPelletDiffusionMatrix: number[][][][];
+  //attractiveDiffusionMatrix: number[][][][];
+  smallPelletDiffusionMatrix: number[][][][];
+  //highlyRepellingDiffusionMatrix: number[][][][];
+  alliedPacDiffusionMatrix: number[][][][];
+  pelletAbsenceDiffusionMatrix: number[][][][];
+};
+
+type SignalPoints = {
+  bigPelletPoints: Point[];
+  //attracivePoints: Point[];
+  smallPelletPoints: Point[];
+  //highlyRepellingPoints: Point[];
+  alliedPacPoints: Point[];
+  pelletAbsencePoints: Point[];
 };
 
 let diffusionMatrices: DiffusionMatrices;
@@ -35,49 +47,71 @@ export function parseFirstInput(): GameConditions {
 }
 
 export function initDiffusionMatrices(map: string[][]): DiffusionMatrices {
-  let highlyAttractiveDiffusionMatrix: number[][][][] = [],
-    slightlyAttractiveDiffusionMatrix: number[][][][] = [],
-    repellingDiffusionMatrix: number[][][][] = [],
-    slightlyRepellingMatrix: number[][][][] = [];
+  let bigPelletDiffusionMatrix: number[][][][] = [],
+    //attractiveDiffusionMatrix: number[][][][] = [],
+    smallPelletDiffusionMatrix: number[][][][] = [],
+    //highlyRepellingDiffusionMatrix: number[][][][] = [],
+    alliedPacDiffusionMatrix: number[][][][] = [],
+    pelletAbsenceDiffusionMatrix: number[][][][] = [];
   for (let x = 0; x < map[0].length; x++) {
-    highlyAttractiveDiffusionMatrix[x] = [];
-    slightlyAttractiveDiffusionMatrix[x] = [];
-    repellingDiffusionMatrix[x] = [];
+    bigPelletDiffusionMatrix[x] = [];
+    //attractiveDiffusionMatrix[x] = [];
+    smallPelletDiffusionMatrix[x] = [];
+    //highlyRepellingDiffusionMatrix[x] = [];
+    alliedPacDiffusionMatrix[x] = [];
+    pelletAbsenceDiffusionMatrix[x] = [];
     for (let y = 0; y < map.length; y++) {
       if (map[y][x] !== "#") {
-        highlyAttractiveDiffusionMatrix[x][y] = getSignalMatrix(
+        bigPelletDiffusionMatrix[x][y] = getSignalMatrix(
           map,
           { x, y },
           10,
-          0.9,
+          1.5,
           10
         );
-        slightlyAttractiveDiffusionMatrix[x][y] = getSignalMatrix(
+        /*attractiveDiffusionMatrix[x][y] = getSignalMatrix(
           map,
           { x, y },
           10,
           0.9,
+          5
+        );*/
+        smallPelletDiffusionMatrix[x][y] = getSignalMatrix(
+          map,
+          { x, y },
+          10,
+          1.5,
           1
         );
 
-        /*slightlyRepellingMatrix[x][y] = slightlyAttractiveDiffusionMatrix[x][
-          y
-        ].map((line) => line.map((num) => -num));*/
-        repellingDiffusionMatrix[x][y] = getSignalMatrix(
+        /*highlyRepellingDiffusionMatrix[x][y] = bigPelletDiffusionMatrix[
+          x
+        ][y].map((line) =>
+          line.map((num) => (num === Number.NEGATIVE_INFINITY ? num : -num))
+        );*/
+        alliedPacDiffusionMatrix[x][y] = getSignalMatrix(
           map,
           { x, y },
           10,
-          0.9,
-          -5
+          1.5,
+          -10
+        );
+        pelletAbsenceDiffusionMatrix[x][y] = getSignalMatrix(
+          map,
+          { x, y },
+          10,
+          1.5,
+          0
         );
       }
     }
   }
+
   return {
-    highlyAttractiveDiffusionMatrix,
-    slightlyAttractiveDiffusionMatrix,
-    repellingDiffusionMatrix,
-    //slightlyRepellingMatrix,
+    bigPelletDiffusionMatrix,
+    smallPelletDiffusionMatrix,
+    alliedPacDiffusionMatrix,
+    pelletAbsenceDiffusionMatrix,
   };
 }
 
@@ -85,13 +119,17 @@ export function getNewSignalMatrix(
   map: string[][],
   oldSignalMatrix: number[][],
   {
-    highlyAttractiveDiffusionMatrix,
-    slightlyAttractiveDiffusionMatrix,
-    repellingDiffusionMatrix,
+    bigPelletDiffusionMatrix,
+    smallPelletDiffusionMatrix,
+    alliedPacDiffusionMatrix,
+    pelletAbsenceDiffusionMatrix,
   }: DiffusionMatrices,
-  highlyAttracivePoints: Point[],
-  slightlyAttractivePoints: Point[],
-  repellingPoints: Point[]
+  {
+    bigPelletPoints,
+    smallPelletPoints,
+    alliedPacPoints,
+    pelletAbsencePoints,
+  }: SignalPoints
 ): number[][] {
   let newSignalMatrix: number[][] = [];
   for (let y = 0; y < map.length; y++) {
@@ -101,8 +139,8 @@ export function getNewSignalMatrix(
     }
   }
 
-  highlyAttracivePoints.forEach((point) => {
-    const pointMatrix = highlyAttractiveDiffusionMatrix[point.x][point.y];
+  bigPelletPoints.forEach((point) => {
+    const pointMatrix = bigPelletDiffusionMatrix[point.x][point.y];
     for (let y = 0; y < pointMatrix.length; y++) {
       for (let x = 0; x < pointMatrix[y].length; x++) {
         newSignalMatrix[y][x] += pointMatrix[y][x];
@@ -110,8 +148,8 @@ export function getNewSignalMatrix(
     }
   });
 
-  slightlyAttractivePoints.forEach((point) => {
-    const pointMatrix = slightlyAttractiveDiffusionMatrix[point.x][point.y];
+  smallPelletPoints.forEach((point) => {
+    const pointMatrix = smallPelletDiffusionMatrix[point.x][point.y];
     for (let y = 0; y < pointMatrix.length; y++) {
       for (let x = 0; x < pointMatrix[y].length; x++) {
         newSignalMatrix[y][x] += pointMatrix[y][x];
@@ -119,7 +157,25 @@ export function getNewSignalMatrix(
     }
   });
 
-  repellingPoints.forEach((point) => {
+  alliedPacPoints.forEach((point) => {
+    const pointMatrix = alliedPacDiffusionMatrix[point.x][point.y];
+    for (let y = 0; y < pointMatrix.length; y++) {
+      for (let x = 0; x < pointMatrix[y].length; x++) {
+        newSignalMatrix[y][x] += pointMatrix[y][x];
+      }
+    }
+  });
+
+  pelletAbsencePoints.forEach((point) => {
+    const pointMatrix = pelletAbsenceDiffusionMatrix[point.x][point.y];
+    for (let y = 0; y < pointMatrix.length; y++) {
+      for (let x = 0; x < pointMatrix[y].length; x++) {
+        newSignalMatrix[y][x] += pointMatrix[y][x];
+      }
+    }
+  });
+
+  /* repellingPoints.forEach((point) => {
     const pointMatrix = repellingDiffusionMatrix[point.x][point.y];
     for (let y = 0; y < pointMatrix.length; y++) {
       for (let x = 0; x < pointMatrix[y].length; x++) {
@@ -128,13 +184,22 @@ export function getNewSignalMatrix(
     }
   });
 
+  slightlyRepellingPoints.forEach((point) => {
+    const pointMatrix = slightlyRepellingDiffusionMatrix[point.x][point.y];
+    for (let y = 0; y < pointMatrix.length; y++) {
+      for (let x = 0; x < pointMatrix[y].length; x++) {
+        newSignalMatrix[y][x] += pointMatrix[y][x];
+      }
+    }
+  });*/
+
   if (oldSignalMatrix) {
     for (let y = 0; y < newSignalMatrix.length; y++) {
       for (let x = 0; x < newSignalMatrix.length; x++) {
         // null in newSignalMatrix ? console.error(`New matrix: ${JSON.stringify(newSignalMatrix)} `);
         //console.error(`Old matrix: ${oldSignalMatrix} `);
         newSignalMatrix[y][x] =
-          (newSignalMatrix[y][x] + oldSignalMatrix[y][x]) / 2;
+          0.75 * newSignalMatrix[y][x] + 0.25 * oldSignalMatrix[y][x];
       }
     }
   }
@@ -143,6 +208,70 @@ export function getNewSignalMatrix(
 }
 
 let previousSignalMatrices: { [pacId: number]: number[][] } = {};
+
+export function findAbsentPellets(
+  visiblePellets: Pellet[],
+  pacPosition: Point,
+  map: string[][]
+): Point[] {
+  let pelletAbsence: Point[] = [];
+  let visitingPoint = pacPosition;
+  while (visitingPoint && map[visitingPoint.y][visitingPoint.x] !== "#") {
+    if (
+      !visiblePellets.some((pellet) => areEqual(pellet.position, visitingPoint))
+    ) {
+      if (!pelletAbsence.some((absence) => areEqual(absence, visitingPoint))) {
+        pelletAbsence.push(visitingPoint);
+      }
+    }
+
+    visitingPoint = {
+      x: (visitingPoint.x + 1) % map[0].length,
+      y: visitingPoint.y,
+    };
+  }
+  visitingPoint = pacPosition;
+  while (visitingPoint && map[visitingPoint.y][visitingPoint.x] !== "#") {
+    if (
+      !visiblePellets.some((pellet) => areEqual(pellet.position, visitingPoint))
+    ) {
+      if (!pelletAbsence.some((absence) => areEqual(absence, visitingPoint))) {
+        pelletAbsence.push(visitingPoint);
+      }
+    }
+
+    visitingPoint = {
+      x: visitingPoint.x - 1 + (visitingPoint.x - 1 < 0 ? map[0].length : 0),
+      y: visitingPoint.y,
+    };
+  }
+  visitingPoint = pacPosition;
+  while (visitingPoint && map[visitingPoint.y][visitingPoint.x] !== "#") {
+    if (
+      !visiblePellets.some((pellet) => areEqual(pellet.position, visitingPoint))
+    ) {
+      if (!pelletAbsence.some((absence) => areEqual(absence, visitingPoint))) {
+        pelletAbsence.push(visitingPoint);
+      }
+    }
+
+    visitingPoint = { x: visitingPoint.x, y: visitingPoint.y + 1 };
+  }
+  visitingPoint = pacPosition;
+  while (visitingPoint && map[visitingPoint.y][visitingPoint.x] !== "#") {
+    if (
+      !visiblePellets.some((pellet) => areEqual(pellet.position, visitingPoint))
+    ) {
+      if (!pelletAbsence.some((absence) => areEqual(absence, visitingPoint))) {
+        pelletAbsence.push(visitingPoint);
+      }
+    }
+
+    visitingPoint = { x: visitingPoint.x, y: visitingPoint.y - 1 };
+  }
+
+  return pelletAbsence;
+}
 
 export function findPacDestinationsWithSignal(
   myPacs: Pac[],
@@ -153,66 +282,167 @@ export function findPacDestinationsWithSignal(
 
   myPacs.forEach((pac) => {
     // TODO: add tunnel connection and repelling/attracting enemies, add speed consideration
-    let pelletAbsence: Point[] = [];
-    let visitingPoint = pac.position;
-    pelletAbsence.push(pac.position);
-    /*while(visitingPoint && map[visitingPoint.y][visitingPoint.x] !== '#') {
-      if(!visiblePellets.some(pellet => areEqual(pellet.position, visitingPoint)) {
-        pelletAbsence.push(visitingPoint);
-      }
-    }*/
+    let pelletAbsencePoints: Point[] = findAbsentPellets(
+      visiblePellets,
+      pac.position,
+      map
+    );
 
     let newPacMatrix = getNewSignalMatrix(
       map,
       previousSignalMatrices[pac.id],
       diffusionMatrices,
-      visiblePellets
-        .filter((pellet) => pellet.value === 10)
-        .map((pellet) => pellet.position),
-      visiblePellets
-        .filter((pellet) => pellet.value === 1)
-        .map((pellet) => pellet.position),
-      [
-        ...myPacs
+      {
+        bigPelletPoints: visiblePellets
+          .filter((pellet) => pellet.value === 10)
+          .map((pellet) => pellet.position),
+        smallPelletPoints: visiblePellets
+          .filter((pellet) => pellet.value === 1)
+          .map((pellet) => pellet.position),
+        alliedPacPoints: myPacs
           .filter((repellingPac) => repellingPac.id !== pac.id)
           .map((repellingPac) => repellingPac.position),
-        ...pelletAbsence,
-      ]
+        pelletAbsencePoints,
+      }
     );
     previousSignalMatrices[pac.id] = newPacMatrix;
-    //console.error(`Matrix for pac ${pac.id}:`);
-    //console.error(prettyPrintNumberMatrix(newPacMatrix));
-    let { x, y } = pac.position;
-    let northLine = newPacMatrix[y - 1];
-    let northPoint = northLine
-      ? { point: { x, y: y - 1 }, value: northLine[x] }
-      : null;
+    console.error(`Matrix for pac ${pac.id}:`);
+    console.error(prettyPrintNumberMatrix(newPacMatrix));
 
-    let southLine = newPacMatrix[y + 1];
-    let southPoint = southLine
-      ? { point: { x, y: y + 1 }, value: southLine[x] }
-      : null;
-
-    let eastValue = newPacMatrix[y][x + 1];
-    let eastPoint = eastValue
-      ? { point: { x: x + 1, y }, value: eastValue }
-      : null;
-
-    let westValue = newPacMatrix[y][x - 1];
-    let westPoint = westValue
-      ? { point: { x: x - 1, y }, value: westValue }
-      : null;
-
-    let maxValue = Number.NEGATIVE_INFINITY;
-    [northPoint, southPoint, eastPoint, westPoint].forEach((point) => {
-      if (point && point.value > maxValue) {
-        maxValue = point.value;
-        pacDestinations[pac.id] = point.point;
-      }
-    });
+    pacDestinations[pac.id] = getHeighestValueNeighbour(
+      newPacMatrix,
+      pac.position,
+      map,
+      pac.speedTurnsLeft > 0 ? 2 : 1
+    );
   });
 
   return pacDestinations;
+}
+
+export function getHeighestValueNeighbour(
+  signalMatrix: number[][],
+  srcPoint: Point,
+  map: string[][],
+  maxDistance: 1 | 2
+): Point {
+  type VisitingPoint = {
+    point: Point;
+    distanceToSrc: number;
+    visited: boolean;
+  };
+
+  const pointsQueue = new PriorityQueue<VisitingPoint>({
+    comparator: function (pointA, pointB) {
+      const pointATotalDistance = pointA.distanceToSrc;
+      const pointBTotalDistance = pointB.distanceToSrc;
+      return pointATotalDistance - pointBTotalDistance;
+    },
+  });
+
+  let visitedPointsMatrix: VisitingPoint[][] = [];
+
+  for (let y = 0; y < map.length; y++) {
+    visitedPointsMatrix[y] = [];
+    for (let x = 0; x < map[y].length; x++) {
+      visitedPointsMatrix[y][x] =
+        map[y][x] === "#"
+          ? null
+          : {
+              point: { x, y },
+              distanceToSrc: Number.POSITIVE_INFINITY,
+              visited: false,
+            };
+    }
+  }
+
+  visitedPointsMatrix[srcPoint.y][srcPoint.x].distanceToSrc = 0;
+  pointsQueue.queue(visitedPointsMatrix[srcPoint.y][srcPoint.x]);
+
+  let highestValue = Number.NEGATIVE_INFINITY;
+  let highestvaluePoint = null;
+
+  while (pointsQueue.length > 0) {
+    const currentPointToVisit = pointsQueue.dequeue();
+    currentPointToVisit.visited = true;
+
+    const width = visitedPointsMatrix[currentPointToVisit.point.y].length;
+
+    const northPoint =
+      visitedPointsMatrix[currentPointToVisit.point.y - 1] &&
+      visitedPointsMatrix[currentPointToVisit.point.y - 1][
+        currentPointToVisit.point.x
+      ];
+    const southPoint =
+      visitedPointsMatrix[currentPointToVisit.point.y + 1] &&
+      visitedPointsMatrix[currentPointToVisit.point.y + 1][
+        currentPointToVisit.point.x
+      ];
+    const eastPoint =
+      visitedPointsMatrix[currentPointToVisit.point.y][
+        (currentPointToVisit.point.x + 1) % width
+      ];
+    const westPoint =
+      visitedPointsMatrix[currentPointToVisit.point.y][
+        currentPointToVisit.point.x -
+          1 +
+          (currentPointToVisit.point.x - 1 < 0 ? width : 0)
+      ];
+    if (northPoint) {
+      if (northPoint.distanceToSrc > currentPointToVisit.distanceToSrc + 1) {
+        northPoint.distanceToSrc = currentPointToVisit.distanceToSrc + 1;
+      }
+      if (!northPoint.visited && northPoint.distanceToSrc <= maxDistance) {
+        if (
+          signalMatrix[northPoint.point.y][northPoint.point.x] > highestValue
+        ) {
+          highestValue = signalMatrix[northPoint.point.y][northPoint.point.x];
+          highestvaluePoint = northPoint.point;
+        }
+        pointsQueue.queue(northPoint);
+      }
+    }
+    if (southPoint) {
+      if (southPoint.distanceToSrc > currentPointToVisit.distanceToSrc + 1) {
+        southPoint.distanceToSrc = currentPointToVisit.distanceToSrc + 1;
+      }
+      if (!southPoint.visited && southPoint.distanceToSrc <= maxDistance) {
+        if (
+          signalMatrix[southPoint.point.y][southPoint.point.x] > highestValue
+        ) {
+          highestValue = signalMatrix[southPoint.point.y][southPoint.point.x];
+          highestvaluePoint = southPoint.point;
+        }
+        pointsQueue.queue(southPoint);
+      }
+    }
+    if (eastPoint) {
+      if (eastPoint.distanceToSrc > currentPointToVisit.distanceToSrc + 1) {
+        eastPoint.distanceToSrc = currentPointToVisit.distanceToSrc + 1;
+      }
+      if (!eastPoint.visited && eastPoint.distanceToSrc <= maxDistance) {
+        if (signalMatrix[eastPoint.point.y][eastPoint.point.x] > highestValue) {
+          highestValue = signalMatrix[eastPoint.point.y][eastPoint.point.x];
+          highestvaluePoint = eastPoint.point;
+        }
+        pointsQueue.queue(eastPoint);
+      }
+    }
+    if (westPoint) {
+      if (westPoint.distanceToSrc > currentPointToVisit.distanceToSrc + 1) {
+        westPoint.distanceToSrc = currentPointToVisit.distanceToSrc + 1;
+      }
+      if (!westPoint.visited && westPoint.distanceToSrc <= maxDistance) {
+        if (signalMatrix[westPoint.point.y][westPoint.point.x] > highestValue) {
+          highestValue = signalMatrix[westPoint.point.y][westPoint.point.x];
+          highestvaluePoint = westPoint.point;
+        }
+        pointsQueue.queue(westPoint);
+      }
+    }
+  }
+  console.error(`Destination point: ${highestvaluePoint}`);
+  return highestvaluePoint;
 }
 
 export function parseTurnInput(): GameState {

@@ -29,8 +29,9 @@ export function prettyPrintNumberMatrix(matrix: number[][]): string {
   return matrix
     .map((line) =>
       line
-        .map((num) => num.toFixed(1))
-        .map((num) => (num === "-Infinity" ? "###" : num))
+        .map((num) => num / 10)
+        .map((num) => (num >= 0 ? "+" + num.toFixed(2) : num.toFixed(2)))
+        .map((num) => (num === "-Infinity" ? "#####" : num))
         .join(" ")
     )
     .join("\n");
