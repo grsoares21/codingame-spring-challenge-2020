@@ -10,10 +10,9 @@ import { runLocally } from "./debug";
 import {
   parseFirstInput,
   parseTurnInput,
-  findPacDestinations,
-  findPathToDestinations,
   getAbility,
   findPacDestinationsWithSignal,
+  updatePelletPointsHistory,
 } from "./gameEngine";
 
 //storeInput();
@@ -22,7 +21,7 @@ const { map } = parseFirstInput();
 // game loop
 while (true) {
   let { visiblePellets, myPacs, enemyPacs } = parseTurnInput();
-
+  updatePelletPointsHistory(myPacs, visiblePellets, map);
   if (
     myPacs.some(
       (pac) => pac.id === 0 && pac.position.x === 21 && pac.position.y === 7
@@ -33,6 +32,7 @@ while (true) {
   const initialTime = new Date().getTime();
   const pacDestinations = findPacDestinationsWithSignal(
     myPacs,
+    enemyPacs,
     visiblePellets,
     map
   );
