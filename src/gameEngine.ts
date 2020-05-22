@@ -22,7 +22,7 @@ type SignalPoints = {
 
 let diffusionMatrices: DiffusionMatrices;
 
-let pelletPointsHistory: Point[];
+let pelletPointsHistory: boolean[][];
 
 export function parseFirstInput(): GameConditions {
   let inputs: string[] = readline().split(" ");
@@ -35,10 +35,10 @@ export function parseFirstInput(): GameConditions {
     const row: string = readline(); // one line of the grid: space " " is floor, pound "#" is wall
     const cells: string[] = row.split("");
     map.push(cells);
-
+    pelletPointsHistory[y] = [];
     for (let x = 0; x < cells.length; x++) {
       if (cells[x] === " ") {
-        pelletPointsHistory.push({ x, y });
+        pelletPointsHistory[y][x] = true;
       }
     }
   }
@@ -66,21 +66,21 @@ export function initDiffusionMatrices(map: string[][]): DiffusionMatrices {
         bigPelletDiffusionMatrix[x][y] = getSignalMatrix(
           map,
           { x, y },
-          10,
+          9,
           1,
           10
         );
         smallPelletDiffusionMatrix[x][y] = getSignalMatrix(
           map,
           { x, y },
-          10,
+          9,
           1,
           1
         );
         alliedPacDiffusionMatrix[x][y] = getSignalMatrix(
           map,
           { x, y },
-          10,
+          9,
           1,
           -5
         );
@@ -173,50 +173,57 @@ export function getNewSignalMatrix(
   return newSignalMatrix;
 }
 
-export function findAbsentPellets(
+export function updatePelletHistoryForPac(
   visiblePellets: Pellet[],
   pacPosition: Point,
   map: string[][]
-): Point[] {
-  let pelletAbsence: Point[] = [];
+): void {
   let visitingPoint = pacPosition;
-  while (visitingPoint && map[visitingPoint.y][visitingPoint.x] !== "#") {
+  let visitedHorizontalPoints = 0;
+  while (
+    visitingPoint &&
+    map[visitingPoint.y][visitingPoint.x] !== "#" &&
+    visitedHorizontalPoints < 35
+  ) {
     if (
       !visiblePellets.some((pellet) => areEqual(pellet.position, visitingPoint))
     ) {
-      if (!pelletAbsence.some((absence) => areEqual(absence, visitingPoint))) {
-        pelletAbsence.push(visitingPoint);
-      }
+      pelletPointsHistory[visitingPoint.y][visitingPoint.x] = false;
     }
 
     visitingPoint = {
       x: (visitingPoint.x + 1) % map[0].length,
       y: visitingPoint.y,
     };
+
+    visitedHorizontalPoints++;
   }
   visitingPoint = pacPosition;
-  while (visitingPoint && map[visitingPoint.y][visitingPoint.x] !== "#") {
+  visitedHorizontalPoints = 0;
+  while (
+    visitingPoint &&
+    map[visitingPoint.y][visitingPoint.x] !== "#" &&
+    visitedHorizontalPoints < 35
+  ) {
     if (
       !visiblePellets.some((pellet) => areEqual(pellet.position, visitingPoint))
     ) {
-      if (!pelletAbsence.some((absence) => areEqual(absence, visitingPoint))) {
-        pelletAbsence.push(visitingPoint);
-      }
+      pelletPointsHistory[visitingPoint.y][visitingPoint.x] = false;
     }
 
     visitingPoint = {
       x: visitingPoint.x - 1 + (visitingPoint.x - 1 < 0 ? map[0].length : 0),
       y: visitingPoint.y,
     };
+
+    visitedHorizontalPoints++;
   }
   visitingPoint = pacPosition;
   while (visitingPoint && map[visitingPoint.y][visitingPoint.x] !== "#") {
     if (
       !visiblePellets.some((pellet) => areEqual(pellet.position, visitingPoint))
     ) {
-      if (!pelletAbsence.some((absence) => areEqual(absence, visitingPoint))) {
-        pelletAbsence.push(visitingPoint);
-      }
+      pelletPointsHistory[visitingPoint.y][visitingPoint.x] = false;
     }
 
     visitingPoint = { x: visitingPoint.x, y: visitingPoint.y + 1 };
@@ -226,15 +233,11 @@ export function findAbsentPellets(
     if (
       !visiblePellets.some((pellet) => areEqual(pellet.position, visitingPoint))
     ) {
-      if (!pelletAbsence.some((absence) => areEqual(absence, visitingPoint))) {
-        pelletAbsence.push(visitingPoint);
-      }
+      pelletPointsHistory[visitingPoint.y][visitingPoint.x] = false;
     }
 
     visitingPoint = { x: visitingPoint.x, y: visitingPoint.y - 1 };
   }
-
-  return pelletAbsence;
 }
 
 export function findPacDestinationsWithSignal(
@@ -245,12 +248,22 @@ export function findPacDestinationsWithSignal(
 ): { [pacId: number]: Point } {
   let pacDestinations: { [pacId: number]: Point } = {};
 
+  let smallPelletPoints: Point[] = [];
+
+  for (let y = 0; y < map.length; y++) {
+    for (let x = 0; x < map[y].length; x++) {
+      if (pelletPointsHistory[y][x]) {
+        smallPelletPoints.push({ x, y });
+      }
+    }
+  }
+
   myPacs.forEach((pac) => {
     let newPacMatrix = getNewSignalMatrix(map, diffusionMatrices, {
       bigPelletPoints: visiblePellets
         .filter((pellet) => pellet.value === 10)
         .map((pellet) => pellet.position),
-      smallPelletPoints: pelletPointsHistory,
+      smallPelletPoints,
       alliedPacPoints: myPacs
         .filter((repellingPac) => repellingPac.id !== pac.id)
         .map((repellingPac) => repellingPac.position),
@@ -487,17 +500,8 @@ export function updatePelletPointsHistory(
   myPacs
     .filter((pac) => pac.type !== "DEAD")
     .forEach((pac) => {
-      let currentAbsentPellets = findAbsentPellets(
-        visiblePellets,
-        pac.position,
-        map
-      );
-      pelletPointsHistory = pelletPointsHistory.filter(
-        (point) =>
-          !currentAbsentPellets.some((absentPelletPoint) =>
-            areEqual(point, absentPelletPoint)
-          )
-      );
+      console.error("updating pellet history for pac: " + pac.id);
+      updatePelletHistoryForPac(visiblePellets, pac.position, map);
     });
 }
 

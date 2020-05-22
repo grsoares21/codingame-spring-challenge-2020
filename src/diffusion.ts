@@ -30,7 +30,12 @@ export function getSignalMatrix(
     for (let x = 0; x < map[y].length; x++) {
       visitedPointsMatrix[y][x] =
         map[y][x] === "#"
-          ? null
+          ? {
+              point: { x, y },
+              value: Number.NEGATIVE_INFINITY,
+              distanceToSrc: -1,
+              visited: true,
+            }
           : {
               point: { x, y },
               distanceToSrc: Number.POSITIVE_INFINITY,
@@ -71,51 +76,67 @@ export function getSignalMatrix(
           (currentPointToVisit.point.x - 1 < 0 ? width : 0)
       ];
     if (northPoint) {
-      if (northPoint.distanceToSrc > currentPointToVisit.distanceToSrc + 1) {
+      if (
+        !northPoint.visited &&
+        currentPointToVisit.distanceToSrc + 1 < maxSignalDistance
+      ) {
         northPoint.distanceToSrc = currentPointToVisit.distanceToSrc + 1;
         northPoint.value =
           signalPointValue /
-          Math.pow(northPoint.distanceToSrc, diffusionFactor);
-      }
-      if (!northPoint.visited && northPoint.distanceToSrc < maxSignalDistance) {
+          Math.pow(northPoint.distanceToSrc + 1, diffusionFactor);
+
         pointsQueue.queue(northPoint);
       }
     }
     if (southPoint) {
-      if (southPoint.distanceToSrc > currentPointToVisit.distanceToSrc + 1) {
+      if (
+        !southPoint.visited &&
+        currentPointToVisit.distanceToSrc + 1 < maxSignalDistance
+      ) {
         southPoint.distanceToSrc = currentPointToVisit.distanceToSrc + 1;
         southPoint.value =
           signalPointValue /
-          Math.pow(southPoint.distanceToSrc, diffusionFactor);
-      }
-      if (!southPoint.visited && southPoint.distanceToSrc < maxSignalDistance) {
+          Math.pow(southPoint.distanceToSrc + 1, diffusionFactor);
+
         pointsQueue.queue(southPoint);
       }
     }
     if (eastPoint) {
-      if (eastPoint.distanceToSrc > currentPointToVisit.distanceToSrc + 1) {
+      if (
+        !eastPoint.visited &&
+        currentPointToVisit.distanceToSrc + 1 < maxSignalDistance
+      ) {
         eastPoint.distanceToSrc = currentPointToVisit.distanceToSrc + 1;
         eastPoint.value =
-          signalPointValue / Math.pow(eastPoint.distanceToSrc, diffusionFactor);
-      }
-      if (!eastPoint.visited && eastPoint.distanceToSrc < maxSignalDistance) {
+          signalPointValue /
+          Math.pow(eastPoint.distanceToSrc + 1, diffusionFactor);
+
         pointsQueue.queue(eastPoint);
       }
     }
     if (westPoint) {
-      if (westPoint.distanceToSrc > currentPointToVisit.distanceToSrc + 1) {
+      if (
+        !westPoint.visited &&
+        currentPointToVisit.distanceToSrc + 1 < maxSignalDistance
+      ) {
         westPoint.distanceToSrc = currentPointToVisit.distanceToSrc + 1;
         westPoint.value =
-          signalPointValue / Math.pow(westPoint.distanceToSrc, diffusionFactor);
-      }
-      if (!westPoint.visited && westPoint.distanceToSrc < maxSignalDistance) {
+          signalPointValue /
+          Math.pow(westPoint.distanceToSrc + 1, diffusionFactor);
+
         pointsQueue.queue(westPoint);
       }
     }
   }
+  let returnedMatrix = [];
+
+  for (let y = 0; y < visitedPointsMatrix.length; ++y) {
+    returnedMatrix[y] = [];
+    for (let x = 0; x < visitedPointsMatrix[y].length; ++x) {
+      returnedMatrix[y][x] = visitedPointsMatrix[y][x].value;
+    }
+  }
   return visitedPointsMatrix.map((line) =>
-    line.map((visitingPoint) =>
-      !visitingPoint ? Number.NEGATIVE_INFINITY : visitingPoint.value
-    )
+    line.map((visitingPoint) => visitingPoint.value)
   );
 }
