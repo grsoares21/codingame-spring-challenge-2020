@@ -258,34 +258,40 @@ export function findPacDestinationsWithSignal(
     }
   }
 
-  myPacs.forEach((pac) => {
-    let newPacMatrix = getNewSignalMatrix(map, diffusionMatrices, {
-      bigPelletPoints: visiblePellets
-        .filter((pellet) => pellet.value === 10)
-        .map((pellet) => pellet.position),
-      smallPelletPoints,
-      alliedPacPoints: myPacs
-        .filter((repellingPac) => repellingPac.id !== pac.id)
-        .map((repellingPac) => repellingPac.position),
-      killablePacPoints: enemyPacs
-        .filter((enemyPac) => enemyPac.type === typeKills[pac.type])
-        .map((enemyPac) => enemyPac.position),
-      nonKillablePacPoints: enemyPacs
-        .filter((enemyPac) => enemyPac.type !== typeKills[pac.type])
-        .map((enemyPac) => enemyPac.position),
-    });
-    if (pac.id === 1) {
+  myPacs
+    .filter((pac) => pac.type !== "DEAD")
+    .forEach((pac) => {
+      let newPacMatrix = getNewSignalMatrix(map, diffusionMatrices, {
+        bigPelletPoints: visiblePellets
+          .filter((pellet) => pellet.value === 10)
+          .map((pellet) => pellet.position),
+        smallPelletPoints,
+        alliedPacPoints: myPacs
+          .filter(
+            (repellingPac) =>
+              repellingPac.id !== pac.id && repellingPac.type !== "DEAD"
+          )
+          .map((repellingPac) => repellingPac.position),
+        killablePacPoints: enemyPacs
+          .filter((enemyPac) => enemyPac.type === typeKills[pac.type])
+          .map((enemyPac) => enemyPac.position),
+        nonKillablePacPoints: enemyPacs
+          .filter(
+            (enemyPac) =>
+              enemyPac.type !== typeKills[pac.type] && enemyPac.type !== "DEAD"
+          )
+          .map((enemyPac) => enemyPac.position),
+      });
       console.error(`Matrix for pac ${pac.id}:`);
       console.error(prettyPrintNumberMatrix(newPacMatrix));
-    }
 
-    pacDestinations[pac.id] = getHeighestValuePath(
-      newPacMatrix,
-      pac.position,
-      map,
-      3
-    );
-  });
+      pacDestinations[pac.id] = getHeighestValuePath(
+        newPacMatrix,
+        pac.position,
+        map,
+        3
+      );
+    });
 
   return pacDestinations;
 }
@@ -369,12 +375,14 @@ export function getHeighestValuePath(
           currentPointToVisit.currentValue +
           signalMatrix[northPoint.point.y][northPoint.point.x];
       }
-      if (!northPoint.visited && northPoint.distanceToSrc <= maxDistance) {
+      if (northPoint.distanceToSrc <= maxDistance) {
         if (northPoint.currentValue > highestValue) {
           highestValue = northPoint.currentValue;
           highestvaluePoint = northPoint.point;
         }
-        pointsQueue.queue(northPoint);
+        if (!northPoint.visited) {
+          pointsQueue.queue(northPoint);
+        }
       }
     }
     if (southPoint) {
@@ -384,12 +392,14 @@ export function getHeighestValuePath(
           currentPointToVisit.currentValue +
           signalMatrix[southPoint.point.y][southPoint.point.x];
       }
-      if (!southPoint.visited && southPoint.distanceToSrc <= maxDistance) {
+      if (southPoint.distanceToSrc <= maxDistance) {
         if (southPoint.currentValue > highestValue) {
           highestValue = southPoint.currentValue;
           highestvaluePoint = southPoint.point;
         }
-        pointsQueue.queue(southPoint);
+        if (!southPoint.visited) {
+          pointsQueue.queue(southPoint);
+        }
       }
     }
     if (eastPoint) {
@@ -399,12 +409,14 @@ export function getHeighestValuePath(
           currentPointToVisit.currentValue +
           signalMatrix[eastPoint.point.y][eastPoint.point.x];
       }
-      if (!eastPoint.visited && eastPoint.distanceToSrc <= maxDistance) {
+      if (eastPoint.distanceToSrc <= maxDistance) {
         if (eastPoint.currentValue > highestValue) {
           highestValue = eastPoint.currentValue;
           highestvaluePoint = eastPoint.point;
         }
-        pointsQueue.queue(eastPoint);
+        if (!eastPoint.visited) {
+          pointsQueue.queue(eastPoint);
+        }
       }
     }
     if (westPoint) {
@@ -414,15 +426,29 @@ export function getHeighestValuePath(
           currentPointToVisit.currentValue +
           signalMatrix[westPoint.point.y][westPoint.point.x];
       }
-      if (!westPoint.visited && westPoint.distanceToSrc <= maxDistance) {
+      if (westPoint.distanceToSrc <= maxDistance) {
         if (westPoint.currentValue > highestValue) {
           highestValue = westPoint.currentValue;
           highestvaluePoint = westPoint.point;
         }
-        pointsQueue.queue(westPoint);
+        if (!westPoint.visited) {
+          pointsQueue.queue(westPoint);
+        }
       }
     }
   }
+  console.error("Matrix for pac:");
+  console.error(prettyPrintNumberMatrix(signalMatrix));
+  console.error("Matrix of sum of paths: ");
+  console.error(
+    prettyPrintNumberMatrix(
+      visitedPointsMatrix.map((line) =>
+        line.map((point) =>
+          point ? point.currentValue : Number.NEGATIVE_INFINITY
+        )
+      )
+    )
+  );
 
   return highestvaluePoint;
 }

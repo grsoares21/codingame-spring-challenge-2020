@@ -2,8 +2,6 @@
  * Grab the pellets as fast as you can!
  **/
 
-import { Point } from "./geometry";
-import { Pac } from "./game";
 import { storeInput } from "./debug";
 
 import { runLocally } from "./debug";
@@ -27,28 +25,23 @@ let currentTurn = 0;
 // game loop
 while (true) {
   let { visiblePellets, myPacs, enemyPacs } = parseTurnInput();
-  console.error("parsed turn input");
+  console.error(`Current turn: ${currentTurn}`);
   if (currentTurn !== 0) {
     updatePelletPointsHistory(myPacs, visiblePellets, map);
   }
-  console.error("updated pellet history");
-  /*if (
-    myPacs.some(
-      (pac) => pac.id === 0 && pac.position.x === 21 && pac.position.y === 7
-    )
-  ) {
+  if (currentTurn === 42) {
     debugger;
-  }*/
-  const initialTime = new Date().getTime();
+  }
+  //const initialTime = new Date().getTime();
   const pacDestinations = findPacDestinationsWithSignal(
     myPacs,
     enemyPacs,
     visiblePellets,
     map
   );
-  console.error(
+  /*console.error(
     `Time to find destinations: ${new Date().getTime() - initialTime}ms`
-  );
+  );*/
   //console.error(`Pac destinations: ${JSON.stringify(pacDestinations)}`);
   /*const pacPaths = findPathToDestinations(
     pacDestinations,
